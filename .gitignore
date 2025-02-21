@@ -62,6 +62,7 @@ rsconnect/
 # Large Files
 reads/**
 seqRuns/**
+**/seqs.fastq.gz
 
 # Reference Databases
 **/Tax4Fun2_ReferenceData_v2/*
