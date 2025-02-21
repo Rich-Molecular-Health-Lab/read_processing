@@ -1,0 +1,16 @@
+[
+   {
+      "alleles" : {
+         "arcC" : "~7",
+         "gtr" : "~14",
+         "tpiA" : "8",
+         "glpK" : "2",
+         "tuf" : "4",
+         "pta" : "3"
+      },
+      "sequence_type" : "-",
+      "id" : "salci1",
+      "scheme" : "shominis",
+      "filename" : "input_genome.fasta"
+   }
+]

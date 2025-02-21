@@ -1,0 +1,61 @@
+{
+    "files": {
+        "workflow-checkpoints": "./checkpoints.json",
+        "sample-data": {
+            "salci1": "salci1/seqs.fastq.gz"
+        },
+        "read-stats-per-file": {
+            "salci1": "salci1/fastcat_stats/per-file-stats.tsv"
+        },
+        "read-stats-per-read": {
+            "salci1": "salci1/fastcat_stats/per-read-stats.tsv.gz"
+        },
+        "alignment": {
+            "salci1": "salci1.reads2ref.bam"
+        },
+        "alignment-index": {
+            "salci1": "salci1.reads2ref.bam.bai"
+        },
+        "assembly": {
+            "salci1": "salci1.medaka.fasta.gz"
+        },
+        "annotation": {
+            "salci1": "salci1.prokka.gff"
+        },
+        "amr": {
+            "salci1": "salci1_resfinder_results"
+        },
+        "mlst": {
+            "salci1": "salci1.mlst.json"
+        },
+        "per-sample-report": {
+            "salci1": "salci1-isolate-report.html"
+        },
+        "workflow-report": "wf-bacterial-genomes-report.html",
+        "workflow-results": "results.json"
+    },
+    "checkpoints": {
+        "reads": {
+            "salci1": "complete"
+        },
+        "alignment": {
+            "salci1": "complete"
+        },
+        "assembly": {
+            "salci1": "complete"
+        },
+        "variant-calling": {
+            "salci1": "not-met"
+        },
+        "annotation": {
+            "salci1": "complete"
+        },
+        "amr": {
+            "salci1": "complete"
+        },
+        "reporting": "complete",
+        "per-sample-report": {
+            "salci1": "complete"
+        }
+    }
+}

@@ -197,7 +197,6 @@ mamba install chopper
 conda deactivate
 ```
 
-git filter-branch --tree-filter 'rm -f **/seqs.fastq.gz' HEAD
 
 # Next Steps
 
