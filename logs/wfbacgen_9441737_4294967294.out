@@ -1,0 +1,115 @@
+
+ N E X T F L O W   ~  version 24.04.3
+
+Launching `https://github.com/epi2me-labs/wf-bacterial-genomes` [modest_williams] DSL2 - revision: f73d06f7fd [master]
+
+WARN: NEXTFLOW RECURSION IS A PREVIEW FEATURE - SYNTAX AND FUNCTIONALITY CAN CHANGE IN FUTURE RELEASES
+
+||||||||||   _____ ____ ___ ____  __  __ _____      _       _
+||||||||||  | ____|  _ \_ _|___ \|  \/  | ____|    | | __ _| |__  ___
+|||||       |  _| | |_) | |  __) | |\/| |  _| _____| |/ _` | '_ \/ __|
+|||||       | |___|  __/| | / __/| |  | | |__|_____| | (_| | |_) \__ \
+||||||||||  |_____|_|  |___|_____|_|  |_|_____|    |_|\__,_|_.__/|___/
+||||||||||  wf-bacterial-genomes v1.4.1-gf73d06f
+--------------------------------------------------------------------------------
+Core Nextflow options
+  revision       : master
+  runName        : modest_williams
+  containerEngine: singularity
+  container      : [withLabel:wf_common:ontresearch/wf-common:shad28e55140f75a68f59bbecc74e880aeab16ab158, withLabel:wfbacterialgenomes:ontresearch/wf-bacterial-genomes:sha2a8c43007876f1c057a194b236e81698a68484ff, withLabel:prokka:ontresearch/prokka:sha08669655982fbef7c750c7895e97e100196c4967, withLabel:medaka:ontresearch/medaka:sha447c70a639b8bcf17dc49b51e74dfcde6474837b, withLabel:amr:ontresearch/resfinder:sha024ca117d06e35c5e4116bcb2cd6235b96916fcf, withLabel:mlst:ontresearch/mlst:sha8f8f258761d66116deb5b58b4204e5b7783a0c90, withLabel:seqsero2:ontresearch/seqsero2:sha96053b39b281e404cf1cf9c4684fa7dbc4e2761d]
+  launchDir      : /lustre/work/richlab/aliciarich/read_processing
+  workDir        : /lustre/work/richlab/aliciarich/read_processing/work
+  projectDir     : /work/richlab/aliciarich/assets/epi2me-labs/wf-bacterial-genomes
+  userName       : aliciarich
+  profile        : singularity
+  configFiles    : /work/richlab/aliciarich/assets/epi2me-labs/wf-bacterial-genomes/nextflow.config
+
+Input Options
+  fastq          : reads/filtered/salci1.fastq
+
+Sample Options
+  sample         : salci1
+
+Isolate options
+  isolates       : true
+
+Output Options
+  out_dir        : processed/salci1
+
+Miscellaneous Options
+  threads        : 32
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+--------------------------------------------------------------------------------
+If you use epi2me-labs/wf-bacterial-genomes for your analysis please cite:
+
+* The nf-core framework
+  https://doi.org/10.1038/s41587-020-0439-x
+
+
+--------------------------------------------------------------------------------
+This is epi2me-labs/wf-bacterial-genomes v1.4.1-gf73d06f.
+--------------------------------------------------------------------------------
+Searching input for [.fastq, .fastq.gz, .fq, .fq.gz] files.
+[-        ] fastcat                        -
+[-        ] cal…pipeline:ingressCheckpoint -
+[-        ] calling_pipeline:deNovo        -
+[-        ] calling_pipeline:alignReads    -
+[-        ] cal…peline:alignmentCheckpoint -
+[-        ] calling_pipeline:readStats     -
+[-        ] calling_pipeline:coverStats    -
+[-        ] calling_pipeline:splitRegions  -
+[-        ] cal…:medakaInference_consensus -
+[-        ] cal…g_pipeline:medakaConsensus -
+[-        ] cal…ipeline:assemblyCheckpoint -
+Running Denovo assembly.
+
+[-        ] fastcat                        -
+[-        ] cal…pipeline:ingressCheckpoint -
+[-        ] calling_pipeline:deNovo        -
+[-        ] calling_pipeline:alignReads    -
+[-        ] cal…peline:alignmentCheckpoint -
+[-        ] calling_pipeline:readStats     -
+[-        ] calling_pipeline:coverStats    -
+[-        ] calling_pipeline:splitRegions  -
+[-        ] cal…:medakaInference_consensus -
+[-        ] cal…g_pipeline:medakaConsensus -
+[-        ] cal…ipeline:assemblyCheckpoint -
+[-        ] cal…pipeline:variantCheckpoint -
+[-        ] calling_pipeline:runProkka     -
+[-        ] cal…eline:annotationCheckpoint -
+[-        ] cal…ne:run_isolates:mlstSearch -
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+Plus 13 more processes waiting for tasks…
+Running Denovo assembly.
+
+[-        ] fastcat                        -
+[-        ] cal…pipeline:ingressCheckpoint -
+[-        ] calling_pipeline:deNovo        -
+[-        ] calling_pipeline:alignReads    -
+[-        ] cal…peline:alignmentCheckpoint -
+[-        ] calling_pipeline:readStats     -
+[-        ] calling_pipeline:coverStats    -
+[-        ] calling_pipeline:splitRegions  -
+[-        ] cal…:medakaInference_consensus -
+[-        ] cal…g_pipeline:medakaConsensus -
+[-        ] cal…ipeline:assemblyCheckpoint -
+[-        ] cal…pipeline:variantCheckpoint -
+[-        ] calling_pipeline:runProkka     -
+[-        ] cal…eline:annotationCheckpoint -
+[-        ] cal…ne:run_isolates:mlstSearch -
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+Plus 14 more processes waiting for tasks…
+Running Denovo assembly.
+Pulling Singularity image docker://ontresearch/wf-common:shad28e55140f75a68f59bbecc74e880aeab16ab158 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-shad28e55140f75a68f59bbecc74e880aeab16ab158.img]
+Pulling Singularity image docker://ontresearch/wf-bacterial-genomes:sha2a8c43007876f1c057a194b236e81698a68484ff [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-bacterial-genomes-sha2a8c43007876f1c057a194b236e81698a68484ff.img]
+Pulling Singularity image docker://ontresearch/prokka:sha08669655982fbef7c750c7895e97e100196c4967 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-prokka-sha08669655982fbef7c750c7895e97e100196c4967.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location

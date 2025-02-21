@@ -1,0 +1,202 @@
+---
+title: "Setting up your HCC Directory the First Time"
+author: "Alicia M. Rich, Ph.D."
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    theme:
+      bootswatch: litera
+    toc: true
+    toc_float:
+      collapsed: true
+      smooth_scroll: true
+    code_folding: "show"
+    fig_caption: true
+    df_print: paged
+params:
+  sampleset: "isolates"
+  seqrun: "salci1"
+  
+---
+
+```{r, message = FALSE}
+global             <- config::get(config = "default")
+
+here::i_am("RemoteHCC_FirstUse.Rmd")
+source(here::here(global$setup))
+
+theme_set(theme_classic())
+thematic_rmd()
+thematic_on(accent = "#8785B2FF", fg = "black")
+
+opts_chunk$set(message = FALSE,
+               warning = FALSE,
+               echo    = FALSE,
+               include = TRUE,
+               eval    = TRUE,
+               comment = "")
+```
+
+# Background
+
+## MinION Data
+
+The ONT sequencers basically measure electrical signals as strands of DNA pass through each nanopore. The MinKNOW software uses an algorithm to convert each signal to its estimated sequence of A's/G's/C's/T's in real time, but those on-the-fly basecalls are quite messy. It is standard practice to take the original signal data after the run has completed and use a slower, more precise algorithm to re-basecall the data with greater precision.  
+
+### Files to Use
+
+After a sequencing run you MinKNOW will drop many different files and subdirectories into a parent directory labeled with the name of your run. Here is what you should do with some of the main files you need to carry forward:
+
+```{r}
+minion_files <- tibble(
+  Relative_Paths = c(
+"**/pod5/*.pod5",
+"barcode_alignment_*.tsv",
+"**/dataframes/sample_sheet/*/*_sample_sheet.csv"),
+
+Description = c(
+"Uncalled reads that passed initial quality control parameters on the MinKNOW local software.",
+"Output stats for multiplexed/barcoded sequencing runs summarized by barcode",
+"Dorado-formatted samplesheets created in the SampleInventory workflow using the barcode_alignment tables."),
+
+Use = c(
+"Your input for the basecalling step you take first.",
+"We change the filename with your Library Code (e.g. hdz1) as a prefix and remove the really long string after 'alignment_' before folding the file into our SampleInventory script for preparing the demultiplexing sample sheets.",
+"After the SampleInventory workflow, you should have one sample sheet for each sequencing run (with the run name/code as the file prefix) that dorado can use for matching sample/sequence names to barcodes (note: this is only necessary if you are working with multiplexed/barcoded libraries)."),
+
+Destination = c(
+"Working directory on HCC/Swan that you will call in your script.",
+"These files must be properly renamed and then place in the bioinformatics-stats repository under the subdirectory dataframes/barcodes/.",
+"Working directory on HCC/Swan that you will call in your script."
+)
+
+) %>%
+  gt(rowname_col = "Relative_Paths") %>%
+  tab_stubhead("Relative Paths") %>%
+  cols_width(Description ~ px(100),
+             Use         ~ px(350),
+             Destination ~ px(250)) %>%
+  tab_style(style = cell_text(v_align = "top"),
+            locations = list(cells_body(), cells_stub())) %>%
+  opt_stylize(style = 3, color = "cyan")
+
+minion_files
+```
+
+## Syntax of this Workflow
+
+If you see a step involving the code "sbatch", that means I am referencing a separate file with the extension .sh as a complete batch script that runs from the HCC's SLURM server. You should transfer your version of that script to the local working directory before running the sbatch code. Sometimes I also run shorter jobs as an [interactive job](https://hcc.unl.edu/docs/submitting_jobs/creating_an_interactive_job/). You can read more about that on the HCC manual if you want to try it.  
+
+I also use a custom language engine in this script that I named "terminal." If you see a chunk of code with {terminal, warning = FALSE} written where you would usually see {r} at the top of the chunk, then running the chunk should only print that code as a text string in this document. This just makes it easier for me to copy and paste the code directly into the terminal panel that I use in my R Studio window when running code through a remote server instead of my local R console. There are ways to set R Studio up to run code through multiple servers, but I find this the simplest way to switch back and forth while still keeping a record of the code that have used or changes I have made to it.  
+
+### Methods Parameters
+
+I keep track of my parameters for workflows using the config package and file. Below is my full-length config.yml file. Scroll down to "methods_16s" to see the parameters I use for 16S microbiome sequences generated with ONT's rapid 16S kit. This allows us to modify parameters in one central location that we reference in all other scripts, avoiding any inconsistences across bioinformatic stages and giving us one place to check when reporting the methods for manuscripts or presentations.  
+
+```{r, echo = FALSE}
+page_fluid(
+    accordion(
+      open = FALSE,
+      accordion_panel(
+        "Show/Hide Config File (config.yml)",
+        tagList(tags$pre(includeText("config.yml")))
+    )
+  )
+)
+```
+
+
+## Intro to High Performance Computing (HPC)
+
+The basecalling step is the most memory-intensive stage of our bioinformatic pipelines. Most local hard drives cannot handle the task, especially for the maximum-precision algorithm we use.  High-Performance Computing (HPC) systems and remote clusters (like the Holland Computing Center's (HCC) remote server known as *Swan*) are powerful computers designed to handle big tasks that are too demanding for personal computers. These systems allow us to connect remotely and use their resources to process large amounts of data quickly and efficiently. For steps like ONT basecalling, which require a lot of memory and processing power, HPC systems are essential to get the job done without overwhelming our own computers.  
+
+## Getting Started with the Holland Computing Center (HCC)
+
+Any UNO/UNMC/UNL student affiliated with an established HCC research group can sign up for a free account to access the system. [Follow the instructions here](https://hcc.unl.edu/docs/accounts/) and enter "richlab" as your group. I will receive an email to approve your membership, and then your account will become active. You should look through the rest of the HCC's manual to learn some of the basics before you begin using it. Begin by working through the following:  
+
+1. [Connecting to the Clusters](https://hcc.unl.edu/docs/connecting/)
+  - My preferred method for step 2 (*Open a terminal or SSH client*) is to use the terminal window inside R Studio. That makes it easier to move smoothly between code languages and servers within a single R Markdown script like this one.
+2. [Handling Data](https://hcc.unl.edu/docs/handling_data/)
+  - The most important storage guidelines are those explaining when/how to use your home vs. work directories and the overall limits that we share as a group across every member's accounts.
+  - Data transfer can initially trip people up, and you have several options. I used to use cyber duck for uploading/downloading files, but more recently I switched to Globus Connect.
+3.  [Submitting Jobs](https://hcc.unl.edu/docs/submitting_jobs/)
+  - This workflow references modularized bash scripts that you can upload to your working directory and submit according to the instructions on the HCC site. You do not need to worry as much about understanding how to find/select/use different apps/modules on the server (I have taken care of that for our pipelines), but you do need to know how to take the scripts I have written, edit a few of the parameters, and tell the HCC when/how to run it for you.
+
+# Set up your Directories
+
+## Load Reads to HCC Directory for Processing
+
+You can use any number of FTPs (*File transfer protocols*) to move directories and files from a local hard drive to your working directory on the HCC. I use [Globus Connect Personal](https://www.globus.org/globus-connect-personal). Follow the installation and use instructions to transfer your local copy of this entire repository to a location within your personal `work` directory on the HCC. Then you can simply use the sync option each time you begin working to ensure all your relative paths and directories are available in both locations.  
+  
+If you set your working directory on swan to the same as the working directory for this R project, then all the paths used here will also work in any scripts you run there.
+
+# First Time Steps: Setting Up your Working Swan Environment
+
+## Download Dorado Model
+
+You should have some basic understanding of which models Dorado provides for basecalling ONT reads by looking over [this page](https://github.com/nanoporetech/dorado#dna-models). I use the config package or parameters in the yaml header to track and source the models that I am using. You will need to report details like this in the methods section of any paper produced by your results.  
+
+**We will almost always choose the newest SUP model available on the HCC with the 10.4.1. kit chemistry.**  
+
+For some reason dorado's automatic sourcing and use of models does not seem to work from the GPU nodes on the HCC, so we will download a stable version of our current model options. - *This file needs to be the path below within your working directory for it to automatically be located by the code I have written in other scripts.*  
+  
+You should at least download the newest `sup` model available, but you may also download the newest `hac` and `fast` models if you would like. The code in other scripts will search this directory for whichever of these three models you specify at that time.
+
+```{terminal, warning = FALSE}
+cd read_processing
+
+module load dorado
+
+dorado download --list
+```
+
+>This will give you a list of the models that are available for download. Select the model where you see `sup` in the name with the highest number after `@v`. *At the time I am writing this, that is `dna_r10.4.1_e8.2_400bps_sup@v5.0.0`* Copy and paste that name below.
+
+```{terminal, warning = FALSE}
+model="<pastehere>"
+dorado download --model $model --models-directory dorado_models
+```
+
+## Download Nextflow Workflows
+
+We will create a local copy of the scripts necessary for our current nextflow pipelines, but first we have to open an interactive job, because HCC does not permit nextflow commands from the login node.
+
+```{terminal, warning = FALSE}
+srun --partition=guest --nodes=1 --ntasks-per-node=1 --job-name=nextflow_download --mem=150GB --time=00:30:00 --cpus-per-task=8 --pty $SHELL
+```
+
+>Below: Replace `wf-bacterial-genomes` with the workflow name of your choice.
+
+```{terminal, warning = FALSE}
+module load nextflow
+
+nextflow run epi2me-labs/wf-bacterial-genomes --help
+```
+
+
+## Create Conda Environments
+
+We need to use some modules/packages that the HCC does not pre-install for us on Swan. We will create a mirror of those packages using the storage handler program Anaconda. Once you create an environment and load all the necessary packages, you can call and reopen that environment any time, and the same group of packages will be available to you. We will create two environments to reuse for our quality control and data filtering steps: **pycoQC** and **filter**. I named the former for its only package, but the latter actually uses the package **chopper**.
+
+## pycoQC
+
+```{terminal, warning = FALSE}
+module load anaconda
+conda create -n pycoQC python=3.6
+conda activate pycoQC
+mamba install pycoqc
+conda deactivate
+```
+
+## filter
+
+```{terminal, warning = FALSE}
+conda create -n filter
+conda activate filter
+mamba install chopper
+conda deactivate
+```
+
+# Next Steps
+
+Now that you have all your necessary directory structures and virtual environments, you should be able to start your Remote Read Processing steps with one of the other remote processing scripts each time. Continue to one of those now to use the environment you just constructed.
