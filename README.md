@@ -1,7 +1,8 @@
 # Welcome to the Read Processing Repository
 
->[To view this as a public page click here.](https://github.com/Rich-Molecular-Health-Lab/read_processing)
->[To return to the repository and directories click here.](https://github.com/Rich-Molecular-Health-Lab/read_processing)
+>-  [To view this as a public page click here.](https://github.com/Rich-Molecular-Health-Lab/read_processing)
+
+>-  [To return to the repository and directories click here.](https://github.com/Rich-Molecular-Health-Lab/read_processing)
 
 ## MinION Data
 
@@ -45,5 +46,5 @@ If you set your working directory on swan to the same as the working directory f
 
 The first time you process any reads on the HCC, you should work through the script linked below. You may download the R markdown file to work from, or open the html version in a browser for a more readable tutorial. You only need to work through this script once. After that you should be able to start directly from one of the Read Processing scripts.
 
-- [RemoteHCC_FirstUse.Rmd](RemoteHCC_FirstUse.Rmd)
-  - To view from your browser: [RemoteHCC_FirstUse.html](https://github.com/Rich-Molecular-Health-Lab/read_processing/RemoteHCC_FirstUse.html)
+- To download the raw script: [RemoteHCC_FirstUse.Rmd](RemoteHCC_FirstUse.Rmd)
+- To view from your browser: [RemoteHCC_FirstUse.html](https://github.com/Rich-Molecular-Health-Lab/read_processing/RemoteHCC_FirstUse.html)
