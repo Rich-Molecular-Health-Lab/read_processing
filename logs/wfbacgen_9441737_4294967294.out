@@ -113,3 +113,1936 @@ Pulling Singularity image docker://ontresearch/wf-common:shad28e55140f75a68f59bb
 Pulling Singularity image docker://ontresearch/wf-bacterial-genomes:sha2a8c43007876f1c057a194b236e81698a68484ff [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-bacterial-genomes-sha2a8c43007876f1c057a194b236e81698a68484ff.img]
 Pulling Singularity image docker://ontresearch/prokka:sha08669655982fbef7c750c7895e97e100196c4967 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-prokka-sha08669655982fbef7c750c7895e97e100196c4967.img]
 WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+[-        ] fastcat                        -
+[-        ] cal…pipeline:ingressCheckpoint -
+[-        ] calling_pipeline:deNovo        -
+[-        ] calling_pipeline:alignReads    -
+[-        ] cal…peline:alignmentCheckpoint -
+[-        ] calling_pipeline:readStats     -
+[-        ] calling_pipeline:coverStats    -
+[-        ] calling_pipeline:splitRegions  -
+[-        ] cal…:medakaInference_consensus -
+[-        ] cal…g_pipeline:medakaConsensus -
+[-        ] cal…ipeline:assemblyCheckpoint -
+[-        ] cal…pipeline:variantCheckpoint -
+[-        ] calling_pipeline:runProkka     -
+[-        ] cal…eline:annotationCheckpoint -
+[-        ] cal…ne:run_isolates:mlstSearch -
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[-        ] calling_pipeline:getParams     | 0 of 1
+Plus 13 more processes waiting for tasks…
+
+
+
+
+
+
+executor >  local (1)
+[-        ] fastcat                        -
+[-        ] cal…pipeline:ingressCheckpoint -
+[-        ] calling_pipeline:deNovo        -
+[-        ] calling_pipeline:alignReads    -
+[-        ] cal…peline:alignmentCheckpoint -
+[-        ] calling_pipeline:readStats     -
+[-        ] calling_pipeline:coverStats    -
+[-        ] calling_pipeline:splitRegions  -
+[-        ] cal…:medakaInference_consensus -
+[-        ] cal…g_pipeline:medakaConsensus -
+[-        ] cal…ipeline:assemblyCheckpoint -
+[-        ] cal…pipeline:variantCheckpoint -
+[-        ] calling_pipeline:runProkka     -
+[-        ] cal…eline:annotationCheckpoint -
+[-        ] cal…ne:run_isolates:mlstSearch -
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[10/4183d1] calling_pipeline:getParams     | 0 of 1
+Plus 13 more processes waiting for tasks…
+
+
+
+
+
+executor >  local (1)
+[-        ] fastcat                        -
+[-        ] cal…pipeline:ingressCheckpoint -
+[-        ] calling_pipeline:deNovo        -
+[-        ] calling_pipeline:alignReads    -
+[-        ] cal…peline:alignmentCheckpoint -
+[-        ] calling_pipeline:readStats     -
+[-        ] calling_pipeline:coverStats    -
+[-        ] calling_pipeline:splitRegions  -
+[-        ] cal…:medakaInference_consensus -
+[-        ] cal…g_pipeline:medakaConsensus -
+[-        ] cal…ipeline:assemblyCheckpoint -
+[-        ] cal…pipeline:variantCheckpoint -
+[-        ] calling_pipeline:runProkka     -
+[-        ] cal…eline:annotationCheckpoint -
+[-        ] cal…ne:run_isolates:mlstSearch -
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+Plus 13 more processes waiting for tasks…
+
+executor >  local (2)
+[7b/5fd61e] fastcat (1)                    | 0 of 1
+[-        ] cal…pipeline:ingressCheckpoint -
+[-        ] calling_pipeline:deNovo        -
+[-        ] calling_pipeline:alignReads    -
+[-        ] cal…peline:alignmentCheckpoint -
+[-        ] calling_pipeline:readStats     -
+[-        ] calling_pipeline:coverStats    -
+[-        ] calling_pipeline:splitRegions  -
+[-        ] cal…:medakaInference_consensus -
+[-        ] cal…g_pipeline:medakaConsensus -
+[-        ] cal…ipeline:assemblyCheckpoint -
+[-        ] cal…pipeline:variantCheckpoint -
+[-        ] calling_pipeline:runProkka     -
+[-        ] cal…eline:annotationCheckpoint -
+[-        ] cal…ne:run_isolates:mlstSearch -
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+Plus 13 more processes waiting for tasks…
+
+executor >  local (3)
+[7b/5fd61e] fastcat (1)                    | 0 of 1
+[-        ] cal…pipeline:ingressCheckpoint -
+[-        ] calling_pipeline:deNovo        -
+[-        ] calling_pipeline:alignReads    -
+[-        ] cal…peline:alignmentCheckpoint -
+[-        ] calling_pipeline:readStats     -
+[-        ] calling_pipeline:coverStats    -
+[-        ] calling_pipeline:splitRegions  -
+[-        ] cal…:medakaInference_consensus -
+[-        ] cal…g_pipeline:medakaConsensus -
+[-        ] cal…ipeline:assemblyCheckpoint -
+[-        ] cal…pipeline:variantCheckpoint -
+[-        ] calling_pipeline:runProkka     -
+[-        ] cal…eline:annotationCheckpoint -
+[-        ] cal…ne:run_isolates:mlstSearch -
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 0 of 1
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+Plus 12 more processes waiting for tasks…
+
+executor >  local (3)
+[7b/5fd61e] fastcat (1)                    | 0 of 1
+[-        ] cal…pipeline:ingressCheckpoint -
+[-        ] calling_pipeline:deNovo        -
+[-        ] calling_pipeline:alignReads    -
+[-        ] cal…peline:alignmentCheckpoint -
+[-        ] calling_pipeline:readStats     -
+[-        ] calling_pipeline:coverStats    -
+[-        ] calling_pipeline:splitRegions  -
+[-        ] cal…:medakaInference_consensus -
+[-        ] cal…g_pipeline:medakaConsensus -
+[-        ] cal…ipeline:assemblyCheckpoint -
+[-        ] cal…pipeline:variantCheckpoint -
+[-        ] calling_pipeline:runProkka     -
+[-        ] cal…eline:annotationCheckpoint -
+[-        ] cal…ne:run_isolates:mlstSearch -
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+Plus 12 more processes waiting for tasks…
+Pulling Singularity image docker://ontresearch/medaka:sha447c70a639b8bcf17dc49b51e74dfcde6474837b [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-medaka-sha447c70a639b8bcf17dc49b51e74dfcde6474837b.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (3)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[-        ] cal…pipeline:ingressCheckpoint | 0 of 1
+[-        ] calling_pipeline:deNovo        -
+[-        ] calling_pipeline:alignReads    -
+[-        ] cal…peline:alignmentCheckpoint -
+[-        ] calling_pipeline:readStats     -
+[-        ] calling_pipeline:coverStats    -
+[-        ] calling_pipeline:splitRegions  -
+[-        ] cal…:medakaInference_consensus -
+[-        ] cal…g_pipeline:medakaConsensus -
+[-        ] cal…ipeline:assemblyCheckpoint -
+[-        ] cal…pipeline:variantCheckpoint | 0 of 1
+[-        ] calling_pipeline:runProkka     -
+[-        ] cal…eline:annotationCheckpoint -
+[-        ] cal…ne:run_isolates:mlstSearch -
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+Plus 12 more processes waiting for tasks…
+Pulling Singularity image docker://ontresearch/medaka:sha447c70a639b8bcf17dc49b51e74dfcde6474837b [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-medaka-sha447c70a639b8bcf17dc49b51e74dfcde6474837b.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (6)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 0 of 1
+[-        ] calling_pipeline:deNovo        | 0 of 1
+[-        ] calling_pipeline:alignReads    -
+[-        ] cal…peline:alignmentCheckpoint -
+[-        ] calling_pipeline:readStats     -
+[-        ] calling_pipeline:coverStats    -
+[-        ] calling_pipeline:splitRegions  -
+[-        ] cal…:medakaInference_consensus -
+[-        ] cal…g_pipeline:medakaConsensus -
+[-        ] cal…ipeline:assemblyCheckpoint -
+[56/fc4d07] cal…line:variantCheckpoint (1) | 0 of 1
+[-        ] calling_pipeline:runProkka     -
+[-        ] cal…eline:annotationCheckpoint -
+[-        ] cal…ne:run_isolates:mlstSearch -
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[b4/381154] cal…stqIngressResultsInDir (1) | 0 of 1
+Plus 11 more processes waiting for tasks…
+Pulling Singularity image docker://ontresearch/medaka:sha447c70a639b8bcf17dc49b51e74dfcde6474837b [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-medaka-sha447c70a639b8bcf17dc49b51e74dfcde6474837b.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (6)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[-        ] calling_pipeline:deNovo        | 0 of 1
+[-        ] calling_pipeline:alignReads    -
+[-        ] cal…peline:alignmentCheckpoint -
+[-        ] calling_pipeline:readStats     -
+[-        ] calling_pipeline:coverStats    -
+[-        ] calling_pipeline:splitRegions  -
+[-        ] cal…:medakaInference_consensus -
+[-        ] cal…g_pipeline:medakaConsensus -
+[-        ] cal…ipeline:assemblyCheckpoint -
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1
+[-        ] calling_pipeline:runProkka     -
+[-        ] cal…eline:annotationCheckpoint -
+[-        ] cal…ne:run_isolates:mlstSearch -
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[b4/381154] cal…stqIngressResultsInDir (1) | 0 of 1
+Plus 11 more processes waiting for tasks…
+Pulling Singularity image docker://ontresearch/medaka:sha447c70a639b8bcf17dc49b51e74dfcde6474837b [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-medaka-sha447c70a639b8bcf17dc49b51e74dfcde6474837b.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (7)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 0 of 1
+[-        ] calling_pipeline:alignReads    -
+[-        ] cal…peline:alignmentCheckpoint -
+[-        ] calling_pipeline:readStats     -
+[-        ] calling_pipeline:coverStats    -
+[-        ] calling_pipeline:splitRegions  -
+[-        ] cal…:medakaInference_consensus -
+[-        ] cal…g_pipeline:medakaConsensus -
+[-        ] cal…ipeline:assemblyCheckpoint -
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1
+[-        ] calling_pipeline:runProkka     -
+[-        ] cal…eline:annotationCheckpoint -
+[-        ] cal…ne:run_isolates:mlstSearch -
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[-        ] cal…line:accumulateCheckpoints | 0 of 1
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+Plus 10 more processes waiting for tasks…
+Pulling Singularity image docker://ontresearch/medaka:sha447c70a639b8bcf17dc49b51e74dfcde6474837b [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-medaka-sha447c70a639b8bcf17dc49b51e74dfcde6474837b.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (7)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 0 of 1
+[-        ] calling_pipeline:alignReads    -
+[-        ] cal…peline:alignmentCheckpoint -
+[-        ] calling_pipeline:readStats     -
+[-        ] calling_pipeline:coverStats    -
+[-        ] calling_pipeline:splitRegions  -
+[-        ] cal…:medakaInference_consensus -
+[-        ] cal…g_pipeline:medakaConsensus -
+[-        ] cal…ipeline:assemblyCheckpoint -
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1
+[-        ] calling_pipeline:runProkka     -
+[-        ] cal…eline:annotationCheckpoint -
+[-        ] cal…ne:run_isolates:mlstSearch -
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[-        ] calling_pipeline:medakaVersion | 0 of 1
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[-        ] cal…line:accumulateCheckpoints | 0 of 1
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+Plus 9 more processes waiting for tasks…
+
+
+
+executor >  local (9)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[-        ] calling_pipeline:alignReads    | 0 of 1
+[-        ] cal…peline:alignmentCheckpoint -
+[-        ] calling_pipeline:readStats     -
+[-        ] calling_pipeline:coverStats    -
+[-        ] calling_pipeline:splitRegions  -
+[-        ] cal…:medakaInference_consensus -
+[-        ] cal…g_pipeline:medakaConsensus -
+[-        ] cal…ipeline:assemblyCheckpoint -
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[-        ] calling_pipeline:runProkka     -
+[-        ] cal…eline:annotationCheckpoint -
+[-        ] cal…ne:run_isolates:mlstSearch -
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 0 of 1
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[5a/b8c96c] cal…:accumulateCheckpoints (1) | 0 of 1
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+Plus 9 more processes waiting for tasks…
+
+
+
+executor >  local (9)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[-        ] calling_pipeline:alignReads    | 0 of 1
+[-        ] cal…peline:alignmentCheckpoint -
+[-        ] calling_pipeline:readStats     -
+[-        ] calling_pipeline:coverStats    -
+[-        ] calling_pipeline:splitRegions  -
+[-        ] cal…:medakaInference_consensus -
+[-        ] cal…g_pipeline:medakaConsensus -
+[-        ] cal…ipeline:assemblyCheckpoint -
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[-        ] calling_pipeline:runProkka     -
+[-        ] cal…eline:annotationCheckpoint -
+[-        ] cal…ne:run_isolates:mlstSearch -
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 0 of 1
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[5a/b8c96c] cal…:accumulateCheckpoints (1) | 1 of 2
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+Plus 9 more processes waiting for tasks…
+
+executor >  local (10)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[-        ] calling_pipeline:alignReads    | 0 of 1
+[-        ] cal…peline:alignmentCheckpoint -
+[-        ] calling_pipeline:readStats     -
+[-        ] calling_pipeline:coverStats    -
+[-        ] calling_pipeline:splitRegions  -
+[-        ] cal…:medakaInference_consensus -
+[-        ] cal…g_pipeline:medakaConsensus -
+[-        ] cal…ipeline:assemblyCheckpoint -
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[-        ] calling_pipeline:runProkka     -
+[-        ] cal…eline:annotationCheckpoint -
+[-        ] cal…ne:run_isolates:mlstSearch -
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 0 of 1
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[ea/24a0e2] cal…:accumulateCheckpoints (2) | 1 of 2
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+Plus 9 more processes waiting for tasks…
+
+executor >  local (10)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[-        ] calling_pipeline:alignReads    | 0 of 1
+[-        ] cal…peline:alignmentCheckpoint -
+[-        ] calling_pipeline:readStats     -
+[-        ] calling_pipeline:coverStats    -
+[-        ] calling_pipeline:splitRegions  -
+[-        ] cal…:medakaInference_consensus -
+[-        ] cal…g_pipeline:medakaConsensus -
+[-        ] cal…ipeline:assemblyCheckpoint -
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[-        ] calling_pipeline:runProkka     -
+[-        ] cal…eline:annotationCheckpoint -
+[-        ] cal…ne:run_isolates:mlstSearch -
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 0 of 1
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[ea/24a0e2] cal…:accumulateCheckpoints (2) | 2 of 2
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+Plus 9 more processes waiting for tasks…
+
+executor >  local (11)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 0 of 1
+[-        ] cal…peline:alignmentCheckpoint -
+[-        ] calling_pipeline:readStats     -
+[-        ] calling_pipeline:coverStats    -
+[-        ] calling_pipeline:splitRegions  -
+[-        ] cal…:medakaInference_consensus -
+[-        ] cal…g_pipeline:medakaConsensus -
+[-        ] cal…ipeline:assemblyCheckpoint -
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[-        ] calling_pipeline:runProkka     -
+[-        ] cal…eline:annotationCheckpoint -
+[-        ] cal…ne:run_isolates:mlstSearch -
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[ea/24a0e2] cal…:accumulateCheckpoints (2) | 2 of 2
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+Plus 9 more processes waiting for tasks…
+Pulling Singularity image docker://ontresearch/mlst:sha8f8f258761d66116deb5b58b4204e5b7783a0c90 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-mlst-sha8f8f258761d66116deb5b58b4204e5b7783a0c90.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (11)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[-        ] cal…peline:alignmentCheckpoint | 0 of 1
+[-        ] calling_pipeline:readStats     | 0 of 1
+[-        ] calling_pipeline:coverStats    | 0 of 1
+[-        ] calling_pipeline:splitRegions  -
+[-        ] cal…:medakaInference_consensus -
+[-        ] cal…g_pipeline:medakaConsensus -
+[-        ] cal…ipeline:assemblyCheckpoint -
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[-        ] calling_pipeline:runProkka     -
+[-        ] cal…eline:annotationCheckpoint -
+[-        ] cal…ne:run_isolates:mlstSearch -
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[ea/24a0e2] cal…:accumulateCheckpoints (2) | 2 of 2
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+Plus 9 more processes waiting for tasks…
+Pulling Singularity image docker://ontresearch/mlst:sha8f8f258761d66116deb5b58b4204e5b7783a0c90 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-mlst-sha8f8f258761d66116deb5b58b4204e5b7783a0c90.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (15)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 0 of 1
+[8f/4477f9] calling_pipeline:readStats (1) | 0 of 1
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 0 of 1
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 0 of 1
+[-        ] cal…:medakaInference_consensus -
+[-        ] cal…g_pipeline:medakaConsensus -
+[-        ] cal…ipeline:assemblyCheckpoint -
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[-        ] calling_pipeline:runProkka     -
+[-        ] cal…eline:annotationCheckpoint -
+[-        ] cal…ne:run_isolates:mlstSearch -
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[ea/24a0e2] cal…:accumulateCheckpoints (2) | 2 of 2
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+Plus 9 more processes waiting for tasks…
+Pulling Singularity image docker://ontresearch/mlst:sha8f8f258761d66116deb5b58b4204e5b7783a0c90 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-mlst-sha8f8f258761d66116deb5b58b4204e5b7783a0c90.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (16)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 0 of 1
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 0 of 1
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 0 of 1
+[-        ] cal…:medakaInference_consensus -
+[-        ] cal…g_pipeline:medakaConsensus -
+[-        ] cal…ipeline:assemblyCheckpoint -
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[-        ] calling_pipeline:runProkka     -
+[-        ] cal…eline:annotationCheckpoint -
+[-        ] cal…ne:run_isolates:mlstSearch -
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[2d/590c65] cal…:accumulateCheckpoints (3) | 2 of 3
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+Plus 9 more processes waiting for tasks…
+Pulling Singularity image docker://ontresearch/mlst:sha8f8f258761d66116deb5b58b4204e5b7783a0c90 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-mlst-sha8f8f258761d66116deb5b58b4204e5b7783a0c90.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (16)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 0 of 1
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 0 of 1
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 0 of 1 ✔
+[-        ] cal…:medakaInference_consensus -
+[-        ] cal…g_pipeline:medakaConsensus -
+[-        ] cal…ipeline:assemblyCheckpoint -
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[-        ] calling_pipeline:runProkka     -
+[-        ] cal…eline:annotationCheckpoint -
+[-        ] cal…ne:run_isolates:mlstSearch -
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[2d/590c65] cal…:accumulateCheckpoints (3) | 3 of 3
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+Plus 9 more processes waiting for tasks…
+Pulling Singularity image docker://ontresearch/mlst:sha8f8f258761d66116deb5b58b4204e5b7783a0c90 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-mlst-sha8f8f258761d66116deb5b58b4204e5b7783a0c90.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (19)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 0 of 1
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 0 of 1
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 0 of 3
+[-        ] cal…g_pipeline:medakaConsensus -
+[-        ] cal…ipeline:assemblyCheckpoint -
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[-        ] calling_pipeline:runProkka     -
+[-        ] cal…eline:annotationCheckpoint -
+[-        ] cal…ne:run_isolates:mlstSearch -
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[2d/590c65] cal…:accumulateCheckpoints (3) | 3 of 3
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+Plus 9 more processes waiting for tasks…
+Pulling Singularity image docker://ontresearch/mlst:sha8f8f258761d66116deb5b58b4204e5b7783a0c90 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-mlst-sha8f8f258761d66116deb5b58b4204e5b7783a0c90.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (19)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 0 of 1
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 0 of 3
+[-        ] cal…g_pipeline:medakaConsensus -
+[-        ] cal…ipeline:assemblyCheckpoint -
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[-        ] calling_pipeline:runProkka     -
+[-        ] cal…eline:annotationCheckpoint -
+[-        ] cal…ne:run_isolates:mlstSearch -
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[2d/590c65] cal…:accumulateCheckpoints (3) | 3 of 3
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+Plus 9 more processes waiting for tasks…
+
+
+
+executor >  local (19)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 0 of 3
+[-        ] cal…g_pipeline:medakaConsensus -
+[-        ] cal…ipeline:assemblyCheckpoint -
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[-        ] calling_pipeline:runProkka     -
+[-        ] cal…eline:annotationCheckpoint -
+[-        ] cal…ne:run_isolates:mlstSearch -
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[2d/590c65] cal…:accumulateCheckpoints (3) | 3 of 3
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+Plus 9 more processes waiting for tasks…
+
+
+
+executor >  local (19)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[45/3379c3] cal…akaInference_consensus (3) | 1 of 3
+[-        ] cal…g_pipeline:medakaConsensus -
+[-        ] cal…ipeline:assemblyCheckpoint -
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[-        ] calling_pipeline:runProkka     -
+[-        ] cal…eline:annotationCheckpoint -
+[-        ] cal…ne:run_isolates:mlstSearch -
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[2d/590c65] cal…:accumulateCheckpoints (3) | 3 of 3
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+Plus 9 more processes waiting for tasks…
+
+executor >  local (19)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[ca/a70fc1] cal…akaInference_consensus (1) | 2 of 3
+[-        ] cal…g_pipeline:medakaConsensus -
+[-        ] cal…ipeline:assemblyCheckpoint -
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[-        ] calling_pipeline:runProkka     -
+[-        ] cal…eline:annotationCheckpoint -
+[-        ] cal…ne:run_isolates:mlstSearch -
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[2d/590c65] cal…:accumulateCheckpoints (3) | 3 of 3
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+Plus 9 more processes waiting for tasks…
+
+executor >  local (19)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 3 of 3 ✔
+[-        ] cal…g_pipeline:medakaConsensus -
+[-        ] cal…ipeline:assemblyCheckpoint -
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[-        ] calling_pipeline:runProkka     -
+[-        ] cal…eline:annotationCheckpoint -
+[-        ] cal…ne:run_isolates:mlstSearch -
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[2d/590c65] cal…:accumulateCheckpoints (3) | 3 of 3
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+Plus 9 more processes waiting for tasks…
+
+executor >  local (20)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 3 of 3 ✔
+[80/b5e376] cal…peline:medakaConsensus (1) | 0 of 1
+[-        ] cal…ipeline:assemblyCheckpoint -
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[-        ] calling_pipeline:runProkka     -
+[-        ] cal…eline:annotationCheckpoint -
+[-        ] cal…ne:run_isolates:mlstSearch -
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[2d/590c65] cal…:accumulateCheckpoints (3) | 3 of 3
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+Plus 9 more processes waiting for tasks…
+
+executor >  local (22)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 3 of 3 ✔
+[80/b5e376] cal…peline:medakaConsensus (1) | 1 of 1 ✔
+[6a/bfa3f0] cal…ine:assemblyCheckpoint (1) | 0 of 1
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[-        ] calling_pipeline:runProkka     | 0 of 1
+[-        ] cal…eline:annotationCheckpoint -
+[-        ] cal…ne:run_isolates:mlstSearch -
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[2d/590c65] cal…:accumulateCheckpoints (3) | 3 of 3
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+[db/c0a700] output (1)                     | 0 of 1
+Plus 8 more processes waiting for tasks…
+
+executor >  local (22)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 3 of 3 ✔
+[80/b5e376] cal…peline:medakaConsensus (1) | 1 of 1 ✔
+[6a/bfa3f0] cal…ine:assemblyCheckpoint (1) | 0 of 1
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[-        ] calling_pipeline:runProkka     | 0 of 1
+[-        ] cal…eline:annotationCheckpoint -
+[-        ] cal…ne:run_isolates:mlstSearch -
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[2d/590c65] cal…:accumulateCheckpoints (3) | 3 of 3
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+[db/c0a700] output (1)                     | 0 of 1
+Plus 8 more processes waiting for tasks…
+
+executor >  local (23)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 3 of 3 ✔
+[80/b5e376] cal…peline:medakaConsensus (1) | 1 of 1 ✔
+[6a/bfa3f0] cal…ine:assemblyCheckpoint (1) | 1 of 1 ✔
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[46/f8c835] calling_pipeline:runProkka (1) | 0 of 1
+[-        ] cal…eline:annotationCheckpoint -
+[-        ] cal…ne:run_isolates:mlstSearch -
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[2d/590c65] cal…:accumulateCheckpoints (3) | 3 of 4
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+[db/c0a700] output (1)                     | 1 of 1
+Plus 8 more processes waiting for tasks…
+
+executor >  local (23)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 3 of 3 ✔
+[80/b5e376] cal…peline:medakaConsensus (1) | 1 of 1 ✔
+[6a/bfa3f0] cal…ine:assemblyCheckpoint (1) | 1 of 1 ✔
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[46/f8c835] calling_pipeline:runProkka (1) | 0 of 1
+[-        ] cal…eline:annotationCheckpoint -
+[-        ] cal…ne:run_isolates:mlstSearch -
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[2d/590c65] cal…:accumulateCheckpoints (3) | 3 of 4
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+[db/c0a700] output (1)                     | 1 of 1
+Plus 8 more processes waiting for tasks…
+
+executor >  local (23)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 3 of 3 ✔
+[80/b5e376] cal…peline:medakaConsensus (1) | 1 of 1 ✔
+[6a/bfa3f0] cal…ine:assemblyCheckpoint (1) | 1 of 1 ✔
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[46/f8c835] calling_pipeline:runProkka (1) | 0 of 1
+[-        ] cal…eline:annotationCheckpoint -
+[-        ] cal…ne:run_isolates:mlstSearch | 0 of 1
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[-        ] calling_pipeline:mlstVersion   | 0 of 1
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[2d/590c65] cal…:accumulateCheckpoints (3) | 3 of 4
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+[db/c0a700] output (1)                     | 1 of 1
+Plus 7 more processes waiting for tasks…
+
+executor >  local (26)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 3 of 3 ✔
+[80/b5e376] cal…peline:medakaConsensus (1) | 1 of 1 ✔
+[6a/bfa3f0] cal…ine:assemblyCheckpoint (1) | 1 of 1 ✔
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[46/f8c835] calling_pipeline:runProkka (1) | 1 of 1 ✔
+[-        ] cal…eline:annotationCheckpoint | 0 of 1
+[ae/6e3c07] cal…un_isolates:mlstSearch (1) | 0 of 1
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[3e/f3c6f4] calling_pipeline:mlstVersion   | 0 of 1
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[a1/328c72] cal…:accumulateCheckpoints (4) | 3 of 4
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+[db/c0a700] output (1)                     | 1 of 1
+Plus 7 more processes waiting for tasks…
+
+executor >  local (27)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 3 of 3 ✔
+[80/b5e376] cal…peline:medakaConsensus (1) | 1 of 1 ✔
+[6a/bfa3f0] cal…ine:assemblyCheckpoint (1) | 1 of 1 ✔
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[46/f8c835] calling_pipeline:runProkka (1) | 1 of 1 ✔
+[84/b9a93e] cal…e:annotationCheckpoint (1) | 0 of 1
+[ae/6e3c07] cal…un_isolates:mlstSearch (1) | 0 of 1
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[3e/f3c6f4] calling_pipeline:mlstVersion   | 0 of 1
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[a1/328c72] cal…:accumulateCheckpoints (4) | 3 of 4
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+[db/c0a700] output (1)                     | 1 of 1
+Plus 7 more processes waiting for tasks…
+
+executor >  local (27)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 3 of 3 ✔
+[80/b5e376] cal…peline:medakaConsensus (1) | 1 of 1 ✔
+[6a/bfa3f0] cal…ine:assemblyCheckpoint (1) | 1 of 1 ✔
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[46/f8c835] calling_pipeline:runProkka (1) | 1 of 1 ✔
+[84/b9a93e] cal…e:annotationCheckpoint (1) | 1 of 1 ✔
+[ae/6e3c07] cal…un_isolates:mlstSearch (1) | 0 of 1
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[3e/f3c6f4] calling_pipeline:mlstVersion   | 0 of 1
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[a1/328c72] cal…:accumulateCheckpoints (4) | 3 of 4
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+[db/c0a700] output (1)                     | 1 of 1
+Plus 7 more processes waiting for tasks…
+
+executor >  local (28)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 3 of 3 ✔
+[80/b5e376] cal…peline:medakaConsensus (1) | 1 of 1 ✔
+[6a/bfa3f0] cal…ine:assemblyCheckpoint (1) | 1 of 1 ✔
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[46/f8c835] calling_pipeline:runProkka (1) | 1 of 1 ✔
+[84/b9a93e] cal…e:annotationCheckpoint (1) | 1 of 1 ✔
+[ae/6e3c07] cal…un_isolates:mlstSearch (1) | 0 of 1
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[3e/f3c6f4] calling_pipeline:mlstVersion   | 1 of 1 ✔
+[38/1cbe26] calling_pipeline:getVersions   | 0 of 1
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[a1/328c72] cal…:accumulateCheckpoints (4) | 3 of 4
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+[db/c0a700] output (1)                     | 1 of 1
+Plus 6 more processes waiting for tasks…
+
+executor >  local (29)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 3 of 3 ✔
+[80/b5e376] cal…peline:medakaConsensus (1) | 1 of 1 ✔
+[6a/bfa3f0] cal…ine:assemblyCheckpoint (1) | 1 of 1 ✔
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[46/f8c835] calling_pipeline:runProkka (1) | 1 of 1 ✔
+[84/b9a93e] cal…e:annotationCheckpoint (1) | 1 of 1 ✔
+[ae/6e3c07] cal…un_isolates:mlstSearch (1) | 0 of 1
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[3e/f3c6f4] calling_pipeline:mlstVersion   | 1 of 1 ✔
+[38/1cbe26] calling_pipeline:getVersions   | 0 of 1
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[63/d34b0a] cal…:accumulateCheckpoints (5) | 4 of 5
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+[db/c0a700] output (1)                     | 1 of 1
+Plus 6 more processes waiting for tasks…
+
+executor >  local (29)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 3 of 3 ✔
+[80/b5e376] cal…peline:medakaConsensus (1) | 1 of 1 ✔
+[6a/bfa3f0] cal…ine:assemblyCheckpoint (1) | 1 of 1 ✔
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[46/f8c835] calling_pipeline:runProkka (1) | 1 of 1 ✔
+[84/b9a93e] cal…e:annotationCheckpoint (1) | 1 of 1 ✔
+[ae/6e3c07] cal…un_isolates:mlstSearch (1) | 0 of 1
+[-        ] cal…ates:getPointfinderSpecies -
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[3e/f3c6f4] calling_pipeline:mlstVersion   | 1 of 1 ✔
+[38/1cbe26] calling_pipeline:getVersions   | 0 of 1
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[63/d34b0a] cal…:accumulateCheckpoints (5) | 5 of 5
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+[db/c0a700] output (1)                     | 1 of 1
+Plus 6 more processes waiting for tasks…
+
+executor >  local (30)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 3 of 3 ✔
+[80/b5e376] cal…peline:medakaConsensus (1) | 1 of 1 ✔
+[6a/bfa3f0] cal…ine:assemblyCheckpoint (1) | 1 of 1 ✔
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[46/f8c835] calling_pipeline:runProkka (1) | 1 of 1 ✔
+[84/b9a93e] cal…e:annotationCheckpoint (1) | 1 of 1 ✔
+[ae/6e3c07] cal…un_isolates:mlstSearch (1) | 1 of 1 ✔
+[97/7581c9] cal…:getPointfinderSpecies (1) | 0 of 1
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[3e/f3c6f4] calling_pipeline:mlstVersion   | 1 of 1 ✔
+[38/1cbe26] calling_pipeline:getVersions   | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[63/d34b0a] cal…:accumulateCheckpoints (5) | 5 of 5
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+[db/c0a700] output (1)                     | 1 of 1
+Plus 6 more processes waiting for tasks…
+
+executor >  local (30)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 3 of 3 ✔
+[80/b5e376] cal…peline:medakaConsensus (1) | 1 of 1 ✔
+[6a/bfa3f0] cal…ine:assemblyCheckpoint (1) | 1 of 1 ✔
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[46/f8c835] calling_pipeline:runProkka (1) | 1 of 1 ✔
+[84/b9a93e] cal…e:annotationCheckpoint (1) | 1 of 1 ✔
+[ae/6e3c07] cal…un_isolates:mlstSearch (1) | 1 of 1 ✔
+[97/7581c9] cal…:getPointfinderSpecies (1) | 1 of 1 ✔
+[-        ] cal…ine:run_isolates:resfinder -
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[3e/f3c6f4] calling_pipeline:mlstVersion   | 1 of 1 ✔
+[38/1cbe26] calling_pipeline:getVersions   | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[63/d34b0a] cal…:accumulateCheckpoints (5) | 5 of 5
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+[db/c0a700] output (1)                     | 1 of 1
+Plus 6 more processes waiting for tasks…
+Pulling Singularity image docker://ontresearch/resfinder:sha024ca117d06e35c5e4116bcb2cd6235b96916fcf [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-resfinder-sha024ca117d06e35c5e4116bcb2cd6235b96916fcf.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (31)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 3 of 3 ✔
+[80/b5e376] cal…peline:medakaConsensus (1) | 1 of 1 ✔
+[6a/bfa3f0] cal…ine:assemblyCheckpoint (1) | 1 of 1 ✔
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[46/f8c835] calling_pipeline:runProkka (1) | 1 of 1 ✔
+[84/b9a93e] cal…e:annotationCheckpoint (1) | 1 of 1 ✔
+[ae/6e3c07] cal…un_isolates:mlstSearch (1) | 1 of 1 ✔
+[97/7581c9] cal…:getPointfinderSpecies (1) | 1 of 1 ✔
+[05/8d4011] cal…run_isolates:resfinder (1) | 0 of 1
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[3e/f3c6f4] calling_pipeline:mlstVersion   | 1 of 1 ✔
+[38/1cbe26] calling_pipeline:getVersions   | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[63/d34b0a] cal…:accumulateCheckpoints (5) | 5 of 5
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+[db/c0a700] output (1)                     | 1 of 1
+Plus 6 more processes waiting for tasks…
+
+
+
+executor >  local (31)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 3 of 3 ✔
+[80/b5e376] cal…peline:medakaConsensus (1) | 1 of 1 ✔
+[6a/bfa3f0] cal…ine:assemblyCheckpoint (1) | 1 of 1 ✔
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[46/f8c835] calling_pipeline:runProkka (1) | 1 of 1 ✔
+[84/b9a93e] cal…e:annotationCheckpoint (1) | 1 of 1 ✔
+[ae/6e3c07] cal…un_isolates:mlstSearch (1) | 1 of 1 ✔
+[97/7581c9] cal…:getPointfinderSpecies (1) | 1 of 1 ✔
+[05/8d4011] cal…run_isolates:resfinder (1) | 0 of 1
+[-        ] cal…_isolates:processResfinder -
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[3e/f3c6f4] calling_pipeline:mlstVersion   | 1 of 1 ✔
+[38/1cbe26] calling_pipeline:getVersions   | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[63/d34b0a] cal…:accumulateCheckpoints (5) | 5 of 5
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+[db/c0a700] output (1)                     | 1 of 1
+Plus 6 more processes waiting for tasks…
+
+
+
+executor >  local (34)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 3 of 3 ✔
+[80/b5e376] cal…peline:medakaConsensus (1) | 1 of 1 ✔
+[6a/bfa3f0] cal…ine:assemblyCheckpoint (1) | 1 of 1 ✔
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[46/f8c835] calling_pipeline:runProkka (1) | 1 of 1 ✔
+[84/b9a93e] cal…e:annotationCheckpoint (1) | 1 of 1 ✔
+[ae/6e3c07] cal…un_isolates:mlstSearch (1) | 1 of 1 ✔
+[97/7581c9] cal…:getPointfinderSpecies (1) | 1 of 1 ✔
+[05/8d4011] cal…run_isolates:resfinder (1) | 1 of 1 ✔
+[aa/5e4db8] cal…lates:processResfinder (1) | 0 of 1
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[3e/f3c6f4] calling_pipeline:mlstVersion   | 1 of 1 ✔
+[38/1cbe26] calling_pipeline:getVersions   | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[5e/59e7aa] cal…peline:collect_results (1) | 0 of 1
+[cb/99ec04] cal…e:makePerSampleReports (1) | 0 of 1
+[63/d34b0a] cal…:accumulateCheckpoints (5) | 5 of 5
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+[db/c0a700] output (1)                     | 1 of 1
+Plus 4 more processes waiting for tasks…
+
+executor >  local (34)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 3 of 3 ✔
+[80/b5e376] cal…peline:medakaConsensus (1) | 1 of 1 ✔
+[6a/bfa3f0] cal…ine:assemblyCheckpoint (1) | 1 of 1 ✔
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[46/f8c835] calling_pipeline:runProkka (1) | 1 of 1 ✔
+[84/b9a93e] cal…e:annotationCheckpoint (1) | 1 of 1 ✔
+[ae/6e3c07] cal…un_isolates:mlstSearch (1) | 1 of 1 ✔
+[97/7581c9] cal…:getPointfinderSpecies (1) | 1 of 1 ✔
+[05/8d4011] cal…run_isolates:resfinder (1) | 1 of 1 ✔
+[aa/5e4db8] cal…lates:processResfinder (1) | 0 of 1
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[3e/f3c6f4] calling_pipeline:mlstVersion   | 1 of 1 ✔
+[38/1cbe26] calling_pipeline:getVersions   | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[5e/59e7aa] cal…peline:collect_results (1) | 0 of 1
+[cb/99ec04] cal…e:makePerSampleReports (1) | 0 of 1
+[63/d34b0a] cal…:accumulateCheckpoints (5) | 5 of 5
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+[db/c0a700] output (1)                     | 1 of 1
+Plus 4 more processes waiting for tasks…
+
+executor >  local (34)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 3 of 3 ✔
+[80/b5e376] cal…peline:medakaConsensus (1) | 1 of 1 ✔
+[6a/bfa3f0] cal…ine:assemblyCheckpoint (1) | 1 of 1 ✔
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[46/f8c835] calling_pipeline:runProkka (1) | 1 of 1 ✔
+[84/b9a93e] cal…e:annotationCheckpoint (1) | 1 of 1 ✔
+[ae/6e3c07] cal…un_isolates:mlstSearch (1) | 1 of 1 ✔
+[97/7581c9] cal…:getPointfinderSpecies (1) | 1 of 1 ✔
+[05/8d4011] cal…run_isolates:resfinder (1) | 1 of 1 ✔
+[aa/5e4db8] cal…lates:processResfinder (1) | 0 of 1 ✔
+[-        ] cal…ne:run_isolates:serotyping -
+[-        ] calling_pipeline:amrCheckpoint -
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[3e/f3c6f4] calling_pipeline:mlstVersion   | 1 of 1 ✔
+[38/1cbe26] calling_pipeline:getVersions   | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[5e/59e7aa] cal…peline:collect_results (1) | 0 of 1
+[cb/99ec04] cal…e:makePerSampleReports (1) | 0 of 1
+[63/d34b0a] cal…:accumulateCheckpoints (5) | 5 of 5
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+[db/c0a700] output (1)                     | 1 of 1
+Plus 4 more processes waiting for tasks…
+
+executor >  local (36)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 3 of 3 ✔
+[80/b5e376] cal…peline:medakaConsensus (1) | 1 of 1 ✔
+[6a/bfa3f0] cal…ine:assemblyCheckpoint (1) | 1 of 1 ✔
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[46/f8c835] calling_pipeline:runProkka (1) | 1 of 1 ✔
+[84/b9a93e] cal…e:annotationCheckpoint (1) | 1 of 1 ✔
+[ae/6e3c07] cal…un_isolates:mlstSearch (1) | 1 of 1 ✔
+[97/7581c9] cal…:getPointfinderSpecies (1) | 1 of 1 ✔
+[05/8d4011] cal…run_isolates:resfinder (1) | 1 of 1 ✔
+[aa/5e4db8] cal…lates:processResfinder (1) | 1 of 1 ✔
+[-        ] cal…ne:run_isolates:serotyping -
+[32/2aaea8] cal…pipeline:amrCheckpoint (1) | 0 of 1
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[3e/f3c6f4] calling_pipeline:mlstVersion   | 1 of 1 ✔
+[38/1cbe26] calling_pipeline:getVersions   | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[5e/59e7aa] cal…peline:collect_results (1) | 0 of 1
+[8f/c941f6] calling_pipeline:makeReport    | 0 of 1
+[cb/99ec04] cal…e:makePerSampleReports (1) | 0 of 1
+[63/d34b0a] cal…:accumulateCheckpoints (5) | 5 of 5
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+[db/c0a700] output (1)                     | 1 of 1
+Plus 3 more processes waiting for tasks…
+
+executor >  local (36)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 3 of 3 ✔
+[80/b5e376] cal…peline:medakaConsensus (1) | 1 of 1 ✔
+[6a/bfa3f0] cal…ine:assemblyCheckpoint (1) | 1 of 1 ✔
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[46/f8c835] calling_pipeline:runProkka (1) | 1 of 1 ✔
+[84/b9a93e] cal…e:annotationCheckpoint (1) | 1 of 1 ✔
+[ae/6e3c07] cal…un_isolates:mlstSearch (1) | 1 of 1 ✔
+[97/7581c9] cal…:getPointfinderSpecies (1) | 1 of 1 ✔
+[05/8d4011] cal…run_isolates:resfinder (1) | 1 of 1 ✔
+[aa/5e4db8] cal…lates:processResfinder (1) | 1 of 1 ✔
+[-        ] cal…ne:run_isolates:serotyping -
+[32/2aaea8] cal…pipeline:amrCheckpoint (1) | 1 of 1 ✔
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[3e/f3c6f4] calling_pipeline:mlstVersion   | 1 of 1 ✔
+[38/1cbe26] calling_pipeline:getVersions   | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[5e/59e7aa] cal…peline:collect_results (1) | 0 of 1
+[8f/c941f6] calling_pipeline:makeReport    | 0 of 1
+[cb/99ec04] cal…e:makePerSampleReports (1) | 0 of 1
+[63/d34b0a] cal…:accumulateCheckpoints (5) | 5 of 6
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+[db/c0a700] output (1)                     | 1 of 1
+Plus 3 more processes waiting for tasks…
+
+executor >  local (38)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 3 of 3 ✔
+[80/b5e376] cal…peline:medakaConsensus (1) | 1 of 1 ✔
+[6a/bfa3f0] cal…ine:assemblyCheckpoint (1) | 1 of 1 ✔
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[46/f8c835] calling_pipeline:runProkka (1) | 1 of 1 ✔
+[84/b9a93e] cal…e:annotationCheckpoint (1) | 1 of 1 ✔
+[ae/6e3c07] cal…un_isolates:mlstSearch (1) | 1 of 1 ✔
+[97/7581c9] cal…:getPointfinderSpecies (1) | 1 of 1 ✔
+[05/8d4011] cal…run_isolates:resfinder (1) | 1 of 1 ✔
+[aa/5e4db8] cal…lates:processResfinder (1) | 1 of 1 ✔
+[-        ] cal…ne:run_isolates:serotyping -
+[32/2aaea8] cal…pipeline:amrCheckpoint (1) | 1 of 1 ✔
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[3e/f3c6f4] calling_pipeline:mlstVersion   | 1 of 1 ✔
+[38/1cbe26] calling_pipeline:getVersions   | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[5e/59e7aa] cal…peline:collect_results (1) | 1 of 1 ✔
+[3c/5ecb65] cal…ng_pipeline:createRunModel | 0 of 1
+[8f/c941f6] calling_pipeline:makeReport    | 0 of 1
+[cb/99ec04] cal…e:makePerSampleReports (1) | 0 of 1
+[d4/51e162] cal…:accumulateCheckpoints (6) | 5 of 6
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+[db/c0a700] output (1)                     | 1 of 1
+Plus 2 more processes waiting for tasks…
+
+executor >  local (38)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 3 of 3 ✔
+[80/b5e376] cal…peline:medakaConsensus (1) | 1 of 1 ✔
+[6a/bfa3f0] cal…ine:assemblyCheckpoint (1) | 1 of 1 ✔
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[46/f8c835] calling_pipeline:runProkka (1) | 1 of 1 ✔
+[84/b9a93e] cal…e:annotationCheckpoint (1) | 1 of 1 ✔
+[ae/6e3c07] cal…un_isolates:mlstSearch (1) | 1 of 1 ✔
+[97/7581c9] cal…:getPointfinderSpecies (1) | 1 of 1 ✔
+[05/8d4011] cal…run_isolates:resfinder (1) | 1 of 1 ✔
+[aa/5e4db8] cal…lates:processResfinder (1) | 1 of 1 ✔
+[-        ] cal…ne:run_isolates:serotyping -
+[32/2aaea8] cal…pipeline:amrCheckpoint (1) | 1 of 1 ✔
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[3e/f3c6f4] calling_pipeline:mlstVersion   | 1 of 1 ✔
+[38/1cbe26] calling_pipeline:getVersions   | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[5e/59e7aa] cal…peline:collect_results (1) | 1 of 1 ✔
+[3c/5ecb65] cal…ng_pipeline:createRunModel | 0 of 1
+[8f/c941f6] calling_pipeline:makeReport    | 0 of 1
+[cb/99ec04] cal…e:makePerSampleReports (1) | 0 of 1
+[d4/51e162] cal…:accumulateCheckpoints (6) | 6 of 6
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+[db/c0a700] output (1)                     | 1 of 1
+Plus 2 more processes waiting for tasks…
+
+executor >  local (38)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 3 of 3 ✔
+[80/b5e376] cal…peline:medakaConsensus (1) | 1 of 1 ✔
+[6a/bfa3f0] cal…ine:assemblyCheckpoint (1) | 1 of 1 ✔
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[46/f8c835] calling_pipeline:runProkka (1) | 1 of 1 ✔
+[84/b9a93e] cal…e:annotationCheckpoint (1) | 1 of 1 ✔
+[ae/6e3c07] cal…un_isolates:mlstSearch (1) | 1 of 1 ✔
+[97/7581c9] cal…:getPointfinderSpecies (1) | 1 of 1 ✔
+[05/8d4011] cal…run_isolates:resfinder (1) | 1 of 1 ✔
+[aa/5e4db8] cal…lates:processResfinder (1) | 1 of 1 ✔
+[-        ] cal…ne:run_isolates:serotyping -
+[32/2aaea8] cal…pipeline:amrCheckpoint (1) | 1 of 1 ✔
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[3e/f3c6f4] calling_pipeline:mlstVersion   | 1 of 1 ✔
+[38/1cbe26] calling_pipeline:getVersions   | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[5e/59e7aa] cal…peline:collect_results (1) | 1 of 1 ✔
+[3c/5ecb65] cal…ng_pipeline:createRunModel | 1 of 1 ✔
+[8f/c941f6] calling_pipeline:makeReport    | 0 of 1
+[cb/99ec04] cal…e:makePerSampleReports (1) | 0 of 1
+[d4/51e162] cal…:accumulateCheckpoints (6) | 6 of 6
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+[db/c0a700] output (1)                     | 1 of 1
+Plus 2 more processes waiting for tasks…
+
+executor >  local (38)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 3 of 3 ✔
+[80/b5e376] cal…peline:medakaConsensus (1) | 1 of 1 ✔
+[6a/bfa3f0] cal…ine:assemblyCheckpoint (1) | 1 of 1 ✔
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[46/f8c835] calling_pipeline:runProkka (1) | 1 of 1 ✔
+[84/b9a93e] cal…e:annotationCheckpoint (1) | 1 of 1 ✔
+[ae/6e3c07] cal…un_isolates:mlstSearch (1) | 1 of 1 ✔
+[97/7581c9] cal…:getPointfinderSpecies (1) | 1 of 1 ✔
+[05/8d4011] cal…run_isolates:resfinder (1) | 1 of 1 ✔
+[aa/5e4db8] cal…lates:processResfinder (1) | 1 of 1 ✔
+[-        ] cal…ne:run_isolates:serotyping -
+[32/2aaea8] cal…pipeline:amrCheckpoint (1) | 1 of 1 ✔
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[3e/f3c6f4] calling_pipeline:mlstVersion   | 1 of 1 ✔
+[38/1cbe26] calling_pipeline:getVersions   | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[5e/59e7aa] cal…peline:collect_results (1) | 1 of 1 ✔
+[3c/5ecb65] cal…ng_pipeline:createRunModel | 1 of 1 ✔
+[8f/c941f6] calling_pipeline:makeReport    | 0 of 1
+[cb/99ec04] cal…e:makePerSampleReports (1) | 1 of 1 ✔
+[-        ] cal…rSampleReportingCheckpoint | 0 of 1
+[d4/51e162] cal…:accumulateCheckpoints (6) | 6 of 6
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+[db/c0a700] output (1)                     | 1 of 1
+Plus 1 more processes waiting for tasks…
+
+executor >  local (39)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 3 of 3 ✔
+[80/b5e376] cal…peline:medakaConsensus (1) | 1 of 1 ✔
+[6a/bfa3f0] cal…ine:assemblyCheckpoint (1) | 1 of 1 ✔
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[46/f8c835] calling_pipeline:runProkka (1) | 1 of 1 ✔
+[84/b9a93e] cal…e:annotationCheckpoint (1) | 1 of 1 ✔
+[ae/6e3c07] cal…un_isolates:mlstSearch (1) | 1 of 1 ✔
+[97/7581c9] cal…:getPointfinderSpecies (1) | 1 of 1 ✔
+[05/8d4011] cal…run_isolates:resfinder (1) | 1 of 1 ✔
+[aa/5e4db8] cal…lates:processResfinder (1) | 1 of 1 ✔
+[-        ] cal…ne:run_isolates:serotyping -
+[32/2aaea8] cal…pipeline:amrCheckpoint (1) | 1 of 1 ✔
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[3e/f3c6f4] calling_pipeline:mlstVersion   | 1 of 1 ✔
+[38/1cbe26] calling_pipeline:getVersions   | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[5e/59e7aa] cal…peline:collect_results (1) | 1 of 1 ✔
+[3c/5ecb65] cal…ng_pipeline:createRunModel | 1 of 1 ✔
+[8f/c941f6] calling_pipeline:makeReport    | 0 of 1
+[cb/99ec04] cal…e:makePerSampleReports (1) | 1 of 1 ✔
+[34/82c058] cal…pleReportingCheckpoint (1) | 0 of 1
+[d4/51e162] cal…:accumulateCheckpoints (6) | 6 of 6
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+[db/c0a700] output (1)                     | 1 of 1
+Plus 1 more processes waiting for tasks…
+
+executor >  local (39)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 3 of 3 ✔
+[80/b5e376] cal…peline:medakaConsensus (1) | 1 of 1 ✔
+[6a/bfa3f0] cal…ine:assemblyCheckpoint (1) | 1 of 1 ✔
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[46/f8c835] calling_pipeline:runProkka (1) | 1 of 1 ✔
+[84/b9a93e] cal…e:annotationCheckpoint (1) | 1 of 1 ✔
+[ae/6e3c07] cal…un_isolates:mlstSearch (1) | 1 of 1 ✔
+[97/7581c9] cal…:getPointfinderSpecies (1) | 1 of 1 ✔
+[05/8d4011] cal…run_isolates:resfinder (1) | 1 of 1 ✔
+[aa/5e4db8] cal…lates:processResfinder (1) | 1 of 1 ✔
+[-        ] cal…ne:run_isolates:serotyping -
+[32/2aaea8] cal…pipeline:amrCheckpoint (1) | 1 of 1 ✔
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[3e/f3c6f4] calling_pipeline:mlstVersion   | 1 of 1 ✔
+[38/1cbe26] calling_pipeline:getVersions   | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[5e/59e7aa] cal…peline:collect_results (1) | 1 of 1 ✔
+[3c/5ecb65] cal…ng_pipeline:createRunModel | 1 of 1 ✔
+[8f/c941f6] calling_pipeline:makeReport    | 0 of 1
+[cb/99ec04] cal…e:makePerSampleReports (1) | 1 of 1 ✔
+[34/82c058] cal…pleReportingCheckpoint (1) | 1 of 1 ✔
+[d4/51e162] cal…:accumulateCheckpoints (6) | 6 of 7
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+[db/c0a700] output (1)                     | 1 of 1
+Plus 1 more processes waiting for tasks…
+
+executor >  local (40)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 3 of 3 ✔
+[80/b5e376] cal…peline:medakaConsensus (1) | 1 of 1 ✔
+[6a/bfa3f0] cal…ine:assemblyCheckpoint (1) | 1 of 1 ✔
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[46/f8c835] calling_pipeline:runProkka (1) | 1 of 1 ✔
+[84/b9a93e] cal…e:annotationCheckpoint (1) | 1 of 1 ✔
+[ae/6e3c07] cal…un_isolates:mlstSearch (1) | 1 of 1 ✔
+[97/7581c9] cal…:getPointfinderSpecies (1) | 1 of 1 ✔
+[05/8d4011] cal…run_isolates:resfinder (1) | 1 of 1 ✔
+[aa/5e4db8] cal…lates:processResfinder (1) | 1 of 1 ✔
+[-        ] cal…ne:run_isolates:serotyping -
+[32/2aaea8] cal…pipeline:amrCheckpoint (1) | 1 of 1 ✔
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[3e/f3c6f4] calling_pipeline:mlstVersion   | 1 of 1 ✔
+[38/1cbe26] calling_pipeline:getVersions   | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[5e/59e7aa] cal…peline:collect_results (1) | 1 of 1 ✔
+[3c/5ecb65] cal…ng_pipeline:createRunModel | 1 of 1 ✔
+[8f/c941f6] calling_pipeline:makeReport    | 0 of 1
+[cb/99ec04] cal…e:makePerSampleReports (1) | 1 of 1 ✔
+[34/82c058] cal…pleReportingCheckpoint (1) | 1 of 1 ✔
+[0d/04e638] cal…:accumulateCheckpoints (7) | 6 of 7
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+[db/c0a700] output (1)                     | 1 of 1
+Plus 1 more processes waiting for tasks…
+
+executor >  local (40)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 3 of 3 ✔
+[80/b5e376] cal…peline:medakaConsensus (1) | 1 of 1 ✔
+[6a/bfa3f0] cal…ine:assemblyCheckpoint (1) | 1 of 1 ✔
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[46/f8c835] calling_pipeline:runProkka (1) | 1 of 1 ✔
+[84/b9a93e] cal…e:annotationCheckpoint (1) | 1 of 1 ✔
+[ae/6e3c07] cal…un_isolates:mlstSearch (1) | 1 of 1 ✔
+[97/7581c9] cal…:getPointfinderSpecies (1) | 1 of 1 ✔
+[05/8d4011] cal…run_isolates:resfinder (1) | 1 of 1 ✔
+[aa/5e4db8] cal…lates:processResfinder (1) | 1 of 1 ✔
+[-        ] cal…ne:run_isolates:serotyping -
+[32/2aaea8] cal…pipeline:amrCheckpoint (1) | 1 of 1 ✔
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[3e/f3c6f4] calling_pipeline:mlstVersion   | 1 of 1 ✔
+[38/1cbe26] calling_pipeline:getVersions   | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[5e/59e7aa] cal…peline:collect_results (1) | 1 of 1 ✔
+[3c/5ecb65] cal…ng_pipeline:createRunModel | 1 of 1 ✔
+[8f/c941f6] calling_pipeline:makeReport    | 0 of 1
+[cb/99ec04] cal…e:makePerSampleReports (1) | 1 of 1 ✔
+[34/82c058] cal…pleReportingCheckpoint (1) | 1 of 1 ✔
+[0d/04e638] cal…:accumulateCheckpoints (7) | 7 of 7
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+[db/c0a700] output (1)                     | 1 of 1
+Plus 1 more processes waiting for tasks…
+
+executor >  local (41)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 3 of 3 ✔
+[80/b5e376] cal…peline:medakaConsensus (1) | 1 of 1 ✔
+[6a/bfa3f0] cal…ine:assemblyCheckpoint (1) | 1 of 1 ✔
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[46/f8c835] calling_pipeline:runProkka (1) | 1 of 1 ✔
+[84/b9a93e] cal…e:annotationCheckpoint (1) | 1 of 1 ✔
+[ae/6e3c07] cal…un_isolates:mlstSearch (1) | 1 of 1 ✔
+[97/7581c9] cal…:getPointfinderSpecies (1) | 1 of 1 ✔
+[05/8d4011] cal…run_isolates:resfinder (1) | 1 of 1 ✔
+[aa/5e4db8] cal…lates:processResfinder (1) | 1 of 1 ✔
+[-        ] cal…ne:run_isolates:serotyping -
+[32/2aaea8] cal…pipeline:amrCheckpoint (1) | 1 of 1 ✔
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[3e/f3c6f4] calling_pipeline:mlstVersion   | 1 of 1 ✔
+[38/1cbe26] calling_pipeline:getVersions   | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[5e/59e7aa] cal…peline:collect_results (1) | 1 of 1 ✔
+[3c/5ecb65] cal…ng_pipeline:createRunModel | 1 of 1 ✔
+[8f/c941f6] calling_pipeline:makeReport    | 1 of 1 ✔
+[-        ] cal…peline:reportingCheckpoint | 0 of 1
+[cb/99ec04] cal…e:makePerSampleReports (1) | 1 of 1 ✔
+[34/82c058] cal…pleReportingCheckpoint (1) | 1 of 1 ✔
+[0d/04e638] cal…:accumulateCheckpoints (7) | 7 of 7
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+[7b/140bc0] output (4)                     | 1 of 11
+
+executor >  local (49)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 3 of 3 ✔
+[80/b5e376] cal…peline:medakaConsensus (1) | 1 of 1 ✔
+[6a/bfa3f0] cal…ine:assemblyCheckpoint (1) | 1 of 1 ✔
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[46/f8c835] calling_pipeline:runProkka (1) | 1 of 1 ✔
+[84/b9a93e] cal…e:annotationCheckpoint (1) | 1 of 1 ✔
+[ae/6e3c07] cal…un_isolates:mlstSearch (1) | 1 of 1 ✔
+[97/7581c9] cal…:getPointfinderSpecies (1) | 1 of 1 ✔
+[05/8d4011] cal…run_isolates:resfinder (1) | 1 of 1 ✔
+[aa/5e4db8] cal…lates:processResfinder (1) | 1 of 1 ✔
+[-        ] cal…ne:run_isolates:serotyping -
+[32/2aaea8] cal…pipeline:amrCheckpoint (1) | 1 of 1 ✔
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[3e/f3c6f4] calling_pipeline:mlstVersion   | 1 of 1 ✔
+[38/1cbe26] calling_pipeline:getVersions   | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[5e/59e7aa] cal…peline:collect_results (1) | 1 of 1 ✔
+[3c/5ecb65] cal…ng_pipeline:createRunModel | 1 of 1 ✔
+[8f/c941f6] calling_pipeline:makeReport    | 1 of 1 ✔
+[a3/da8edf] cal…peline:reportingCheckpoint | 0 of 1
+[cb/99ec04] cal…e:makePerSampleReports (1) | 1 of 1 ✔
+[34/82c058] cal…pleReportingCheckpoint (1) | 1 of 1 ✔
+[0d/04e638] cal…:accumulateCheckpoints (7) | 7 of 7
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+[c9/c8967d] output (6)                     | 1 of 11
+
+executor >  local (51)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 3 of 3 ✔
+[80/b5e376] cal…peline:medakaConsensus (1) | 1 of 1 ✔
+[6a/bfa3f0] cal…ine:assemblyCheckpoint (1) | 1 of 1 ✔
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[46/f8c835] calling_pipeline:runProkka (1) | 1 of 1 ✔
+[84/b9a93e] cal…e:annotationCheckpoint (1) | 1 of 1 ✔
+[ae/6e3c07] cal…un_isolates:mlstSearch (1) | 1 of 1 ✔
+[97/7581c9] cal…:getPointfinderSpecies (1) | 1 of 1 ✔
+[05/8d4011] cal…run_isolates:resfinder (1) | 1 of 1 ✔
+[aa/5e4db8] cal…lates:processResfinder (1) | 1 of 1 ✔
+[-        ] cal…ne:run_isolates:serotyping -
+[32/2aaea8] cal…pipeline:amrCheckpoint (1) | 1 of 1 ✔
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[3e/f3c6f4] calling_pipeline:mlstVersion   | 1 of 1 ✔
+[38/1cbe26] calling_pipeline:getVersions   | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[5e/59e7aa] cal…peline:collect_results (1) | 1 of 1 ✔
+[3c/5ecb65] cal…ng_pipeline:createRunModel | 1 of 1 ✔
+[8f/c941f6] calling_pipeline:makeReport    | 1 of 1 ✔
+[a3/da8edf] cal…peline:reportingCheckpoint | 1 of 1 ✔
+[cb/99ec04] cal…e:makePerSampleReports (1) | 1 of 1 ✔
+[34/82c058] cal…pleReportingCheckpoint (1) | 1 of 1 ✔
+[0d/04e638] cal…:accumulateCheckpoints (7) | 7 of 8
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+[37/b088c2] output (8)                     | 5 of 11
+
+executor >  local (52)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 3 of 3 ✔
+[80/b5e376] cal…peline:medakaConsensus (1) | 1 of 1 ✔
+[6a/bfa3f0] cal…ine:assemblyCheckpoint (1) | 1 of 1 ✔
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[46/f8c835] calling_pipeline:runProkka (1) | 1 of 1 ✔
+[84/b9a93e] cal…e:annotationCheckpoint (1) | 1 of 1 ✔
+[ae/6e3c07] cal…un_isolates:mlstSearch (1) | 1 of 1 ✔
+[97/7581c9] cal…:getPointfinderSpecies (1) | 1 of 1 ✔
+[05/8d4011] cal…run_isolates:resfinder (1) | 1 of 1 ✔
+[aa/5e4db8] cal…lates:processResfinder (1) | 1 of 1 ✔
+[-        ] cal…ne:run_isolates:serotyping -
+[32/2aaea8] cal…pipeline:amrCheckpoint (1) | 1 of 1 ✔
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[3e/f3c6f4] calling_pipeline:mlstVersion   | 1 of 1 ✔
+[38/1cbe26] calling_pipeline:getVersions   | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[5e/59e7aa] cal…peline:collect_results (1) | 1 of 1 ✔
+[3c/5ecb65] cal…ng_pipeline:createRunModel | 1 of 1 ✔
+[8f/c941f6] calling_pipeline:makeReport    | 1 of 1 ✔
+[a3/da8edf] cal…peline:reportingCheckpoint | 1 of 1 ✔
+[cb/99ec04] cal…e:makePerSampleReports (1) | 1 of 1 ✔
+[34/82c058] cal…pleReportingCheckpoint (1) | 1 of 1 ✔
+[21/9c8e4a] cal…:accumulateCheckpoints (8) | 7 of 8
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+[f5/d41087] output (11)                    | 10 of 11
+
+executor >  local (52)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 3 of 3 ✔
+[80/b5e376] cal…peline:medakaConsensus (1) | 1 of 1 ✔
+[6a/bfa3f0] cal…ine:assemblyCheckpoint (1) | 1 of 1 ✔
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[46/f8c835] calling_pipeline:runProkka (1) | 1 of 1 ✔
+[84/b9a93e] cal…e:annotationCheckpoint (1) | 1 of 1 ✔
+[ae/6e3c07] cal…un_isolates:mlstSearch (1) | 1 of 1 ✔
+[97/7581c9] cal…:getPointfinderSpecies (1) | 1 of 1 ✔
+[05/8d4011] cal…run_isolates:resfinder (1) | 1 of 1 ✔
+[aa/5e4db8] cal…lates:processResfinder (1) | 1 of 1 ✔
+[-        ] cal…ne:run_isolates:serotyping -
+[32/2aaea8] cal…pipeline:amrCheckpoint (1) | 1 of 1 ✔
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[3e/f3c6f4] calling_pipeline:mlstVersion   | 1 of 1 ✔
+[38/1cbe26] calling_pipeline:getVersions   | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[5e/59e7aa] cal…peline:collect_results (1) | 1 of 1 ✔
+[3c/5ecb65] cal…ng_pipeline:createRunModel | 1 of 1 ✔
+[8f/c941f6] calling_pipeline:makeReport    | 1 of 1 ✔
+[a3/da8edf] cal…peline:reportingCheckpoint | 1 of 1 ✔
+[cb/99ec04] cal…e:makePerSampleReports (1) | 1 of 1 ✔
+[34/82c058] cal…pleReportingCheckpoint (1) | 1 of 1 ✔
+[21/9c8e4a] cal…:accumulateCheckpoints (8) | 7 of 8
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+[c9/c8967d] output (6)                     | 11 of 11 ✔
+
+executor >  local (52)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 3 of 3 ✔
+[80/b5e376] cal…peline:medakaConsensus (1) | 1 of 1 ✔
+[6a/bfa3f0] cal…ine:assemblyCheckpoint (1) | 1 of 1 ✔
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[46/f8c835] calling_pipeline:runProkka (1) | 1 of 1 ✔
+[84/b9a93e] cal…e:annotationCheckpoint (1) | 1 of 1 ✔
+[ae/6e3c07] cal…un_isolates:mlstSearch (1) | 1 of 1 ✔
+[97/7581c9] cal…:getPointfinderSpecies (1) | 1 of 1 ✔
+[05/8d4011] cal…run_isolates:resfinder (1) | 1 of 1 ✔
+[aa/5e4db8] cal…lates:processResfinder (1) | 1 of 1 ✔
+[-        ] cal…ne:run_isolates:serotyping -
+[32/2aaea8] cal…pipeline:amrCheckpoint (1) | 1 of 1 ✔
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[3e/f3c6f4] calling_pipeline:mlstVersion   | 1 of 1 ✔
+[38/1cbe26] calling_pipeline:getVersions   | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[5e/59e7aa] cal…peline:collect_results (1) | 1 of 1 ✔
+[3c/5ecb65] cal…ng_pipeline:createRunModel | 1 of 1 ✔
+[8f/c941f6] calling_pipeline:makeReport    | 1 of 1 ✔
+[a3/da8edf] cal…peline:reportingCheckpoint | 1 of 1 ✔
+[cb/99ec04] cal…e:makePerSampleReports (1) | 1 of 1 ✔
+[34/82c058] cal…pleReportingCheckpoint (1) | 1 of 1 ✔
+[21/9c8e4a] cal…:accumulateCheckpoints (8) | 8 of 8 ✔
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+[c9/c8967d] output (6)                     | 11 of 11 ✔
+
+executor >  local (52)
+[7b/5fd61e] fastcat (1)                    | 1 of 1 ✔
+[3d/0b8c3c] cal…line:ingressCheckpoint (1) | 1 of 1 ✔
+[ce/17b359] calling_pipeline:deNovo (1)    | 1 of 1 ✔
+[b8/a14941] cal…ng_pipeline:alignReads (1) | 1 of 1 ✔
+[5e/77389f] cal…ne:alignmentCheckpoint (1) | 1 of 1 ✔
+[8f/4477f9] calling_pipeline:readStats (1) | 1 of 1 ✔
+[46/ce8ca2] cal…ng_pipeline:coverStats (1) | 1 of 1 ✔
+[df/6d3c0e] cal…_pipeline:splitRegions (1) | 1 of 1 ✔
+[4c/958327] cal…akaInference_consensus (2) | 3 of 3 ✔
+[80/b5e376] cal…peline:medakaConsensus (1) | 1 of 1 ✔
+[6a/bfa3f0] cal…ine:assemblyCheckpoint (1) | 1 of 1 ✔
+[56/fc4d07] cal…line:variantCheckpoint (1) | 1 of 1 ✔
+[46/f8c835] calling_pipeline:runProkka (1) | 1 of 1 ✔
+[84/b9a93e] cal…e:annotationCheckpoint (1) | 1 of 1 ✔
+[ae/6e3c07] cal…un_isolates:mlstSearch (1) | 1 of 1 ✔
+[97/7581c9] cal…:getPointfinderSpecies (1) | 1 of 1 ✔
+[05/8d4011] cal…run_isolates:resfinder (1) | 1 of 1 ✔
+[aa/5e4db8] cal…lates:processResfinder (1) | 1 of 1 ✔
+[-        ] cal…ne:run_isolates:serotyping -
+[32/2aaea8] cal…pipeline:amrCheckpoint (1) | 1 of 1 ✔
+[d5/934e7c] calling_pipeline:prokkaVersion | 1 of 1 ✔
+[23/84f1a2] calling_pipeline:medakaVersion | 1 of 1 ✔
+[3e/f3c6f4] calling_pipeline:mlstVersion   | 1 of 1 ✔
+[38/1cbe26] calling_pipeline:getVersions   | 1 of 1 ✔
+[10/4183d1] calling_pipeline:getParams     | 1 of 1 ✔
+[5e/59e7aa] cal…peline:collect_results (1) | 1 of 1 ✔
+[3c/5ecb65] cal…ng_pipeline:createRunModel | 1 of 1 ✔
+[8f/c941f6] calling_pipeline:makeReport    | 1 of 1 ✔
+[a3/da8edf] cal…peline:reportingCheckpoint | 1 of 1 ✔
+[cb/99ec04] cal…e:makePerSampleReports (1) | 1 of 1 ✔
+[34/82c058] cal…pleReportingCheckpoint (1) | 1 of 1 ✔
+[21/9c8e4a] cal…:accumulateCheckpoints (8) | 8 of 8 ✔
+[b4/381154] cal…stqIngressResultsInDir (1) | 1 of 1 ✔
+[c9/c8967d] output (6)                     | 11 of 11 ✔
+Completed at: 21-Feb-2025 16:26:18
+Duration    : 16m 47s
+CPU hours   : 6.9
+Succeeded   : 52
+
+

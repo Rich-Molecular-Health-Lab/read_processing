@@ -197,6 +197,8 @@ mamba install chopper
 conda deactivate
 ```
 
+git filter-branch --tree-filter 'rm -f **/seqs.fastq.gz' HEAD
+
 # Next Steps
 
 Now that you have all your necessary directory structures and virtual environments, you should be able to start your Remote Read Processing steps with one of the other remote processing scripts each time. Continue to one of those now to use the environment you just constructed.
