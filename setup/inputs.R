@@ -159,7 +159,8 @@ subjects <- list(
 seqruns <- list(
   loris     = as.list(paste0("hdz", 1:18)),
   marmoset  = as.list(sprintf("cm%03d", 1:10)),
-  isolates  = as.list(paste0("salci", 1))
+  isolates  = as.list(paste0("salci", 1)),
+  bats      = as.list(paste0("nwr", 1))
 )
 
 
