@@ -270,7 +270,7 @@ We will also join the previous sample records to this table at the end of the ch
 extracts <- read.csv(here(path$inventories$extraction), 
                      header = T) %>% 
   filter(str_starts(SampleID, "\\w+")) %>%
-  mutate(SampleID        = if_else(str_detect(SampleID, "#N/A"), "ExtractControl", SampleID)) %>%
+  mutate(SampleID        = if_else(str_detect(SampleID, "#N/A") | is.na(SampleID), "ExtractControl", SampleID)) %>%
   mutate(SampleID = str_squish(str_trim(SampleID, "both")),
          ExtractID= str_squish(str_trim(ExtractID, "both")),
          ExtractDate       = mdy(ExtractDate)) %>%
@@ -279,7 +279,7 @@ extracts <- read.csv(here(path$inventories$extraction),
          ExtractConc = if_else(str_detect(ExtractConc, "HIGHER"), "100", ExtractConc),
          ExtractConc = if_else(ExtractConc == "LOW", "0", ExtractConc),
          ExtractConc = if_else(ExtractConc == "", NA, ExtractConc)) %>%
-  mutate(ExtractConc = round(as.numeric(ExtractConc), 1))  %>% filter(ExtractType == "DNA") %>%
+  mutate(ExtractConc = round(as.numeric(ExtractConc), 1))  %>% filter(ExtractType == "DNA" | ExtractType == "dna") %>%
   select(-ExtractType) %>%
   right_join(samples) %>% distinct()
 ```
@@ -305,9 +305,10 @@ compilation <- read.csv(here(path$inventories$libraries),
          TotalPoolVol,
          BeadVol,
          Conc_QC2    = Final.Library.Concentration) %>%
+  full_join(extracts, by = join_by(ExtractID)) %>% 
+  mutate(SampleID = if_else(is.na(SampleID) & !is.na(ExtractID), "NTC", SampleID)) %>%
   full_join(barcodes, by = join_by(LibraryCode, LibraryBarcode)) %>%
-  left_join(seqrun.tbl, by = join_by(LibraryCode, FlowCellSerial)) %>%
-  right_join(extracts, by = join_by(ExtractID)) %>% distinct() %>%
+  left_join(seqrun.tbl, by = join_by(LibraryCode, FlowCellSerial)) %>% distinct() %>%
   mutate(steps_remaining = case_when(
     is.na(ExtractID) ~ "sample not extracted",
     is.na(SequenceID) ~ "extract not sequenced",

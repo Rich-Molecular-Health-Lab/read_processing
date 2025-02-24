@@ -145,7 +145,13 @@ subjects <- list(
     CULI = "Culi"
   ),
   bats = list(
-    UNK = "Unknown"
+    UNKN = "Unknown",
+    EPFU = "EPFU",
+    MYLE = "MYLE",
+    LABO = "LABO",
+    MYCI = "MYCI",
+    LANO = "LANO",
+    NYHU = "NYHU"
   ),
   envir = list(
     UNK = "Unknown"

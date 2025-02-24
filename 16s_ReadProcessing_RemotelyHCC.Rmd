@@ -15,7 +15,7 @@ output:
     df_print: paged
 params:
   sampleset: "bats"
-  seqrun: "nwr1"
+  seqrun: "NWR1"
   
 ---
 
@@ -45,10 +45,6 @@ opts_chunk$set(message = FALSE,
 ## If this is your first time
 
 Start with the script `read_processing/RemoteHCC_FirstUse.Rmd` script. This will guide you through the steps to transfer your data and create virtual environments you will need to run the jobs below. Once you go through that process the first time, you can skip to the steps in this script.
-
-## This Workflow
-
-This is the current recommended pipeline for processing **raw reads obtained from the MinION Sequencer**. The ONT sequencers basically measure electrical signals as strands of DNA pass through each nanopore. The MinKNOW software uses an algorithm to convert each signal to its estimated sequence of A's/G's/C's/T's in real time, but those on-the-fly basecalls are quite messy. It is standard practice to take the original signal data after the run has completed and use a slower, more precise algorithm to re-basecall the data with greater precision.  
 
 ## Transfer sequencing data
 
@@ -82,8 +78,8 @@ Run the chunk below and then copy and paste the text that it creates to replace 
 #!/bin/bash
 #SBATCH --time=2:00:00
 #SBATCH --job-name=basecall
-#SBATCH --error=logs/basecall_%A_%a.err
-#SBATCH --output=logs/basecall_%A_%a.out
+#SBATCH --error=/work/richlab/aliciarich/read_processing/logs/basecall_%A_%a.err
+#SBATCH --output=/work/richlab/aliciarich/read_processing/logs/basecall_%A_%a.out
 #SBATCH --partition=gpu,guest_gpu
 #SBATCH --constraint='gpu_v100|gpu_t4'
 #SBATCH --nodes=1
@@ -115,22 +111,137 @@ Once you ensure this script has transferred to the `read_processing/batch_script
 
 ```{terminal, warning = FALSE}
 cd read_processing
-sbatch batch_scripts/basecall_singleplex_remote.sh
+sbatch batch_scripts/basecall_multiplex_remote.sh
+```
+
+### Demultiplex and Trim
+
+Now we need to trim away the adapters and barcodes that we attached to our libraries before sequencing. The code below will also demultiplex your reads, but keep in mind that this is only necessary if you have pooled multiple barcoded samples into a single sequencing run (multiplexing). Dorado has algorithms that know the sequence of every ONT kit's barcodes attached to our libraries before pooling, and now it will use that information to assign a SampleID to every read.  
+
+You do not need to use the GPU nodes for this or any of the other jobs in this workflow (though it is fine if you already are in one). It is faster and easier to grab any of the available nodes and use the CPUs instead. 
+
+Again, run the chunk below and then copy and paste the text that it creates to replace the text in the file `batch_scripts/demux_trim_remote.sh`
+
+```{terminal, warning = FALSE}
+#!/bin/bash
+#SBATCH --time=00:45:00
+#SBATCH --job-name=demux_trim
+#SBATCH --error=/work/richlab/aliciarich/read_processing/logs/demux_trim_%A_%a.err
+#SBATCH --output=/work/richlab/aliciarich/read_processing/logs/demux_trim_%A_%a.out
+#SBATCH --partition=guest
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --mem=100GB
+
+seqrun=params$seqrun
+samplesheet=params$samplesheet
+
+cd /work/richlab/aliciarich/read_processing
+
+mkdir -p "reads/trimmed/$seqrun"
+
+module load dorado
+
+dorado demux "reads/basecalled/$seqrun.bam" \
+    --output-dir "reads/trimmed/$seqrun" \
+    --kit-name "'SQK-16S114-24'" \
+    --sample-sheet "$samplesheet" \
+    --emit-fastq --emit-summary
+
+```
+
+Once you ensure this script has transferred to the `read_processing/batch_scripts` path on your HCC directory, run the code below to submit the job.
+
+```{terminal, warning = FALSE}
+cd read_processing
+sbatch batch_scripts/demux_trim_remote.sh
+```
+
+### Quality Control
+
+Now we need to trim away the messy ends of our reads (they are kind of like the first pancake - never as precise as the middle regions) and filter out any reads with a lower quality score than our threshold. Again, these parameters will be important things to note in the methods of any results you publish/present, so I keep a record of my working parameters in the yaml header or my config file, which you will see below.
+
+Run the chunk below and then copy and paste the text that it creates to replace the text in the file `batch_scripts/qc_multiplex_remote.sh`
+
+```{terminal, warning = FALSE}
+#!/bin/bash
+#SBATCH --time=00:45:00
+#SBATCH --job-name=qc_multiplex
+#SBATCH --error=/work/richlab/aliciarich/read_processing/logs/qc_multiplex_%A_%a.err
+#SBATCH --output=/work/richlab/aliciarich/read_processing/logs/qc_multiplex_%A_%a.out
+#SBATCH --partition=guest
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --mem=100GB
+
+module load anaconda
+
+conda activate filter
+
+cd /work/richlab/aliciarich/read_processing
+
+seqrun=params$seqrun
+trimmed=reads/trimmed/$seqrun
+filtered=reads/filtered/$seqrun
+
+mkdir -p $filtered
+
+cd $trimmed
+
+for file in "$trimmed"/*.fastq; do
+    
+    if [ -f "$file" ]; then
+       
+        base_filename=$(basename "$file")
+
+        chopper --maxlength methods_16s$max_length --minlength methods_16s$min_length --quality methods_16s$min_qual --input "$file" > "$filtered/$base_filename"
+
+        echo "Processed $file"
+    else
+        echo "Error: File $file does not exist or is not a regular file."
+    fi
+done
+
+cd $filtered
+
+for file in "$filtered"/*.fastq; do
+    if [ -f "$file" ]; then
+        base_filename=$(basename "$file" .fastq)
+        
+        mkdir -p "$filtered/$base_filename"
+        
+        mv "$file" "$filtered/$base_filename/${base_filename}.fastq"
+        
+        echo "Organized $file"
+    else
+        echo "Error: File $file does not exist or is not a regular file."
+    fi
+done
+
+
+```
+Once you ensure this script has transferred to the `read_processing/batch_scripts` path on your HCC directory, run the code below to submit the job.
+
+```{terminal, warning = FALSE}
+cd read_processing
+sbatch batch_scripts/qc_multiplex_remote.sh
 ```
 
 
-## Alignment, Assembly, Annotation
+## Alignment, Taxonomy, Abundance
 
-Now we will combine all three of these steps by implementing [`wf-bacterial-genomes`](https://github.com/epi2me-labs/wf-bacterial-genomes) with Nextflow.
+We will use the wf-16s pipeline by EPI2ME to do this. You should have a look at all the options and steps described [here](https://github.com/epi2me-labs/wf-16s) if you use this workflow. Work out which options I have selected or left to default in the script provided, because you will need to mention those details in the methods of anything published/presented.  
 
-Again, run the chunk below and then copy and paste this into a script that you will run. Name this script `wfbacgen_remote.sh`.
+Again, run the chunk below and then copy and paste this into a script that you will run. Name this script `wf16s_remote.sh`.
+
+>Notice that this is a more memory- and time-intensive job than the others. You will need to scale up time for more samples/reads or longer reads.
 
 ```{terminal, warning = FALSE}
 #!/bin/bash
 #SBATCH --time=03:00:00
-#SBATCH --job-name=wfbacgen
-#SBATCH --error=/work/richlab/aliciarich/read_processing/logs/wfbacgen_%A_%a.err
-#SBATCH --output=/work/richlab/aliciarich/read_processing/logs/wfbacgen_%A_%a.out
+#SBATCH --job-name=wf16s
+#SBATCH --error=/work/richlab/aliciarich/read_processing/logs/wf16s_%A_%a.err
+#SBATCH --output=/work/richlab/aliciarich/read_processing/logs/wf16s_%A_%a.out
 #SBATCH --partition=guest
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
@@ -146,12 +257,21 @@ seqrun=params$seqrun
 
 mkdir -p processed/$seqrun
 
-nextflow run epi2me-labs/wf-bacterial-genomes \
+nextflow run epi2me-labs/wf-16s \
 	-profile singularity \
-	--fastq "reads/filtered/$seqrun.fastq" \
-	--isolates \
-	--sample "$seqrun" \
+	--fastq "reads/filtered/$seqrun" \
+  --taxonomic_rank methods_16s$tax_rank \
+  --keep_bam \
+  --minimap2_by_reference \
+  --include_read_assignments \
   --out_dir "processed/$seqrun" \
+  --min_len methods_16s$min_length \
+  --max_len methods_16s$max_length \
+  --abundance_threshold methods_16s$abund_threshold \
+  --min_read_qual methods_16s$min_qual \
+  --min_percent_identity methods_16s$min_id \
+  --min_ref_coverage methods_16s$min_cov \
+  --n_taxa_barplot methods_16s$n_taxa_barplot \
   --threads 32
 
 ```
@@ -160,7 +280,7 @@ Once you ensure this script has transferred to the `read_processing/batch_script
 
 ```{terminal, warning = FALSE}
 cd read_processing
-sbatch batch_scripts/wfbacgen_remote.sh
+sbatch batch_scripts/wf16s_remote.sh
 ```
 
 # Next Steps

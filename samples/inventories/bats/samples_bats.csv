@@ -1,25 +1,70 @@
-﻿SampleID,SampleSubject,SampleDate,SampleCollectedBy,SampleNotes,SampleBox
-unknown1,unknown,"""2024-12-31""",unknown,,
-unknown2,unknown,"""2024-12-31""",unknown,,
-unknown3,unknown,"""2024-12-31""",unknown,,
-unknown4,unknown,"""2024-12-31""",unknown,,
-unknown5,unknown,"""2024-12-31""",unknown,,
-unknown6,unknown,"""2024-12-31""",unknown,,
-unknown7,unknown,"""2024-12-31""",unknown,,
-unknown8,unknown,"""2024-12-31""",unknown,,
-unknown9,unknown,"""2024-12-31""",unknown,,
-unknown10,unknown,"""2024-12-31""",unknown,,
-unknown11,unknown,"""2024-12-31""",unknown,,
-unknown12,unknown,"""2024-12-31""",unknown,,
-unknown13,unknown,"""2024-12-31""",unknown,,
-unknown14,unknown,"""2024-12-31""",unknown,,
-unknown15,unknown,"""2024-12-31""",unknown,,
-unknown16,unknown,"""2024-12-31""",unknown,,
-unknown17,unknown,"""2024-12-31""",unknown,,
-unknown18,unknown,"""2024-12-31""",unknown,,
-unknown19,unknown,"""2024-12-31""",unknown,,
-unknown20,unknown,"""2024-12-31""",unknown,,
-unknown21,unknown,"""2024-12-31""",unknown,,
-unknown22,unknown,"""2024-12-31""",unknown,,
-unknown23,unknown,"""2024-12-31""",unknown,,
-unknown24,unknown,"""2024-12-31""",unknown,,
+﻿SampleID,SampleSubject,SampleDate,SampleCollectedBy,SampleNotes,SampleBox,InLab,Received,Priority,mist netting latitude,mist netting longitude,net length/area,capturing time,sex,age,female reproductive status ,number of pellets,body mass,forearm
+NWR-003,EPFU,9/13/24,RP (Highlands) please share with Katherine and Olivia ,extracted,NWR Bat Fecals Box 1,y,9/23/24,microbiome,,,,,,,,,,
+NWR-007,EPFU,,RP (Highlands) please share with Katherine and Olivia ,extracted,NWR Bat Fecals Box 1,y,9/23/24,microbiome,,,,,,,,,,
+NWR-008,MYLE,,RP (Highlands) please share with Katherine and Olivia ,,NWR Bat Fecals Box 1,y,9/23/24,host DNA,,,,,,,,,,
+NWR-012,MYLE,,RP (Highlands) please share with Katherine and Olivia ,,NWR Bat Fecals Box 1,y,9/23/24,host DNA,,,,,,,,,,
+NWR-031,LABO,6/14/24,JW - GCP,extracted,NWR Bat Fecals Box 1,y,9/6/24,host DNA,41.338991,-96.148116,6m,22:32,female,adult,lactating,6,16.5,
+NWR-032,EPFU,6/20/24,JW - Fontenelle,extracted,NWR Bat Fecals Box 1,y,9/6/24,host DNA,41.1627321,-95.8958538,9m,21:26,male,adult,n/a,4,10(?),45
+NWR-033,EPFU,6/20/24,JW - Fontenelle,extracted,NWR Bat Fecals Box 1,y,9/6/24,host DNA,41.1627321,-95.8958538,9m,21:32,male,adult,n/a,2,10(?),47
+NWR-034,EPFU,6/20/24,JW - Fontenelle,redo,NWR Bat Fecals Box 1,y,9/6/24,microbiome,41.1627321,-95.8958538,9m,22:15,female,adult,lactating,3,15,48
+NWR-035,MYCI,9/23/24,BA,,NWR Bat Fecals Box 1,y,10/31/24,host DNA,41.71595,-103.67247,NA,NA,F ,juvenile,,,6,33.92
+NWR-036,MYCI,9/26/24,BA,,NWR Bat Fecals Box 1,y,10/31/24,host DNA,42.71776,-102.92947,NA,NA,F ,juvenile,,,6,33.2
+NWR-037,MYCI,9/23/24,BA,,NWR Bat Fecals Box 1,y,10/31/24,microbiome,41.71595,-103.67247,NA,NA,M ,juvenile,,,7,33.09
+NWR-038,LANO,9/26/24,BA,,NWR Bat Fecals Box 1,y,10/31/24,host DNA,42.71776,-102.92947,NA,NA,M ,juvenile,,,13.5,43.05
+NWR-039,MYCI,9/23/24,BA,,NWR Bat Fecals Box 1,y,10/31/24,microbiome,41.71595,-103.67247,NA,NA,F,juvenile,,,7.5,33.08
+NWR-040,LABO,9/26/24,BA,,NWR Bat Fecals Box 1,y,10/31/24,host DNA,42.71776,-102.92947,NA,NA,M,juvenile,,,9.5,38.95
+NWR-089,EPFU,,RP (Highlands) please share with Katherine and Olivia ,extracted,NWR Bat Fecals Box 1,y,9/23/24,microbiome,,,,,,,,,,
+NWR-092,MYLE,9/12/24,RP (Highlands) please share with Katherine and Olivia ,,NWR Bat Fecals Box 1,y,9/23/24,TBD - How many host DNAs?,35.0165837,-83.2232563,4m,22:19,F,A,NR,,4,33
+NWR-094,MYLE,9/12/24,RP (Highlands) please share with Katherine and Olivia ,,NWR Bat Fecals Box 1,y,9/23/24,host DNA,35.0165837,-83.2232563,4m,20:02,M,J,,,3.75,32
+NWR-099,EPFU,,RP (Highlands) please share with Katherine and Olivia ,extracted,NWR Bat Fecals Box 1,y,9/23/24,microbiome,,,,,,,,,,
+NWR-102,EPFU,,"J. O'Keefe (IN, IL)",extracted,NWR Bat Fecals Box 1,y,11/13/24,,40.434158,-92.986717,,,M,A,,ND,17.9,47
+NWR-103,EPFU,,"J. O'Keefe (IN, IL)",extracted,NWR Bat Fecals Box 1,y,11/13/24,,40.434158,-92.986717,,,F,J,NR,ND,19.25,50.5
+NWR-104,,,"J. O'Keefe (IN, IL)",,NWR Bat Fecals Box 1,y,11/13/24,,40.434158,-92.986717,,,F,A,PL,ND,21.5,48
+NWR-105,,,"J. O'Keefe (IN, IL)",,NWR Bat Fecals Box 1,y,11/13/24,,40.434158,-92.986717,,,F,J,NR,ND,16.1,44
+NWR-106,,,"J. O'Keefe (IN, IL)",,NWR Bat Fecals Box 1,y,11/13/24,,40.434158,-92.986717,,,F,J,NR,,14.6,45
+NWR-107,EPFU,,"J. O'Keefe (IN, IL)",extracted,NWR Bat Fecals Box 1,y,11/13/24,,40.4138409,-92.949176,,,F,J,NR,,20,45.3
+NWR-108,EPFU,,"J. O'Keefe (IN, IL)",extracted,NWR Bat Fecals Box 1,y,11/13/24,,40.4138409,-92.949176,,,M,J,,,ND,46.1
+NWR-109,,,"J. O'Keefe (IN, IL)",,NWR Bat Fecals Box 1,y,11/13/24,,40.4138409,-92.949176,,,F,J,NR,,21,49.4
+NWR-110,,,"J. O'Keefe (IN, IL)",,NWR Bat Fecals Box 1,y,11/13/24,,39.86615655,-92.50563753,,,M,A,,,18.8,48
+NWR-111,,,"J. O'Keefe (IN, IL)",,NWR Bat Fecals Box 1,y,11/13/24,,40.434158,-92.986717,,,F,A,PL,,19.5,50
+NWR-112,,,"J. O'Keefe (IN, IL)",,NWR Bat Fecals Box 1,y,11/13/24,,40.56991934,-92.71078332,,,F,J,NR,,20,47.9
+NWR-113,,,"J. O'Keefe (IN, IL)",,NWR Bat Fecals Box 1,y,11/13/24,,40.563229,-91.85844,,,M,J,,,18,45.2
+NWR-114,EPFU,,"J. O'Keefe (IN, IL)",extracted,NWR Bat Fecals Box 1,y,11/13/24,,40.434158,-92.986717,,,M,J,,,15.5,46
+NWR-115,EPFU,,"J. O'Keefe (IN, IL)",extracted,NWR Bat Fecals Box 1,y,11/13/24,,40.434158,-92.986717,,,F,J,,,15.7,47
+NWR-116,EPFU,,"J. O'Keefe (IN, IL)",extracted,NWR Bat Fecals Box 1,y,11/13/24,,39.86615655,-92.50563753,,,M,A,,,16,44
+NWR-117,EPFU,,"J. O'Keefe (IN, IL)",extracted,NWR Bat Fecals Box 1,y,11/13/24,,40.5788157,-91.89688037,,,,,,,,
+NWR-118,EPFU,,"J. O'Keefe (IN, IL)",extracted,NWR Bat Fecals Box 1,y,11/13/24,,40.434158,-92.986717,,,M,J,,,15.1,48
+NWR-119,EPFU,,"J. O'Keefe (IN, IL)",extracted,NWR Bat Fecals Box 1,y,11/13/24,,40.5788157,-91.89688037,,,F,A,PL,,21.3,46
+NWR-120,EPFU,,"J. O'Keefe (IN, IL)",extracted,NWR Bat Fecals Box 1,y,11/13/24,,40.5788157,-91.89688037,,,F,A,PL,,24,49
+NWR-121,EPFU,,"J. O'Keefe (IN, IL)",extracted,NWR Bat Fecals Box 1,y,11/13/24,,40.434158,-92.986717,,,F,J,NR,,18.9,48
+NWR-122,EPFU,,"J. O'Keefe (IN, IL)",extracted,NWR Bat Fecals Box 1,y,11/13/24,,40.434158,-92.986717,,,M,J,,,17.5,46
+NWR-123,EPFU,,"J. O'Keefe (IN, IL)",extracted,NWR Bat Fecals Box 1,y,11/13/24,,40.56530543,-92.696214,,,F,J,NR,,19.8,46
+NWR-124,,,"J. O'Keefe (IN, IL)",,NWR Bat Fecals Box 1,y,11/13/24,,40.434158,-92.986717,,,F,A,PL,,20.9,46
+NWR-125,EPFU,,"J. O'Keefe (IN, IL)",extracted,NWR Bat Fecals Box 1,y,11/13/24,,40.434158,-92.986717,,,F,A,L,,20.4,52
+NWR-126,EPFU,,"J. O'Keefe (IN, IL)",extracted,NWR Bat Fecals Box 1,y,11/13/24,,40.434158,-92.986717,,,M,A,,,18.7,46
+NWR-127,EPFU,,"J. O'Keefe (IN, IL)",extracted,NWR Bat Fecals Box 1,y,11/13/24,,40.56530543,-92.696214,,,M,A,,,19.2,45
+NWR-128,EPFU,,"J. O'Keefe (IN, IL)",extracted,NWR Bat Fecals Box 1,y,11/13/24,,40.56530543,-92.696214,,,F,A,PL,,20.1,49
+NWR-129,EPFU,,"J. O'Keefe (IN, IL)",extracted,NWR Bat Fecals Box 1,y,11/13/24,,40.5788157,-91.89688037,,,F,A,L,,23.5,50
+NWR-130,EPFU,,"J. O'Keefe (IN, IL)",extracted,NWR Bat Fecals Box 1,y,11/13/24,,40.5788157,-91.89688037,,,F,A,L,,19.4,48
+NWR-151,EPFU,9/5/24,T. Raad UNO,extracted,NWR Bat Fecals Box 1,y,9/6/24,microbiome,41.164674,-95.896408,by hand from roost,22:10,M,Adult,,5,22.5 g,46 mm
+NWR-152,EPFU,9/5/24,T.Raad UNO,extracted,NWR Bat Fecals Box 1,y,9/6/24,microbiome,41.1627321,-95.8958538,9m,22:25,F,Adult,NR,2,26.5 g ,46 mm
+NWR-153,EPFU,9/5/24,T.Raad UNO,extracted,NWR Bat Fecals Box 1,y,9/6/24,microbiome,41.1627321,-95.8958538,9m,23:25,F,Adult,NR,3,27.0 g,45 mm
+NWR-154,EPFU,9/11/24,T.Raad UNO,extracted,NWR Bat Fecals Box 1,y,9/13/24,microbiome,40.5912,-96.1223,"9m, double high",21:30,F,Adult,Post-lactating,4,19.75 g,45.6 mm
+NWR-155,EPFU,9/11/24,T.Raad UNO,extracted,NWR Bat Fecals Box 1,y,9/13/24,microbiome,40.5912,-96.1223,"9m, double high",21:31,F,Adult,NR,9,25.5 g,45 mm
+NWR-156,NYHU,9/11/24,T.Raad UNO,,NWR Bat Fecals Box 1,y,9/13/24,host DNA,40.5912,-96.1223,9m,21:57,F,Juvenile,NR,3,14 g,38 mm
+NWR-001,EPFU,9/12/24,RP (Highlands) please share with Katherine and Olivia ,,,n,,,35.0165837,-83.2232563,4m,19:51,M,A ,,,14.5,44
+NWR-055,EPFU,6/18/24,KCI (NC),,,n,,,,,,,,,,,,
+NWR-056,,,KCI (NC),,,n,,,,,,,,,,,,
+NWR-057,,,KCI (NC),,,n,,,,,,,,,,,,
+NWR-058,,,KCI (NC),,,n,,,,,,,,,,,,
+NWR-060,,,KCI (NC),,,n,,,,,,,,,,,,
+NWR-061,,,KCI (NC),,,n,,,,,,,,,,,,
+NWR-071,,,KCI (NC),,,n,,,,,,,,,,,,
+NWR-072,,,KCI (NC),,,n,,,,,,,,,,,,
+NWR-073,EPFU,6/27/24,KCI (NC),,,n,,,,,,,,,,,,
+NWR-074,,,KCI (NC),,,n,,,,,,,,,,,,
+NWR-075,EPFU,6/18/24,KCI (NC),,,n,,,,,,,,,,,,
+NWR-076,,,KCI (NC),,,n,,,,,,,,,,,,
+NWR-078,,,KCI (NC),,,n,,,,,,,,,,,,
+NWR-079,,,KCI (NC),,,n,,,,,,,,,,,,
+NWR-080,,,KCI (NC),,,n,,,,,,,,,,,,

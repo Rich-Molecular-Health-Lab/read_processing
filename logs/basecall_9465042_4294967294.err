@@ -1,0 +1,16 @@
+[2025-02-23 21:13:03.545] [info] Running: "basecaller" "sup" "seqRuns/NWR1/pod5" "--recursive" "--no-trim"
+[2025-02-23 21:13:07.022] [warning] Unknown certs location for current distribution. If you hit download issues, use the envvar `SSL_CERT_FILE` to specify the location manually.
+[2025-02-23 21:13:07.143] [info]  - downloading dna_r10.4.1_e8.2_400bps_sup@v5.0.0 with httplib
+[2025-02-23 21:13:07.443] [error] Failed to download dna_r10.4.1_e8.2_400bps_sup@v5.0.0: SSL server verification failed
+[2025-02-23 21:13:07.443] [info]  - downloading dna_r10.4.1_e8.2_400bps_sup@v5.0.0 with curl
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  1  178M    1 3573k    0     0  7336k      0  0:00:24 --:--:--  0:00:24 7321k
+ 21  178M   21 38.5M    0     0  26.8M      0  0:00:06  0:00:01  0:00:05 26.8M
+ 90  178M   90  162M    0     0  66.6M      0  0:00:02  0:00:02 --:--:-- 66.6M
+100  178M  100  178M    0     0  69.2M      0  0:00:02  0:00:02 --:--:-- 69.1M
+[2025-02-23 21:13:20.162] [info] > Creating basecall pipeline
+[2025-02-23 21:13:48.545] [info] cuda:0 using chunk size 12288, batch size 256
+[2025-02-23 21:13:49.832] [info] cuda:0 using chunk size 6144, batch size 256

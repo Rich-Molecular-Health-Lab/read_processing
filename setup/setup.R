@@ -28,7 +28,8 @@ knitr::knit_engines$set(terminal = function(options) {
   patterns <- list(
     params             = list(
       sampleset    = paste0(params$sampleset),
-      seqrun       = paste0(params$seqrun)
+      seqrun       = paste0(params$seqrun),
+      samplesheet  = as.character(sample_sheets[paste0(tolower(params$seqrun))])
     )            ,
     scripts            = scripts           ,
     path               = path              ,
