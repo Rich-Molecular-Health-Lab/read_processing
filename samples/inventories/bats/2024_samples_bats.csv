@@ -1,0 +1,200 @@
+SampleID,SampleCollectedBy,Location,InLab,SampleDate,Non_MistNetting,MistNetting_Lat,MistNetting_Long,Net_Length_Area,Capture_time,Species,Sex,Age,F_Repro_Stat,Number_Pellets,Body_Mass,Forearm_Length,SpeciesFull
+NWR001,RP ,Highlands,y,20240912,,35.0165837,-83.2232563,4m,19:51,epfu,M,A ,,,14.5,44,Eptesicus_fuscus
+NWR002,RP,Highlands,,,,,,,,,,,,,,,
+NWR003,RP,Highlands,y,20240913,,,,,,epfu,,,,,,,Eptesicus_fuscus
+NWR004,RP,Highlands,,,,,,,,,,,,,,,
+NWR005,RP,Highlands,,,,,,,,,,,,,,,
+NWR006,RP,Highlands,,,,,,,,,,,,,,,
+NWR007,RP,Highlands,y,,,,,,,epfu,,,,,,,Eptesicus_fuscus
+NWR008,RP,Highlands,y,,,,,,,myle,,,,,,,Myotis_leibii
+NWR009,RP,Highlands,,,,,,,,,,,,,,,
+NWR010,RP,Highlands,,,,,,,,,,,,,,,
+NWR011,RP,Highlands,,,,,,,,,,,,,,,
+NWR012,RP,Highlands,y,,,,,,,myle,,,,,,,Myotis_leibii
+NWR013,RP,Highlands,,,,,,,,,,,,,,,
+NWR014,RP,Highlands,,,,,,,,,,,,,,,
+NWR015,RP,Highlands,,,,,,,,,,,,,,,
+NWR016,RP,Highlands,,,,,,,,,,,,,,,
+NWR017,RP,Highlands,,,,,,,,,,,,,,,
+NWR018,RP,Highlands,,,,,,,,,,,,,,,
+NWR019,RP,Highlands,,,,,,,,,,,,,,,
+NWR020,RP,Highlands,,,,,,,,,,,,,,,
+NWR021,RP,Highlands,,,,,,,,,,,,,,,
+NWR022,RP,Highlands,,,,,,,,,,,,,,,
+NWR023,RP,Highlands,,,,,,,,,,,,,,,
+NWR024,RP,Highlands,,,,,,,,,,,,,,,
+NWR025,RP,Highlands,,,,,,,,,,,,,,,
+NWR026,RP,Highlands,,,,,,,,,,,,,,,
+NWR027,RP,Highlands,,,,,,,,,,,,,,,
+NWR028,RP,Highlands,,,,,,,,,,,,,,,
+NWR029,RP,Highlands,,,,,,,,,,,,,,,
+NWR030,RP,Highlands,,,,,,,,,,,,,,,
+NWR031,JW,GCP,y,20240614,,41.338991,-96.148116,6m,22:32,labo,female,adult,lactating,6,16.5,,Lasiurus_borealis
+NWR032,JW,Fontanelle,y,20240620,,41.1627321,-95.8958538,9m,21:26,epfu,male,adult,NA,4,10,45,Eptesicus_fuscus
+NWR033,JW,Fontanelle,y,20240620,,41.1627321,-95.8958538,9m,21:32,epfu,male,adult,NA,2,10,47,Eptesicus_fuscus
+NWR034,JW,Fontanelle,y,20240620,,41.1627321,-95.8958538,9m,22:15,epfu,female,adult,lactating,3,15,48,Eptesicus_fuscus
+NWR035,BA,Nebraska,y,20240923,,41.71595,-103.67247,NA,NA,myci,F ,juvenile,,,6,33.92,Myotis_ciliolabrum
+NWR036,BA,NE,y,20240926,,42.71776,-102.92947,NA,NA,myci,F ,juvenile,,,6,33.2,Myotis_ciliolabrum
+NWR037,BA,NE,y,20240923,,41.71595,-103.67247,NA,NA,myci,M ,juvenile,,,7,33.09,Myotis_ciliolabrum
+NWR038,BA,NE,y,20240926,,42.71776,-102.92947,NA,NA,lano,M ,juvenile,,,13.5,43.05,Lasionycteris_noctivigans
+NWR039,BA,NE,y,20240923,,41.71595,-103.67247,NA,NA,myci,F,juvenile,,,7.5,33.08,Myotis_ciliolabrum
+NWR040,BA,NE,y,20240926,,42.71776,-102.92947,NA,NA,labo,M,juvenile,,,9.5,38.95,Lasiurus_borealis
+NWR041,AS,West_Virginia,,,,,,,,,,,,,,,
+NWR042,AS,West_Virginia,,,,,,,,,,,,,,,
+NWR043,AS,West_Virginia,,,,,,,,,,,,,,,
+NWR044,AS,West_Virginia,,,,,,,,,,,,,,,
+NWR045,AS,West_Virginia,,,,,,,,,,,,,,,
+NWR046,AS,West_Virginia,,,,,,,,,,,,,,,
+NWR047,AS,West_Virginia,,,,,,,,,,,,,,,
+NWR048,AS,West_Virginia,,,,,,,,,,,,,,,
+NWR049,AS,West_Virginia,,,,,,,,,,,,,,,
+NWR050,AS,West_Virginia,,,,,,,,,,,,,,,
+NWR051,KCI,NC,,,,,,,,,,,,,,,
+NWR052,KCI,NC,,,,,,,,,,,,,,,
+NWR053,KCI,NC,,,,,,,,,,,,,,,
+NWR054,KCI,NC,,,,,,,,,,,,,,,
+NWR055,KCI,NC,y,20240618,,,,,,epfu,,,,,,,Eptesicus_fuscus
+NWR056,KCI,NC,y,NA,,,,,,,,,,,,,
+NWR057,KCI,NC,y,NA,,NA,NA,NA,NA,NA,NA,NA,NA,NA,,,NA
+NWR058,KCI,NC,y,,,,,,,,,,,,,,
+NWR059,KCI,NC,,,,,,,,,,,,,,,
+NWR060,KCI,NC,y,,,,,,,,,,,,,,
+NWR061,KCI,NC,y,,,,,,,,,,,,,,
+NWR062,KCI,NC,,,,,,,,,,,,,,,
+NWR063,KCI,NC,,,,,,,,,,,,,,,
+NWR064,KCI,NC,,,,,,,,,,,,,,,
+NWR065,KCI,NC,,,,,,,,,,,,,,,
+NWR066,KCI,NC,,,,,,,,,,,,,,,
+NWR067,KCI,NC,,,,,,,,,,,,,,,
+NWR068,KCI,NC,,,,,,,,,,,,,,,
+NWR069,KCI,NC,,,,,,,,,,,,,,,
+NWR070,KCI,NC,,,,,,,,,,,,,,,
+NWR071,KCI,NC,y,,,,,,,,,,,,,,
+NWR072,KCI,NC,y,,,,,,,,,,,,,,
+NWR073,KCI,NC,y,20240627,,NA,NA,NA,NA,epfu,male,adult,,NA,,,Eptesicus_fuscus
+NWR074,KCI,NC,y,,,,,,,,,,,,,,
+NWR075,KCI,NC,y,20240618,,,,,,epfu,,,,,,,Eptesicus_fuscus
+NWR076,KCI,NC,y,NA,,NA,NA,NA,NA,NA,NA,NA,NA,NA,,,NA
+NWR077,KCI,NC,,,,,,,,,,,,,,,
+NWR078,KCI,NC,y,NA,,NA,NA,NA,NA,NA,NA,NA,NA,NA,,,NA
+NWR079,KCI,NC,y,NA,,NA,NA,NA,NA,NA,NA,NA,NA,NA,,,NA
+NWR080,KCI,NC,y,NA,,NA,NA,NA,NA,NA,NA,NA,NA,NA,,,NA
+NWR081,RP,Highlands,,,,,,,,,,,,,,,
+NWR082,RP,Highlands,,,,,,,,,,,,,,,
+NWR083,RP,Highlands,,,,,,,,,,,,,,,
+NWR084,RP,Highlands,,,,,,,,,,,,,,,
+NWR085,RP,Highlands,,,,,,,,,,,,,,,
+NWR086,RP,Highlands,,,,,,,,,,,,,,,
+NWR087,RP,Highlands,,,,,,,,,,,,,,,
+NWR088,RP,Highlands,,,,,,,,,,,,,,,
+NWR089,RP,Highlands,y,,,,,,,epfu,,,,,,,Eptesicus_fuscus
+NWR090,RP,Highlands,,,,,,,,,,,,,,,
+NWR091,RP,Highlands,,,,,,,,,,,,,,,
+NWR092,RP,Highlands,y,20240912,,35.0165837,-83.2232563,4m,22:19,myle,F,A,NR,,4,33,Myotis_leibii
+NWR093,RP,Highlands,,,,,,,,,,,,,,,
+NWR094,RP,Highlands,y,20240912,,35.0165837,-83.2232563,4m,20:02,myle,M,J,,,3.75,32,Myotis_leibii
+NWR095,RP,Highlands,,,,,,,,,,,,,,,
+NWR096,RP,Highlands,,,,,,,,,,,,,,,
+NWR097,RP,Highlands,,,,,,,,,,,,,,,
+NWR098,RP,Highlands,,,,,,,,,,,,,,,
+NWR099,RP,Highlands,y,,,,,,,epfu,,,,,,,Eptesicus_fuscus
+NWR100,RP,Highlands,,,,,,,,,,,,,,,
+NWR101,JO,"IN, IL",n,,,,,,,epfu,,,,,,,Eptesicus_fuscus
+NWR102,JO,"IN, IL",y,,,40.434158,-92.986717,,,epfu,M,A,,ND,17.9,47,Eptesicus_fuscus
+NWR103,JO,"IN, IL",y,,,40.434158,-92.986717,,,epfu,F,J,NR,ND,19.25,50.5,Eptesicus_fuscus
+NWR104,JO,"IN, IL",y,,,40.434158,-92.986717,,,epfu,F,A,PL,ND,21.5,48,Eptesicus_fuscus
+NWR105,JO,"IN, IL",y,,,40.434158,-92.986717,,,epfu,F,J,NR,ND,16.1,44,Eptesicus_fuscus
+NWR106,JO,"IN, IL",y,,,40.434158,-92.986717,,,epfu,F,J,NR,,14.6,45,Eptesicus_fuscus
+NWR107,JO,"IN, IL",y,,,40.4138409,-92.949176,,,epfu,F,J,NR,,20,45.3,Eptesicus_fuscus
+NWR108,JO,"IN, IL",y,,,40.4138409,-92.949176,,,epfu,M,J,,,,46.1,Eptesicus_fuscus
+NWR109,JO,"IN, IL",y,,,40.4138409,-92.949176,,,epfu,F,J,NR,,21,49.4,Eptesicus_fuscus
+NWR110,JO,"IN, IL",y,,,39.86615655,-92.50563753,,,epfu,M,A,,,18.8,48,Eptesicus_fuscus
+NWR111,JO,"IN, IL",y,,,40.434158,-92.986717,,,epfu,F,A,PL,,19.5,50,Eptesicus_fuscus
+NWR112,JO,"IN, IL",y,,,40.56991934,-92.71078332,,,epfu,F,J,NR,,20,47.9,Eptesicus_fuscus
+NWR113,JO,"IN, IL",y,,,40.563229,-91.85844,,,epfu,M,J,,,18,45.2,Eptesicus_fuscus
+NWR114,JO,"IN, IL",y,,,40.434158,-92.986717,,,epfu,M,J,,,15.5,46,Eptesicus_fuscus
+NWR115,JO,"IN, IL",y,,,40.434158,-92.986717,,,epfu,F,J,,,15.7,47,Eptesicus_fuscus
+NWR116,JO,"IN, IL",y,,,39.86615655,-92.50563753,,,epfu,M,A,,,16,44,Eptesicus_fuscus
+NWR117,JO,"IN, IL",n,,,40.5788157,-91.89688037,,,epfu,,,,,,,Eptesicus_fuscus
+NWR118,JO,"IN, IL",y,,,40.434158,-92.986717,,,epfu,M,J,,,15.1,48,Eptesicus_fuscus
+NWR119,JO,"IN, IL",y,,,40.5788157,-91.89688037,,,epfu,F,A,PL,,21.3,46,Eptesicus_fuscus
+NWR120,JO,"IN, IL",y,,,40.5788157,-91.89688037,,,epfu,F,A,PL,,24,49,Eptesicus_fuscus
+NWR121,JO,"IN, IL",y,,,40.434158,-92.986717,,,epfu,F,J,NR,,18.9,48,Eptesicus_fuscus
+NWR122,JO,"IN, IL",y,,,40.434158,-92.986717,,,epfu,M,J,,,17.5,46,Eptesicus_fuscus
+NWR123,JO,"IN, IL",y,,,40.56530543,-92.696214,,,epfu,F,J,NR,,19.8,46,Eptesicus_fuscus
+NWR124,JO,"IN, IL",y,,,40.434158,-92.986717,,,epfu,F,A,PL,,20.9,46,Eptesicus_fuscus
+NWR125,JO,"IN, IL",y,,,40.434158,-92.986717,,,epfu,F,A,L,,20.4,52,Eptesicus_fuscus
+NWR126,JO,"IN, IL",y,,,40.434158,-92.986717,,,epfu,M,A,,,18.7,46,Eptesicus_fuscus
+NWR127,JO,"IN, IL",y,,,40.56530543,-92.696214,,,epfu,M,A,,,19.2,45,Eptesicus_fuscus
+NWR128,JO,"IN, IL",y,,,40.56530543,-92.696214,,,epfu,F,A,PL,,20.1,49,Eptesicus_fuscus
+NWR129,JO,"IN, IL",y,,,40.5788157,-91.89688037,,,epfu,F,A,L,,23.5,50,Eptesicus_fuscus
+NWR130,JO,"IN, IL",y,,,40.5788157,-91.89688037,,,epfu,F,A,L,,19.4,48,Eptesicus_fuscus
+NWR131,AS,WV,,,,,,,,,,,,,,,
+NWR132,AS,WV,,,,,,,,,,,,,,,
+NWR133,AS,WV,,,,,,,,,,,,,,,
+NWR134,AS,WV,,,,,,,,,,,,,,,
+NWR135,AS,WV,,,,,,,,,,,,,,,
+NWR136,AS,WV,,,,,,,,,,,,,,,
+NWR137,AS,WV,,,,,,,,,,,,,,,
+NWR138,AS,WV,,,,,,,,,,,,,,,
+NWR139,AS,WV,,,,,,,,,,,,,,,
+NWR140,AS,WV,,,,,,,,,,,,,,,
+NWR141,AS,WV,,,,,,,,,,,,,,,
+NWR142,AS,WV,,,,,,,,,,,,,,,
+NWR143,AS,WV,,,,,,,,,,,,,,,
+NWR144,AS,WV,,,,,,,,,,,,,,,
+NWR145,AS,WV,,,,,,,,,,,,,,,
+NWR146,AS,WV,,,,,,,,,,,,,,,
+NWR147,AS,WV,,,,,,,,,,,,,,,
+NWR148,AS,WV,,,,,,,,,,,,,,,
+NWR149,AS,WV,,,,,,,,,,,,,,,
+NWR150,AS,WV,,,,,,,,,,,,,,,
+NWR151,TR,Fontanelle,y,20240905,,41.164674,-95.896408,by hand from roost,22:10,epfu,M,Adult,,5,22.5,46,Eptesicus_fuscus
+NWR152,TR,Fontanelle,y,20240905,,41.1627321,-95.8958538,9m,22:25,epfu,F,Adult,NR,2,26.5,46,Eptesicus_fuscus
+NWR153,TR,Fontanelle,y,20240905,,41.1627321,-95.8958538,9m,23:25,epfu,F,Adult,NR,3,27,45,Eptesicus_fuscus
+NWR154,TR,Fontanelle,y,20240911,,40.5912,-96.1223,"9m, double high",21:30,epfu,F,Adult,Post-lactating,4,19.75,45.6,Eptesicus_fuscus
+NWR155,TR,Fontanelle,y,20240911,,40.5912,-96.1223,"9m, double high",21:31,epfu,F,Adult,NR,9,25.5,45,Eptesicus_fuscus
+NWR156,TR,Fontanelle,y,20240911,,40.5912,-96.1223,9m,21:57,nyhu,F,Juvenile,NR,3,14,38,Nycticeius_humeralis
+NWR157,LS,NE_Rehab,,20240921,Yes - bat in rehabilitation,,,,,epfu,F,Juvenile,NR,3,15.9,44,Eptesicus_fuscus
+NWR158,LS,NE_Rehab,,20240921,Yes - sample under night roost at TCP,,,,Morning,epfu,,,,6,,,Eptesicus_fuscus
+NWR159,LS,NE_Rehab,,20240921,Yes - sample under night roost at TCP,,,,Evening,epfu,,,,6,,,Eptesicus_fuscus
+NWR160,LS,NE_Rehab,,20240922,Yes - sample under night roost at TCP,,,,Morning,epfu,,,,6,,,Eptesicus_fuscus
+NWR161,LS,NE_Rehab,,20240922,Yes - sample under night roost at TCP,,,,Evening,epfu,,,,6,,,Eptesicus_fuscus
+NWR162,LS,NE_Rehab,,20240924,Yes - bat in rehabilitation,,,,,epfu,M,Adult,NR,4,20.3,48,Eptesicus_fuscus
+NWR163,LS,NE_Rehab,,20240925,Yes - sample under night roost at TCP,,,,Evening,epfu,,,,6,,,Eptesicus_fuscus
+NWR165,LS,NE_Rehab,,20240929,Yes - sample under night roost at TCP,,,,Morning,epfu,,,,6,,,Eptesicus_fuscus
+NWR166,LS,NE_Rehab,,,,,,,,,,,,,,,
+NWR167,LS,NE_Rehab,,,,,,,,,,,,,,,
+NWR168,LS,NE_Rehab,,,,,,,,,,,,,,,
+NWR169,LS,NE_Rehab,,,,,,,,,,,,,,,
+NWR170,LS,NE_Rehab,,,,,,,,,,,,,,,
+NWR171,LS,NE_Rehab,,,,,,,,,,,,,,,
+NWR172,LS,NE_Rehab,,,,,,,,,,,,,,,
+NWR173,LS,NE_Rehab,,,,,,,,,,,,,,,
+NWR174,LS,NE_Rehab,,,,,,,,,,,,,,,
+NWR175,LS,NE_Rehab,,,,,,,,,,,,,,,
+NWR176,LS,NE_Rehab,,,,,,,,,,,,,,,
+NWR177,LS,NE_Rehab,,,,,,,,,,,,,,,
+NWR178,LS,NE_Rehab,,,,,,,,,,,,,,,
+NWR179,LS,NE_Rehab,,,,,,,,,,,,,,,
+NWR180,LS,NE_Rehab,,,,,,,,,,,,,,,
+NWR181,SF,TX,,,,,,,,,,,,,,,
+NWR182,SF,TX,,,,,,,,,,,,,,,
+NWR183,SF,TX,,,,,,,,,,,,,,,
+NWR184,SF,TX,,,,,,,,,,,,,,,
+NWR185,SF,TX,,,,,,,,,,,,,,,
+NWR186,SF,TX,,,,,,,,,,,,,,,
+NWR187,SF,TX,,,,,,,,,,,,,,,
+NWR188,SF,TX,,,,,,,,,,,,,,,
+NWR189,SF,TX,,,,,,,,,,,,,,,
+NWR190,SF,TX,,,,,,,,,,,,,,,
+NWR191,SF,TX,,,,,,,,,,,,,,,
+NWR192,SF,TX,,,,,,,,,,,,,,,
+NWR193,SF,TX,,,,,,,,,,,,,,,
+NWR194,SF,TX,,,,,,,,,,,,,,,
+NWR195,SF,TX,,,,,,,,,,,,,,,
+NWR196,SF,TX,,,,,,,,,,,,,,,
+NWR197,SF,TX,,,,,,,,,,,,,,,
+NWR198,SF,TX,,,,,,,,,,,,,,,
+NWR199,SF,TX,,,,,,,,,,,,,,,
+NWR200,SF,TX,,,,,,,,,,,,,,,
