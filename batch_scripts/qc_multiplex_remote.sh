@@ -22,8 +22,11 @@ mkdir -p $filtered
 
 cd $trimmed
 
-for file in "$trimmed"/*.fastq; do
-    
+echo "Current directory: $(pwd)"
+echo "Files in trimmed: $(ls *.fastq)"
+
+for file in *.fastq; do
+
     if [ -f "$file" ]; then
        
         base_filename=$(basename "$file")
@@ -37,8 +40,9 @@ for file in "$trimmed"/*.fastq; do
 done
 
 cd $filtered
+echo "Current directory: $(pwd)"
 
-for file in "$filtered"/*.fastq; do
+for file in *.fastq; do
     if [ -f "$file" ]; then
         base_filename=$(basename "$file" .fastq)
         
@@ -51,3 +55,6 @@ for file in "$filtered"/*.fastq; do
         echo "Error: File $file does not exist or is not a regular file."
     fi
 done
+
+
+echo "Files in filtered: $(ls *.fastq)"

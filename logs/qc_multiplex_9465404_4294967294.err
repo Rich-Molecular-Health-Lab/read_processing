@@ -1,0 +1,27 @@
+/var/spool/slurmd/job9465404/slurm_script: line 34: reads/filtered/NWR1/NTC1-CTRL.fastq: No such file or directory
+/var/spool/slurmd/job9465404/slurm_script: line 34: reads/filtered/NWR1/NWR-003-S1.fastq: No such file or directory
+/var/spool/slurmd/job9465404/slurm_script: line 34: reads/filtered/NWR1/NWR-032-S2.fastq: No such file or directory
+/var/spool/slurmd/job9465404/slurm_script: line 34: reads/filtered/NWR1/NWR-036-S3.fastq: No such file or directory
+/var/spool/slurmd/job9465404/slurm_script: line 34: reads/filtered/NWR1/NWR-089-S4.fastq: No such file or directory
+/var/spool/slurmd/job9465404/slurm_script: line 34: reads/filtered/NWR1/NWR-102-S5.fastq: No such file or directory
+/var/spool/slurmd/job9465404/slurm_script: line 34: reads/filtered/NWR1/NWR-103-S6.fastq: No such file or directory
+/var/spool/slurmd/job9465404/slurm_script: line 34: reads/filtered/NWR1/NWR-107-S7.fastq: No such file or directory
+/var/spool/slurmd/job9465404/slurm_script: line 34: reads/filtered/NWR1/NWR-108-S8.fastq: No such file or directory
+/var/spool/slurmd/job9465404/slurm_script: line 34: reads/filtered/NWR1/NWR-114-S9.fastq: No such file or directory
+/var/spool/slurmd/job9465404/slurm_script: line 34: reads/filtered/NWR1/NWR-115-S10.fastq: No such file or directory
+/var/spool/slurmd/job9465404/slurm_script: line 34: reads/filtered/NWR1/NWR-116-S11.fastq: No such file or directory
+/var/spool/slurmd/job9465404/slurm_script: line 34: reads/filtered/NWR1/NWR-117-S12.fastq: No such file or directory
+/var/spool/slurmd/job9465404/slurm_script: line 34: reads/filtered/NWR1/NWR-118-S13.fastq: No such file or directory
+/var/spool/slurmd/job9465404/slurm_script: line 34: reads/filtered/NWR1/NWR-119-S14.fastq: No such file or directory
+/var/spool/slurmd/job9465404/slurm_script: line 34: reads/filtered/NWR1/NWR-121-S23.fastq: No such file or directory
+/var/spool/slurmd/job9465404/slurm_script: line 34: reads/filtered/NWR1/NWR-122-S21.fastq: No such file or directory
+/var/spool/slurmd/job9465404/slurm_script: line 34: reads/filtered/NWR1/NWR-126-S17.fastq: No such file or directory
+/var/spool/slurmd/job9465404/slurm_script: line 34: reads/filtered/NWR1/NWR-127-S19.fastq: No such file or directory
+/var/spool/slurmd/job9465404/slurm_script: line 34: reads/filtered/NWR1/NWR-130-S18.fastq: No such file or directory
+/var/spool/slurmd/job9465404/slurm_script: line 34: reads/filtered/NWR1/NWR-151-S20.fastq: No such file or directory
+/var/spool/slurmd/job9465404/slurm_script: line 34: reads/filtered/NWR1/NWR-153-S22.fastq: No such file or directory
+/var/spool/slurmd/job9465404/slurm_script: line 34: reads/filtered/NWR1/NWR-154-S16.fastq: No such file or directory
+/var/spool/slurmd/job9465404/slurm_script: line 34: reads/filtered/NWR1/NWR-156-S15.fastq: No such file or directory
+/var/spool/slurmd/job9465404/slurm_script: line 34: reads/filtered/NWR1/unclassified.fastq: No such file or directory
+/var/spool/slurmd/job9465404/slurm_script: line 42: cd: reads/filtered/NWR1: No such file or directory
+ls: cannot access '*.fastq': No such file or directory

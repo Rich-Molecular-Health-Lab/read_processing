@@ -161,19 +161,19 @@ sbatch batch_scripts/demux_trim_remote.sh
 
 Now we need to trim away the messy ends of our reads (they are kind of like the first pancake - never as precise as the middle regions) and filter out any reads with a lower quality score than our threshold. Again, these parameters will be important things to note in the methods of any results you publish/present, so I keep a record of my working parameters in the yaml header or my config file, which you will see below.
 
-Run the chunk below and then copy and paste the text that it creates to replace the text in the file `batch_scripts/qc_multiplex_remote.sh`
+#### Open Interactive Job
+
+Type the following into the HCC terminal to open an interactive job.
 
 ```{terminal, warning = FALSE}
-#!/bin/bash
-#SBATCH --time=00:45:00
-#SBATCH --job-name=qc_multiplex
-#SBATCH --error=/work/richlab/aliciarich/read_processing/logs/qc_multiplex_%A_%a.err
-#SBATCH --output=/work/richlab/aliciarich/read_processing/logs/qc_multiplex_%A_%a.out
-#SBATCH --partition=guest
-#SBATCH --nodes=1
-#SBATCH --ntasks=1
-#SBATCH --mem=100GB
+srun --partition=guest --nodes=1 --ntasks-per-node=1 --job-name=qc_multiplex --mem=100GB --time=0:45:00 --pty $SHELL
+```
 
+##### Part 1
+
+Copy and paste the following code.
+
+```{terminal, warning = FALSE}
 module load anaconda
 
 conda activate filter
@@ -181,15 +181,15 @@ conda activate filter
 cd /work/richlab/aliciarich/read_processing
 
 seqrun=params$seqrun
-trimmed=reads/trimmed/$seqrun
-filtered=reads/filtered/$seqrun
+trimmed=/work/richlab/aliciarich/read_processing/reads/trimmed/$seqrun
+filtered=/work/richlab/aliciarich/read_processing/reads/filtered/$seqrun
 
 mkdir -p $filtered
 
 cd $trimmed
 
-for file in "$trimmed"/*.fastq; do
-    
+for file in ${trimmed}/*.fastq; do
+
     if [ -f "$file" ]; then
        
         base_filename=$(basename "$file")
@@ -202,6 +202,13 @@ for file in "$trimmed"/*.fastq; do
     fi
 done
 
+```
+
+##### Part 2
+
+This part just reorganizes the files so that they are in the proper structure for the EPI2ME Workflows that we use next to easily locate them.
+
+```{terminal, warning = FALSE}
 cd $filtered
 
 for file in "$filtered"/*.fastq; do
@@ -218,14 +225,12 @@ for file in "$filtered"/*.fastq; do
     fi
 done
 
+conda deactivate
+
+cd /work/richlab/aliciarich/read_processing
 
 ```
-Once you ensure this script has transferred to the `read_processing/batch_scripts` path on your HCC directory, run the code below to submit the job.
 
-```{terminal, warning = FALSE}
-cd read_processing
-sbatch batch_scripts/qc_multiplex_remote.sh
-```
 
 
 ## Alignment, Taxonomy, Abundance

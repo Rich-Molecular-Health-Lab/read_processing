@@ -1,0 +1,12 @@
+[2025-02-23 22:44:36.087] [info] Running: "demux" "reads/basecalled/NWR1.bam" "--output-dir" "reads/trimmed/NWR1" "--kit-name" "'SQK-16S114-24'" "--sample-sheet" "samples/sample_sheets/bats/nwr1_sample_sheet.csv" "--emit-fastq" "--emit-summary"
+[2025-02-23 22:44:36.183] [info] num input files: 1
+[2025-02-23 22:44:36.296] [info] > starting barcode demuxing
+
+> Output records written: 0
+
+> Output records written: 0
+
+> Output records written: 0
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  Could not find 'SQK-16S114-24' in pre-built or custom kits
+/var/spool/slurmd/job9465230/slurm_script: line 24: 3195674 Aborted                 (core dumped) dorado demux "reads/basecalled/$seqrun.bam" --output-dir "reads/trimmed/$seqrun" --kit-name "'SQK-16S114-24'" --sample-sheet "$samplesheet" --emit-fastq --emit-summary

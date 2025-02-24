@@ -341,7 +341,7 @@ done
 
 ##### Part 2
 
->This part just reorganizes the files so that they are in the proper structure for the EPI2ME Workflows that we use next to easily locate them.
+This part just reorganizes the files so that they are in the proper structure for the EPI2ME Workflows that we use next to easily locate them.
 
 ```{terminal, warning = FALSE}
 cd $filtered

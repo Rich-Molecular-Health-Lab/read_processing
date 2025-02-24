@@ -1,0 +1,2579 @@
+
+ N E X T F L O W   ~  version 24.04.3
+
+NOTE: Your local project version looks outdated - a different revision is available in the remote repository [a20a5156b9]
+Launching `https://github.com/epi2me-labs/wf-16s` [furious_gilbert] DSL2 - revision: c8e0b7f558 [master]
+
+WARN: NEXTFLOW RECURSION IS A PREVIEW FEATURE - SYNTAX AND FUNCTIONALITY CAN CHANGE IN FUTURE RELEASES
+
+||||||||||   _____ ____ ___ ____  __  __ _____      _       _
+||||||||||  | ____|  _ \_ _|___ \|  \/  | ____|    | | __ _| |__  ___
+|||||       |  _| | |_) | |  __) | |\/| |  _| _____| |/ _` | '_ \/ __|
+|||||       | |___|  __/| | / __/| |  | | |__|_____| | (_| | |_) \__ \
+||||||||||  |_____|_|  |___|_____|_|  |_|_____|    |_|\__,_|_.__/|___/
+||||||||||  wf-16s v1.2.0-gc8e0b7f
+--------------------------------------------------------------------------------
+Core Nextflow options
+  revision             : master
+  runName              : furious_gilbert
+  containerEngine      : singularity
+  container            : [withLabel:wfmetagenomics:ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76, withLabel:wf_common:ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48]
+  launchDir            : /lustre/work/richlab/aliciarich/read_processing
+  workDir              : /lustre/work/richlab/aliciarich/read_processing/work
+  projectDir           : /work/richlab/aliciarich/assets/epi2me-labs/wf-16s
+  userName             : aliciarich
+  profile              : singularity
+  configFiles          : /work/richlab/aliciarich/assets/epi2me-labs/wf-16s/nextflow.config
+
+Input Options
+  fastq                : reads/filtered/NWR1
+
+Reference Options
+  database_sets        : [ncbi_16s_18s:[reference:https://ont-exd-int-s3-euwst1-epi2me-labs.s3.amazonaws.com/wf-metagenomics/ncbi_16s_18s/ncbi_targeted_loci_16s_18s.fna, database:https://ont-exd-int-s3-euwst1-epi2me-labs.s3.amazonaws.com/wf-metagenomics/ncbi_16s_18s/ncbi_targeted_loci_kraken2.tar.gz, ref2taxid:https://ont-exd-int-s3-euwst1-epi2me-labs.s3.amazonaws.com/wf-metagenomics/ncbi_16s_18s/ref2taxid.targloci.tsv, taxonomy:https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump_archive/taxdmp_2023-01-01.zip], ncbi_16s_18s_28s_ITS:[reference:https://ont-exd-int-s3-euwst1-epi2me-labs.s3.amazonaws.com/wf-metagenomics/ncbi_16s_18s_28s_ITS/ncbi_16s_18s_28s_ITS.fna, database:https://ont-exd-int-s3-euwst1-epi2me-labs.s3.amazonaws.com/wf-metagenomics/ncbi_16s_18s_28s_ITS/ncbi_16s_18s_28s_ITS_kraken2.tar.gz, ref2taxid:https://ont-exd-int-s3-euwst1-epi2me-labs.s3.amazonaws.com/wf-metagenomics/ncbi_16s_18s_28s_ITS/ref2taxid.ncbi_16s_18s_28s_ITS.tsv, taxonomy:https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump_archive/taxdmp_2023-01-01.zip], SILVA_138_1:[database:null]]
+  taxonomic_rank       : S
+
+Minimap2 Options
+  keep_bam             : true
+  minimap2_by_reference: true
+  min_percent_identity : 85
+  min_ref_coverage     : 80
+
+Report Options
+  abundance_threshold  : 0
+  n_taxa_barplot       : 12
+
+Output Options
+  out_dir              : processed/NWR1
+
+Advanced Options
+  min_len              : 1000
+  min_read_qual        : 7
+  threads              : 32
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+--------------------------------------------------------------------------------
+If you use epi2me-labs/wf-16s for your analysis please cite:
+
+* The nf-core framework
+  https://doi.org/10.1038/s41587-020-0439-x
+
+
+--------------------------------------------------------------------------------
+This is epi2me-labs/wf-16s v1.2.0-gc8e0b7f.
+--------------------------------------------------------------------------------
+Checking inputs.
+Searching input for [.fastq, .fastq.gz, .fq, .fq.gz] files.
+[-        ] fastcat                        -
+[-        ] pre…s:download_unpack_taxonomy -
+[-        ] pre…wnload_reference_ref2taxid -
+[-        ] min…ine:run_common:getVersions -
+[-        ] min…eline:run_common:getParams -
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+
+[-        ] fastcat                        -
+[-        ] pre…s:download_unpack_taxonomy -
+[-        ] pre…wnload_reference_ref2taxid -
+[-        ] min…ine:run_common:getVersions -
+[-        ] min…eline:run_common:getParams -
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+
+[-        ] fastcat                        -
+[-        ] pre…s:download_unpack_taxonomy -
+[-        ] pre…wnload_reference_ref2taxid -
+[-        ] min…ine:run_common:getVersions -
+[-        ] min…eline:run_common:getParams -
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+[-        ] fastcat                        | 0 of 8
+[-        ] pre…s:download_unpack_taxonomy -
+[-        ] pre…wnload_reference_ref2taxid -
+[-        ] min…ine:run_common:getVersions -
+[-        ] min…eline:run_common:getParams -
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (1)
+[f5/25b33f] fastcat (7)                    | 0 of 24
+[-        ] pre…s:download_unpack_taxonomy -
+[-        ] pre…wnload_reference_ref2taxid -
+[-        ] min…ine:run_common:getVersions -
+[-        ] min…eline:run_common:getParams -
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (4)
+[3d/17a3e8] fastcat (10)                   | 0 of 24
+[-        ] pre…s:download_unpack_taxonomy -
+[-        ] pre…wnload_reference_ref2taxid -
+[-        ] min…ine:run_common:getVersions -
+[-        ] min…eline:run_common:getParams -
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (8)
+[76/efbf87] fastcat (6)                    | 0 of 24
+[-        ] pre…s:download_unpack_taxonomy -
+[-        ] pre…wnload_reference_ref2taxid -
+[-        ] min…ine:run_common:getVersions -
+[-        ] min…eline:run_common:getParams -
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (9)
+[d6/6bcac5] fastcat (21)                   | 0 of 24
+[-        ] pre…s:download_unpack_taxonomy -
+[-        ] pre…wnload_reference_ref2taxid -
+[-        ] min…ine:run_common:getVersions -
+[-        ] min…eline:run_common:getParams -
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (9)
+[f5/25b33f] fastcat (7)                    | 1 of 24
+[-        ] pre…s:download_unpack_taxonomy -
+[-        ] pre…wnload_reference_ref2taxid -
+[-        ] min…ine:run_common:getVersions -
+[-        ] min…eline:run_common:getParams -
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (11)
+[80/4ebfbf] fastcat (3)                    | 2 of 24
+[-        ] pre…s:download_unpack_taxonomy -
+[-        ] pre…wnload_reference_ref2taxid -
+[-        ] min…ine:run_common:getVersions -
+[-        ] min…eline:run_common:getParams -
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (11)
+[d8/cb358e] fastcat (22)                   | 3 of 24
+[-        ] pre…s:download_unpack_taxonomy -
+[-        ] pre…wnload_reference_ref2taxid -
+[-        ] min…ine:run_common:getVersions -
+[-        ] min…eline:run_common:getParams -
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (13)
+[e7/b8b052] fastcat (8)                    | 3 of 24
+[-        ] pre…s:download_unpack_taxonomy -
+[-        ] pre…wnload_reference_ref2taxid -
+[-        ] min…ine:run_common:getVersions -
+[-        ] min…eline:run_common:getParams -
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (13)
+[50/497a8b] fastcat (9)                    | 5 of 24
+[-        ] pre…s:download_unpack_taxonomy -
+[-        ] pre…wnload_reference_ref2taxid -
+[-        ] min…ine:run_common:getVersions -
+[-        ] min…eline:run_common:getParams -
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (14)
+[b4/820282] fastcat (1)                    | 6 of 24
+[-        ] pre…s:download_unpack_taxonomy -
+[-        ] pre…wnload_reference_ref2taxid -
+[-        ] min…ine:run_common:getVersions -
+[-        ] min…eline:run_common:getParams -
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (15)
+[66/63f023] fastcat (13)                   | 7 of 24
+[-        ] pre…s:download_unpack_taxonomy -
+[-        ] pre…wnload_reference_ref2taxid -
+[-        ] min…ine:run_common:getVersions -
+[-        ] min…eline:run_common:getParams -
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (15)
+[66/63f023] fastcat (13)                   | 7 of 24
+[-        ] pre…s:download_unpack_taxonomy -
+[-        ] pre…wnload_reference_ref2taxid -
+[-        ] min…ine:run_common:getVersions -
+[-        ] min…eline:run_common:getParams -
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (16)
+[88/b73d06] fastcat (11)                   | 7 of 24
+[-        ] pre…s:download_unpack_taxonomy -
+[-        ] pre…wnload_reference_ref2taxid -
+[-        ] min…ine:run_common:getVersions -
+[-        ] min…eline:run_common:getParams -
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (16)
+[e7/b8b052] fastcat (8)                    | 8 of 24
+[-        ] pre…s:download_unpack_taxonomy -
+[-        ] pre…wnload_reference_ref2taxid -
+[-        ] min…ine:run_common:getVersions -
+[-        ] min…eline:run_common:getParams -
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (17)
+[89/529401] fastcat (24)                   | 8 of 24
+[-        ] pre…s:download_unpack_taxonomy -
+[-        ] pre…wnload_reference_ref2taxid -
+[-        ] min…ine:run_common:getVersions -
+[-        ] min…eline:run_common:getParams -
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (17)
+[ed/a1be7f] fastcat (14)                   | 9 of 24
+[-        ] pre…s:download_unpack_taxonomy -
+[-        ] pre…wnload_reference_ref2taxid -
+[-        ] min…ine:run_common:getVersions -
+[-        ] min…eline:run_common:getParams -
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (18)
+[75/080ab4] fastcat (5)                    | 9 of 24
+[-        ] pre…s:download_unpack_taxonomy -
+[-        ] pre…wnload_reference_ref2taxid -
+[-        ] min…ine:run_common:getVersions -
+[-        ] min…eline:run_common:getParams -
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (19)
+[d6/6bcac5] fastcat (21)                   | 11 of 24
+[-        ] pre…s:download_unpack_taxonomy -
+[-        ] pre…wnload_reference_ref2taxid -
+[-        ] min…ine:run_common:getVersions -
+[-        ] min…eline:run_common:getParams -
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (20)
+[b9/ee5edd] fastcat (18)                   | 12 of 24
+[-        ] pre…s:download_unpack_taxonomy -
+[-        ] pre…wnload_reference_ref2taxid -
+[-        ] min…ine:run_common:getVersions -
+[-        ] min…eline:run_common:getParams -
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (20)
+[b9/ee5edd] fastcat (18)                   | 12 of 24
+[-        ] pre…s:download_unpack_taxonomy -
+[-        ] pre…wnload_reference_ref2taxid -
+[-        ] min…ine:run_common:getVersions -
+[-        ] min…eline:run_common:getParams -
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (21)
+[3f/19c89f] fastcat (12)                   | 12 of 24
+[-        ] pre…s:download_unpack_taxonomy -
+[-        ] pre…wnload_reference_ref2taxid -
+[-        ] min…ine:run_common:getVersions -
+[-        ] min…eline:run_common:getParams -
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (21)
+[fe/f7ddd4] fastcat (2)                    | 13 of 24
+[-        ] pre…s:download_unpack_taxonomy -
+[-        ] pre…wnload_reference_ref2taxid -
+[-        ] min…ine:run_common:getVersions -
+[-        ] min…eline:run_common:getParams -
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (22)
+[4e/ff2d0c] fastcat (16)                   | 13 of 24
+[-        ] pre…s:download_unpack_taxonomy -
+[-        ] pre…wnload_reference_ref2taxid -
+[-        ] min…ine:run_common:getVersions -
+[-        ] min…eline:run_common:getParams -
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (22)
+[75/080ab4] fastcat (5)                    | 14 of 24
+[-        ] pre…s:download_unpack_taxonomy -
+[-        ] pre…wnload_reference_ref2taxid -
+[-        ] min…ine:run_common:getVersions -
+[-        ] min…eline:run_common:getParams -
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (22)
+[17/89fa7c] fastcat (19)                   | 15 of 24
+[-        ] pre…s:download_unpack_taxonomy -
+[-        ] pre…wnload_reference_ref2taxid -
+[-        ] min…ine:run_common:getVersions -
+[-        ] min…eline:run_common:getParams -
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (23)
+[0e/36b622] fastcat (23)                   | 15 of 24
+[-        ] pre…s:download_unpack_taxonomy -
+[-        ] pre…wnload_reference_ref2taxid -
+[-        ] min…ine:run_common:getVersions -
+[-        ] min…eline:run_common:getParams -
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (24)
+[b6/164512] fastcat (15)                   | 15 of 24
+[-        ] pre…s:download_unpack_taxonomy -
+[-        ] pre…wnload_reference_ref2taxid -
+[-        ] min…ine:run_common:getVersions -
+[-        ] min…eline:run_common:getParams -
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (24)
+[66/63f023] fastcat (13)                   | 17 of 24
+[-        ] pre…s:download_unpack_taxonomy -
+[-        ] pre…wnload_reference_ref2taxid -
+[-        ] min…ine:run_common:getVersions -
+[-        ] min…eline:run_common:getParams -
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (24)
+[4e/ff2d0c] fastcat (16)                   | 18 of 24
+[-        ] pre…s:download_unpack_taxonomy -
+[-        ] pre…wnload_reference_ref2taxid -
+[-        ] min…ine:run_common:getVersions -
+[-        ] min…eline:run_common:getParams -
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (24)
+[88/b73d06] fastcat (11)                   | 20 of 24
+[-        ] pre…s:download_unpack_taxonomy -
+[-        ] pre…wnload_reference_ref2taxid -
+[-        ] min…ine:run_common:getVersions -
+[-        ] min…eline:run_common:getParams -
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (24)
+[b9/ee5edd] fastcat (18)                   | 21 of 24
+[-        ] pre…s:download_unpack_taxonomy -
+[-        ] pre…wnload_reference_ref2taxid -
+[-        ] min…ine:run_common:getVersions -
+[-        ] min…eline:run_common:getParams -
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (24)
+[0e/36b622] fastcat (23)                   | 22 of 24
+[-        ] pre…s:download_unpack_taxonomy -
+[-        ] pre…wnload_reference_ref2taxid -
+[-        ] min…ine:run_common:getVersions -
+[-        ] min…eline:run_common:getParams -
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (27)
+[89/529401] fastcat (24)                   | 23 of 24
+[-        ] pre…s:download_unpack_taxonomy | 0 of 1
+[d0/7d8090] pre…wnload_reference_ref2taxid | 0 of 1
+[1b/c81d1c] min…ine:run_common:getVersions | 0 of 1
+[69/150524] min…eline:run_common:getParams | 0 of 1
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (28)
+[89/529401] fastcat (24)                   | 23 of 24
+[5f/770cd6] pre…s:download_unpack_taxonomy | 0 of 1
+[d0/7d8090] pre…wnload_reference_ref2taxid | 0 of 1
+[1b/c81d1c] min…ine:run_common:getVersions | 0 of 1
+[69/150524] min…eline:run_common:getParams | 0 of 1
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results -
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (28)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 0 of 1
+[d0/7d8090] pre…wnload_reference_ref2taxid | 0 of 1
+[1b/c81d1c] min…ine:run_common:getVersions | 0 of 1
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[-        ] min…ap_pipeline:output_results | 0 of 1
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (29)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 0 of 1
+[d0/7d8090] pre…wnload_reference_ref2taxid | 0 of 1
+[1b/c81d1c] min…ine:run_common:getVersions | 0 of 1
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[94/50610a] min…ipeline:output_results (1) | 0 of 1
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (29)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 0 of 1
+[d0/7d8090] pre…wnload_reference_ref2taxid | 0 of 1
+[1b/c81d1c] min…ine:run_common:getVersions | 0 of 1
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[94/50610a] min…ipeline:output_results (1) | 1 of 1
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (30)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 0 of 1
+[d0/7d8090] pre…wnload_reference_ref2taxid | 0 of 1
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 1 of 2
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (30)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 0 of 1
+[d0/7d8090] pre…wnload_reference_ref2taxid | 0 of 1
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 1 of 2
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (30)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 0 of 1
+[d0/7d8090] pre…wnload_reference_ref2taxid | 0 of 1
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 2
+Note: Empty files or those files whose reads have been discarded after filtering based on read length and/or read quality will not appear in the report and will be excluded from subsequent analysis.
+Minimap2 pipeline.
+Preparing databases.
+Using default taxonomy database.
+Using a default database.
+Pulling Singularity image docker://ontresearch/wf-metagenomics:sha44a6dacff5f2001d917b774647bb4cbc1b53bc76 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-metagenomics-sha44a6dacff5f2001d917b774647bb4cbc1b53bc76.img]
+Pulling Singularity image docker://ontresearch/wf-common:sha338caea0a2532dc0ea8f46638ccc322bb8f9af48 [cache /lustre/work/richlab/aliciarich/read_processing/work/singularity/ontresearch-wf-common-sha338caea0a2532dc0ea8f46638ccc322bb8f9af48.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /lustre/work/richlab/aliciarich/read_processing/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  local (30)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 0 of 1
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 2
+
+
+
+
+
+
+
+
+
+executor >  local (30)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[-        ] minimap_pipeline:minimap       -
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 2
+
+
+
+
+
+
+
+
+
+executor >  local (31)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[3a/8f7f0b] min…eline:minimap (NWR-036-S3) | 0 of 24
+[-        ] min…pipeline:getAlignmentStats -
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 2
+
+executor >  local (32)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[3a/8f7f0b] min…eline:minimap (NWR-036-S3) | 1 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 1
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 5
+
+executor >  local (33)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[32/7a27c4] min…eline:minimap (NWR-003-S1) | 2 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 2
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 8
+
+executor >  local (34)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[45/70eff4] min…line:minimap (NWR-119-S14) | 2 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 2
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 8
+
+executor >  local (34)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[ea/3e9599] min…line:minimap (NWR-127-S19) | 3 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 3
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 11
+
+executor >  local (35)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[45/70eff4] min…line:minimap (NWR-119-S14) | 4 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 4
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 14
+
+executor >  local (36)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[a1/757df6] min…peline:minimap (NTC1-CTRL) | 5 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 5
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 17
+
+executor >  local (37)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[3e/9e4a0b] min…line:minimap (NWR-130-S18) | 6 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 6
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 20
+
+executor >  local (37)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[3e/9e4a0b] min…line:minimap (NWR-130-S18) | 6 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 6
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 20
+
+executor >  local (38)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[46/c6dac7] min…line:minimap (NWR-115-S10) | 7 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 6
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 23
+
+executor >  local (38)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[46/c6dac7] min…line:minimap (NWR-115-S10) | 7 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 7
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 23
+
+executor >  local (39)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[39/e91e03] min…line:minimap (NWR-122-S21) | 8 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 8
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 26
+
+executor >  local (39)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[39/e91e03] min…line:minimap (NWR-122-S21) | 8 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 8
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 26
+
+executor >  local (40)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[59/203398] min…line:minimap (NWR-156-S15) | 8 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 8
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 26
+
+executor >  local (40)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[bb/25e49b] min…eline:minimap (NWR-102-S5) | 9 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 9
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 29
+
+executor >  local (41)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[1c/540c11] min…eline:minimap (NWR-108-S8) | 9 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 9
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 29
+
+executor >  local (41)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[59/203398] min…line:minimap (NWR-156-S15) | 10 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 10
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 32
+
+executor >  local (42)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[1c/540c11] min…eline:minimap (NWR-108-S8) | 11 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 11
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 35
+
+executor >  local (43)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[c6/0f91ac] min…line:minimap (NWR-153-S22) | 12 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 12
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 35
+
+executor >  local (43)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[c6/0f91ac] min…line:minimap (NWR-153-S22) | 12 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 12
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 38
+
+executor >  local (44)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[f1/95637f] min…line:minimap (NWR-126-S17) | 12 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 12
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 38
+
+executor >  local (44)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[16/11405e] min…eline:minimap (NWR-107-S7) | 13 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 13
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 41
+
+executor >  local (45)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[f1/95637f] min…line:minimap (NWR-126-S17) | 14 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 14
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 44
+
+executor >  local (46)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[e2/83e4d7] min…eline:minimap (NWR-089-S4) | 14 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 14
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 44
+
+executor >  local (46)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[fa/205ced] min…eline:minimap (NWR-032-S2) | 15 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 15
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 47
+
+executor >  local (47)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[e2/83e4d7] min…eline:minimap (NWR-089-S4) | 16 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 16
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 50
+
+executor >  local (48)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[e0/ad1e1a] min…line:minimap (NWR-154-S16) | 16 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 16
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 50
+
+executor >  local (48)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[65/d52d37] min…line:minimap (NWR-121-S23) | 17 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 17
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 53
+
+executor >  local (49)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[71/c7f943] min…eline:minimap (NWR-114-S9) | 17 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 17
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 53
+
+executor >  local (49)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[e0/ad1e1a] min…line:minimap (NWR-154-S16) | 18 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 18
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 56
+
+executor >  local (50)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[a5/5f740b] min…line:minimap (NWR-117-S12) | 18 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 18
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 56
+
+executor >  local (50)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[71/c7f943] min…eline:minimap (NWR-114-S9) | 19 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 19
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 59
+
+executor >  local (51)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[a5/5f740b] min…line:minimap (NWR-117-S12) | 20 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 20
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 62
+
+executor >  local (51)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[a5/5f740b] min…line:minimap (NWR-117-S12) | 20 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 20
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 62
+
+executor >  local (52)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[4a/cfc85b] min…line:minimap (NWR-118-S13) | 21 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 20
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 64
+
+executor >  local (52)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[4a/cfc85b] min…line:minimap (NWR-118-S13) | 21 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 21
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 65
+
+executor >  local (53)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[98/96e969] min…line:minimap (NWR-151-S20) | 22 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 22
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 68
+
+executor >  local (54)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 22 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 22
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 68
+
+executor >  local (54)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[e0/3dbbbd] min…line:minimap (NWR-116-S11) | 23 of 24
+[-        ] min…pipeline:getAlignmentStats | 0 of 23
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[42/d73b88] min…ipeline:output_results (2) | 2 of 71
+
+executor >  local (58)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[-        ] min…pipeline:getAlignmentStats | 0 of 23
+[-        ] min…line:createAbundanceTables -
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references -
+[-        ] minimap_pipeline:configure_igv -
+[63/7e43d2] min…ipeline:output_results (8) | 2 of 72
+
+executor >  local (62)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[-        ] min…pipeline:getAlignmentStats | 0 of 24
+[-        ] min…line:createAbundanceTables | 0 of 1
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[4e/37844d] min…peline:output_results (10) | 2 of 74
+
+executor >  local (66)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[-        ] min…pipeline:getAlignmentStats | 0 of 24
+[-        ] min…line:createAbundanceTables | 0 of 1
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[1d/9a2e52] min…peline:output_results (13) | 2 of 74
+
+executor >  local (69)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[-        ] min…pipeline:getAlignmentStats | 0 of 24
+[-        ] min…line:createAbundanceTables | 0 of 1
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[35/3b0366] min…ipeline:output_results (7) | 7 of 74
+
+executor >  local (73)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[-        ] min…pipeline:getAlignmentStats | 0 of 24
+[-        ] min…line:createAbundanceTables | 0 of 1
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[93/9d1afb] min…peline:output_results (23) | 9 of 74
+
+executor >  local (76)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[-        ] min…pipeline:getAlignmentStats | 0 of 24
+[-        ] min…line:createAbundanceTables | 0 of 1
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[1d/9a2e52] min…peline:output_results (13) | 14 of 74
+
+executor >  local (80)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[-        ] min…pipeline:getAlignmentStats | 0 of 24
+[-        ] min…line:createAbundanceTables | 0 of 1
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[0a/2489f3] min…peline:output_results (29) | 18 of 74
+
+executor >  local (84)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[-        ] min…pipeline:getAlignmentStats | 0 of 24
+[-        ] min…line:createAbundanceTables | 0 of 1
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[e1/107203] min…peline:output_results (32) | 21 of 74
+
+executor >  local (88)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[-        ] min…pipeline:getAlignmentStats | 0 of 24
+[-        ] min…line:createAbundanceTables | 0 of 1
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[61/5b4517] min…peline:output_results (36) | 25 of 74
+
+executor >  local (92)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[-        ] min…pipeline:getAlignmentStats | 0 of 24
+[-        ] min…line:createAbundanceTables | 0 of 1
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[2b/efa9af] min…peline:output_results (39) | 29 of 74
+
+executor >  local (96)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[-        ] min…pipeline:getAlignmentStats | 0 of 24
+[-        ] min…line:createAbundanceTables | 0 of 1
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[b8/14ab93] min…peline:output_results (35) | 33 of 74
+
+executor >  local (101)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[-        ] min…pipeline:getAlignmentStats | 0 of 24
+[-        ] min…line:createAbundanceTables | 0 of 1
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[00/d8e08a] min…peline:output_results (50) | 38 of 74
+
+executor >  local (105)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[-        ] min…pipeline:getAlignmentStats | 0 of 24
+[-        ] min…line:createAbundanceTables | 0 of 1
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[28/1cf891] min…peline:output_results (53) | 41 of 74
+
+executor >  local (108)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[-        ] min…pipeline:getAlignmentStats | 0 of 24
+[-        ] min…line:createAbundanceTables | 0 of 1
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[05/667939] min…peline:output_results (46) | 46 of 74
+
+executor >  local (112)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[-        ] min…pipeline:getAlignmentStats | 0 of 24
+[-        ] min…line:createAbundanceTables | 0 of 1
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[00/d8e08a] min…peline:output_results (50) | 50 of 74
+
+executor >  local (115)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[-        ] min…pipeline:getAlignmentStats | 0 of 24
+[-        ] min…line:createAbundanceTables | 0 of 1
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[0d/399835] min…peline:output_results (65) | 51 of 74
+
+executor >  local (119)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[-        ] min…pipeline:getAlignmentStats | 0 of 24
+[-        ] min…line:createAbundanceTables | 0 of 1
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[b6/e9cbbb] min…peline:output_results (58) | 58 of 74
+
+executor >  local (123)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[-        ] min…pipeline:getAlignmentStats | 0 of 24
+[-        ] min…line:createAbundanceTables | 0 of 1
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[26/f01b63] min…peline:output_results (70) | 61 of 74
+
+executor >  local (126)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[-        ] min…pipeline:getAlignmentStats | 0 of 24
+[-        ] min…line:createAbundanceTables | 0 of 1
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[92/9e1d76] min…peline:output_results (63) | 65 of 74
+
+executor >  local (127)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[-        ] min…pipeline:getAlignmentStats | 0 of 24
+[a7/cd69ee] min…line:createAbundanceTables | 0 of 1
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[8e/51f24e] min…peline:output_results (67) | 68 of 74
+
+executor >  local (127)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[-        ] min…pipeline:getAlignmentStats | 0 of 24
+[a7/cd69ee] min…line:createAbundanceTables | 0 of 1
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[26/f01b63] min…peline:output_results (70) | 71 of 74
+
+executor >  local (127)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[-        ] min…pipeline:getAlignmentStats | 0 of 24
+[a7/cd69ee] min…line:createAbundanceTables | 0 of 1
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[e9/c01182] min…peline:output_results (74) | 74 of 74
+
+executor >  local (128)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[c2/8b8ed8] min…lignmentStats (NWR-036-S3) | 0 of 24
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[e9/c01182] min…peline:output_results (74) | 74 of 75
+
+executor >  local (129)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[c2/8b8ed8] min…lignmentStats (NWR-036-S3) | 1 of 24
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[e9/c01182] min…peline:output_results (74) | 74 of 75
+
+executor >  local (130)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[76/048df3] min…lignmentStats (NWR-003-S1) | 2 of 24
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[e9/c01182] min…peline:output_results (74) | 74 of 75
+
+executor >  local (131)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[06/f1e244] min…ignmentStats (NWR-127-S19) | 3 of 24
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[e9/c01182] min…peline:output_results (74) | 74 of 75
+
+executor >  local (132)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[f2/302697] min…ignmentStats (NWR-119-S14) | 4 of 24
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[e9/c01182] min…peline:output_results (74) | 74 of 75
+
+executor >  local (133)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[57/91941d] min…AlignmentStats (NTC1-CTRL) | 5 of 24
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[e9/c01182] min…peline:output_results (74) | 74 of 75
+
+executor >  local (134)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[72/50da5c] min…ignmentStats (NWR-130-S18) | 6 of 24
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[e9/c01182] min…peline:output_results (74) | 74 of 75
+
+executor >  local (135)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[28/4fa431] min…ignmentStats (NWR-115-S10) | 7 of 24
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[e9/c01182] min…peline:output_results (74) | 74 of 75
+
+executor >  local (135)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[28/4fa431] min…ignmentStats (NWR-115-S10) | 7 of 24
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[e9/c01182] min…peline:output_results (74) | 74 of 75
+
+executor >  local (136)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[54/1ba2cd] min…ignmentStats (NWR-122-S21) | 8 of 24
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[e9/c01182] min…peline:output_results (74) | 74 of 75
+
+executor >  local (137)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[99/d473e4] min…lignmentStats (NWR-102-S5) | 9 of 24
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[e9/c01182] min…peline:output_results (74) | 74 of 75
+
+executor >  local (137)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[99/d473e4] min…lignmentStats (NWR-102-S5) | 9 of 24
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[e9/c01182] min…peline:output_results (74) | 74 of 75
+
+executor >  local (138)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[d1/324116] min…ignmentStats (NWR-156-S15) | 10 of 24
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[e9/c01182] min…peline:output_results (74) | 74 of 75
+
+executor >  local (139)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[23/6caa04] min…lignmentStats (NWR-108-S8) | 11 of 24
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[e9/c01182] min…peline:output_results (74) | 74 of 75
+
+executor >  local (140)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[df/9dd732] min…lignmentStats (NWR-107-S7) | 11 of 24
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[e9/c01182] min…peline:output_results (74) | 74 of 75
+
+executor >  local (140)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[71/1f4782] min…ignmentStats (NWR-153-S22) | 12 of 24
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[e9/c01182] min…peline:output_results (74) | 74 of 75
+
+executor >  local (141)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[df/9dd732] min…lignmentStats (NWR-107-S7) | 13 of 24
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[e9/c01182] min…peline:output_results (74) | 74 of 75
+
+executor >  local (142)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[52/32b20a] min…ignmentStats (NWR-126-S17) | 14 of 24
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[e9/c01182] min…peline:output_results (74) | 74 of 75
+
+executor >  local (142)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[52/32b20a] min…ignmentStats (NWR-126-S17) | 14 of 24
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[e9/c01182] min…peline:output_results (74) | 74 of 75
+
+executor >  local (143)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[cb/09d3de] min…lignmentStats (NWR-089-S4) | 14 of 24
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[e9/c01182] min…peline:output_results (74) | 74 of 75
+
+executor >  local (143)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[9e/976e17] min…lignmentStats (NWR-032-S2) | 15 of 24
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[e9/c01182] min…peline:output_results (74) | 74 of 75
+
+executor >  local (144)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[ca/9cbd8c] min…ignmentStats (NWR-121-S23) | 15 of 24
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[e9/c01182] min…peline:output_results (74) | 74 of 75
+
+executor >  local (144)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[cb/09d3de] min…lignmentStats (NWR-089-S4) | 16 of 24
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[e9/c01182] min…peline:output_results (74) | 74 of 75
+
+executor >  local (145)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[ca/9cbd8c] min…ignmentStats (NWR-121-S23) | 17 of 24
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[e9/c01182] min…peline:output_results (74) | 74 of 75
+
+executor >  local (146)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[c6/4a026f] min…ignmentStats (NWR-154-S16) | 18 of 24
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[e9/c01182] min…peline:output_results (74) | 74 of 75
+
+executor >  local (147)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[90/f46ece] min…lignmentStats (NWR-114-S9) | 19 of 24
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[e9/c01182] min…peline:output_results (74) | 74 of 75
+
+executor >  local (148)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[fd/6bd90a] min…ignmentStats (NWR-118-S13) | 19 of 24
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[e9/c01182] min…peline:output_results (74) | 74 of 75
+
+executor >  local (148)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[d3/001587] min…ignmentStats (NWR-117-S12) | 20 of 24
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[e9/c01182] min…peline:output_results (74) | 74 of 75
+
+executor >  local (149)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[fd/6bd90a] min…ignmentStats (NWR-118-S13) | 21 of 24
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[e9/c01182] min…peline:output_results (74) | 74 of 75
+
+executor >  local (150)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[3f/d1b94d] min…ignmentStats (NWR-116-S11) | 21 of 24
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[e9/c01182] min…peline:output_results (74) | 74 of 75
+
+executor >  local (150)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[76/7f0393] min…ignmentStats (NWR-151-S20) | 22 of 24
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[e9/c01182] min…peline:output_results (74) | 74 of 75
+
+executor >  local (151)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[fa/4aa8fc] min…lignmentStats (NWR-103-S6) | 22 of 24
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[e9/c01182] min…peline:output_results (74) | 74 of 75
+
+executor >  local (151)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[3f/d1b94d] min…ignmentStats (NWR-116-S11) | 23 of 24
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[-        ] minimap_pipeline:makeReport    -
+[-        ] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[e9/c01182] min…peline:output_results (74) | 74 of 75
+
+executor >  local (152)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[fa/4aa8fc] min…lignmentStats (NWR-103-S6) | 24 of 24 ✔
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[-        ] minimap_pipeline:makeReport    -
+[27/f3b189] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[e9/c01182] min…peline:output_results (74) | 74 of 75
+
+executor >  local (152)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[fa/4aa8fc] min…lignmentStats (NWR-103-S6) | 24 of 24 ✔
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[-        ] minimap_pipeline:makeReport    | 0 of 1
+[27/f3b189] min…pipeline:filter_references | 0 of 1
+[-        ] minimap_pipeline:configure_igv -
+[e9/c01182] min…peline:output_results (74) | 74 of 75
+
+executor >  local (153)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[fa/4aa8fc] min…lignmentStats (NWR-103-S6) | 24 of 24 ✔
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[-        ] minimap_pipeline:makeReport    | 0 of 1
+[27/f3b189] min…pipeline:filter_references | 1 of 1 ✔
+[-        ] minimap_pipeline:configure_igv -
+[01/ca1ee0] min…peline:output_results (75) | 74 of 78
+
+executor >  local (157)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[fa/4aa8fc] min…lignmentStats (NWR-103-S6) | 24 of 24 ✔
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[41/02ea3d] min…ap_pipeline:makeReport (1) | 0 of 1
+[27/f3b189] min…pipeline:filter_references | 1 of 1 ✔
+[-        ] minimap_pipeline:configure_igv | 0 of 1
+[a0/883b5d] min…peline:output_results (78) | 74 of 78
+
+executor >  local (158)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[fa/4aa8fc] min…lignmentStats (NWR-103-S6) | 24 of 24 ✔
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[41/02ea3d] min…ap_pipeline:makeReport (1) | 0 of 1
+[27/f3b189] min…pipeline:filter_references | 1 of 1 ✔
+[68/9f8382] min…pipeline:configure_igv (1) | 0 of 1
+[a0/883b5d] min…peline:output_results (78) | 74 of 78
+
+executor >  local (158)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[fa/4aa8fc] min…lignmentStats (NWR-103-S6) | 24 of 24 ✔
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[41/02ea3d] min…ap_pipeline:makeReport (1) | 0 of 1
+[27/f3b189] min…pipeline:filter_references | 1 of 1 ✔
+[68/9f8382] min…pipeline:configure_igv (1) | 0 of 1
+[01/ca1ee0] min…peline:output_results (75) | 75 of 78
+
+executor >  local (158)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[fa/4aa8fc] min…lignmentStats (NWR-103-S6) | 24 of 24 ✔
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[41/02ea3d] min…ap_pipeline:makeReport (1) | 0 of 1
+[27/f3b189] min…pipeline:filter_references | 1 of 1 ✔
+[68/9f8382] min…pipeline:configure_igv (1) | 0 of 1
+[a0/883b5d] min…peline:output_results (78) | 78 of 78
+
+executor >  local (158)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[fa/4aa8fc] min…lignmentStats (NWR-103-S6) | 24 of 24 ✔
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[41/02ea3d] min…ap_pipeline:makeReport (1) | 0 of 1
+[27/f3b189] min…pipeline:filter_references | 1 of 1 ✔
+[68/9f8382] min…pipeline:configure_igv (1) | 1 of 1 ✔
+[a0/883b5d] min…peline:output_results (78) | 78 of 79
+
+executor >  local (159)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[fa/4aa8fc] min…lignmentStats (NWR-103-S6) | 24 of 24 ✔
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[41/02ea3d] min…ap_pipeline:makeReport (1) | 0 of 1
+[27/f3b189] min…pipeline:filter_references | 1 of 1 ✔
+[68/9f8382] min…pipeline:configure_igv (1) | 1 of 1 ✔
+[4e/d73841] min…peline:output_results (79) | 78 of 79
+
+executor >  local (159)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[fa/4aa8fc] min…lignmentStats (NWR-103-S6) | 24 of 24 ✔
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[41/02ea3d] min…ap_pipeline:makeReport (1) | 0 of 1
+[27/f3b189] min…pipeline:filter_references | 1 of 1 ✔
+[68/9f8382] min…pipeline:configure_igv (1) | 1 of 1 ✔
+[4e/d73841] min…peline:output_results (79) | 79 of 79
+
+executor >  local (159)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[fa/4aa8fc] min…lignmentStats (NWR-103-S6) | 24 of 24 ✔
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[41/02ea3d] min…ap_pipeline:makeReport (1) | 1 of 1 ✔
+[27/f3b189] min…pipeline:filter_references | 1 of 1 ✔
+[68/9f8382] min…pipeline:configure_igv (1) | 1 of 1 ✔
+[4e/d73841] min…peline:output_results (79) | 79 of 80
+
+executor >  local (160)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[fa/4aa8fc] min…lignmentStats (NWR-103-S6) | 24 of 24 ✔
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[41/02ea3d] min…ap_pipeline:makeReport (1) | 1 of 1 ✔
+[27/f3b189] min…pipeline:filter_references | 1 of 1 ✔
+[68/9f8382] min…pipeline:configure_igv (1) | 1 of 1 ✔
+[dd/853eda] min…peline:output_results (80) | 79 of 80
+
+executor >  local (160)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[fa/4aa8fc] min…lignmentStats (NWR-103-S6) | 24 of 24 ✔
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[41/02ea3d] min…ap_pipeline:makeReport (1) | 1 of 1 ✔
+[27/f3b189] min…pipeline:filter_references | 1 of 1 ✔
+[68/9f8382] min…pipeline:configure_igv (1) | 1 of 1 ✔
+[dd/853eda] min…peline:output_results (80) | 80 of 80 ✔
+
+executor >  local (160)
+[b6/164512] fastcat (15)                   | 24 of 24 ✔
+[5f/770cd6] pre…s:download_unpack_taxonomy | 1 of 1 ✔
+[d0/7d8090] pre…wnload_reference_ref2taxid | 1 of 1 ✔
+[1b/c81d1c] min…ine:run_common:getVersions | 1 of 1 ✔
+[69/150524] min…eline:run_common:getParams | 1 of 1 ✔
+[54/2a9497] min…eline:minimap (NWR-103-S6) | 24 of 24 ✔
+[fa/4aa8fc] min…lignmentStats (NWR-103-S6) | 24 of 24 ✔
+[a7/cd69ee] min…line:createAbundanceTables | 1 of 1 ✔
+[41/02ea3d] min…ap_pipeline:makeReport (1) | 1 of 1 ✔
+[27/f3b189] min…pipeline:filter_references | 1 of 1 ✔
+[68/9f8382] min…pipeline:configure_igv (1) | 1 of 1 ✔
+[dd/853eda] min…peline:output_results (80) | 80 of 80 ✔
+Completed at: 24-Feb-2025 00:20:53
+Duration    : 33m
+CPU hours   : 14.8
+Succeeded   : 160
+
+

@@ -1,8 +1,8 @@
 #!/bin/bash
 #SBATCH --time=00:45:00
 #SBATCH --job-name=demux_trim
-#SBATCH --error=swan$logs/demux_trim_%A_%a.err
-#SBATCH --output=swan$logs/demux_trim_%A_%a.out
+#SBATCH --error=/work/richlab/aliciarich/read_processing/logs/demux_trim_%A_%a.err
+#SBATCH --output=/work/richlab/aliciarich/read_processing/logs/demux_trim_%A_%a.out
 #SBATCH --partition=guest
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
@@ -19,7 +19,6 @@ module load dorado
 
 dorado demux "reads/basecalled/$seqrun.bam" \
     --output-dir "reads/trimmed/$seqrun" \
-    --kit-name "'SQK-16S114-24'" \
+    --kit-name 'SQK-16S114-24' \
     --sample-sheet "$samplesheet" \
     --emit-fastq --emit-summary
-    

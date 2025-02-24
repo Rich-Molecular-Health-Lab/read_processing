@@ -1,0 +1,3020 @@
+[2025-02-23 22:48:59.415] [info] Running: "demux" "reads/basecalled/NWR1.bam" "--output-dir" "reads/trimmed/NWR1" "--kit-name" "SQK-16S114-24" "--sample-sheet" "samples/sample_sheets/bats/nwr1_sample_sheet.csv" "--emit-fastq" "--emit-summary"
+[2025-02-23 22:48:59.492] [info] num input files: 1
+[2025-02-23 22:48:59.565] [info] > starting barcode demuxing
+
+> Output records written: 3
+
+> Output records written: 4
+
+> Output records written: 12
+
+> Output records written: 18
+
+> Output records written: 20
+
+> Output records written: 20
+
+> Output records written: 27
+
+> Output records written: 28
+
+> Output records written: 31
+
+> Output records written: 32
+
+> Output records written: 32
+
+> Output records written: 36
+
+> Output records written: 54
+
+> Output records written: 54
+
+> Output records written: 94
+
+> Output records written: 94
+
+> Output records written: 164
+
+> Output records written: 2050
+
+> Output records written: 3308
+
+> Output records written: 3308
+
+> Output records written: 3554
+
+> Output records written: 6043
+
+> Output records written: 6043
+
+> Output records written: 6043
+
+> Output records written: 7491
+
+> Output records written: 7491
+
+> Output records written: 7491
+
+> Output records written: 8371
+
+> Output records written: 8371
+
+> Output records written: 8371
+
+> Output records written: 8718
+
+> Output records written: 8718
+
+> Output records written: 8718
+
+> Output records written: 9812
+
+> Output records written: 10198
+
+> Output records written: 10198
+
+> Output records written: 10304
+
+> Output records written: 11541
+
+> Output records written: 11679
+
+> Output records written: 11679
+
+> Output records written: 11679
+
+> Output records written: 12551
+
+> Output records written: 12757
+
+> Output records written: 12757
+
+> Output records written: 13286
+
+> Output records written: 13286
+
+> Output records written: 13459
+
+> Output records written: 13459
+
+> Output records written: 14085
+
+> Output records written: 14477
+
+> Output records written: 14702
+
+> Output records written: 14702
+
+> Output records written: 15172
+
+> Output records written: 15401
+
+> Output records written: 15765
+
+> Output records written: 15765
+
+> Output records written: 15781
+
+> Output records written: 15781
+
+> Output records written: 16686
+
+> Output records written: 16686
+
+> Output records written: 16823
+
+> Output records written: 16823
+
+> Output records written: 16841
+
+> Output records written: 17412
+
+> Output records written: 18614
+
+> Output records written: 19487
+
+> Output records written: 19487
+
+> Output records written: 19487
+
+> Output records written: 19803
+
+> Output records written: 19803
+
+> Output records written: 19803
+
+> Output records written: 20781
+
+> Output records written: 20781
+
+> Output records written: 20781
+
+> Output records written: 21109
+
+> Output records written: 22288
+
+> Output records written: 22482
+
+> Output records written: 22482
+
+> Output records written: 22482
+
+> Output records written: 23252
+
+> Output records written: 23252
+
+> Output records written: 23252
+
+> Output records written: 24191
+
+> Output records written: 24430
+
+> Output records written: 24549
+
+> Output records written: 24549
+
+> Output records written: 25545
+
+> Output records written: 25545
+
+> Output records written: 25668
+
+> Output records written: 25668
+
+> Output records written: 26387
+
+> Output records written: 26387
+
+> Output records written: 26955
+
+> Output records written: 27081
+
+> Output records written: 27086
+
+> Output records written: 27730
+
+> Output records written: 27730
+
+> Output records written: 27730
+
+> Output records written: 28629
+
+> Output records written: 28629
+
+> Output records written: 28975
+
+> Output records written: 29298
+
+> Output records written: 29524
+
+> Output records written: 29524
+
+> Output records written: 29646
+
+> Output records written: 29646
+
+> Output records written: 29646
+
+> Output records written: 30736
+
+> Output records written: 30945
+
+> Output records written: 31824
+
+> Output records written: 31824
+
+> Output records written: 31824
+
+> Output records written: 32502
+
+> Output records written: 32696
+
+> Output records written: 32696
+
+> Output records written: 33207
+
+> Output records written: 33408
+
+> Output records written: 33408
+
+> Output records written: 33871
+
+> Output records written: 33871
+
+> Output records written: 34463
+
+> Output records written: 34829
+
+> Output records written: 34829
+
+> Output records written: 35213
+
+> Output records written: 35522
+
+> Output records written: 35760
+
+> Output records written: 36125
+
+> Output records written: 36308
+
+> Output records written: 36308
+
+> Output records written: 36904
+
+> Output records written: 36904
+
+> Output records written: 37192
+
+> Output records written: 37702
+
+> Output records written: 37702
+
+> Output records written: 37943
+
+> Output records written: 38449
+
+> Output records written: 38626
+
+> Output records written: 38626
+
+> Output records written: 39169
+
+> Output records written: 39247
+
+> Output records written: 39247
+
+> Output records written: 39953
+
+> Output records written: 40162
+
+> Output records written: 40162
+
+> Output records written: 40566
+
+> Output records written: 40566
+
+> Output records written: 40566
+
+> Output records written: 41503
+
+> Output records written: 41609
+
+> Output records written: 41609
+
+> Output records written: 41742
+
+> Output records written: 42403
+
+> Output records written: 42403
+
+> Output records written: 42791
+
+> Output records written: 43250
+
+> Output records written: 43400
+
+> Output records written: 43533
+
+> Output records written: 43533
+
+> Output records written: 43534
+
+> Output records written: 44932
+
+> Output records written: 44932
+
+> Output records written: 45069
+
+> Output records written: 45332
+
+> Output records written: 45332
+
+> Output records written: 45332
+
+> Output records written: 46281
+
+> Output records written: 46715
+
+> Output records written: 46946
+
+> Output records written: 47132
+
+> Output records written: 47573
+
+> Output records written: 47807
+
+> Output records written: 47961
+
+> Output records written: 48310
+
+> Output records written: 48548
+
+> Output records written: 48730
+
+> Output records written: 49072
+
+> Output records written: 49230
+
+> Output records written: 49230
+
+> Output records written: 49831
+
+> Output records written: 49962
+
+> Output records written: 49962
+
+> Output records written: 50555
+
+> Output records written: 50683
+
+> Output records written: 50895
+
+> Output records written: 51308
+
+> Output records written: 51433
+
+> Output records written: 51663
+
+> Output records written: 52129
+
+> Output records written: 52129
+
+> Output records written: 52614
+
+> Output records written: 52784
+
+> Output records written: 53017
+
+> Output records written: 53519
+
+> Output records written: 53519
+
+> Output records written: 54003
+
+> Output records written: 54451
+
+> Output records written: 54451
+
+> Output records written: 54911
+
+> Output records written: 55115
+
+> Output records written: 55377
+
+> Output records written: 55615
+
+> Output records written: 55824
+
+> Output records written: 56027
+
+> Output records written: 56361
+
+> Output records written: 56517
+
+> Output records written: 56947
+
+> Output records written: 57255
+
+> Output records written: 57446
+
+> Output records written: 57848
+
+> Output records written: 57848
+
+> Output records written: 57848
+
+> Output records written: 58400
+
+> Output records written: 58400
+
+> Output records written: 58954
+
+> Output records written: 59319
+
+> Output records written: 59477
+
+> Output records written: 59658
+
+> Output records written: 60106
+
+> Output records written: 60106
+
+> Output records written: 61116
+
+> Output records written: 61116
+
+> Output records written: 61116
+
+> Output records written: 61980
+
+> Output records written: 62228
+
+> Output records written: 62474
+
+> Output records written: 62746
+
+> Output records written: 62979
+
+> Output records written: 63211
+
+> Output records written: 63472
+
+> Output records written: 63700
+
+> Output records written: 63936
+
+> Output records written: 64174
+
+> Output records written: 64276
+
+> Output records written: 64276
+
+> Output records written: 64276
+
+> Output records written: 64822
+
+> Output records written: 64822
+
+> Output records written: 65553
+
+> Output records written: 65553
+
+> Output records written: 65553
+
+> Output records written: 66208
+
+> Output records written: 66208
+
+> Output records written: 66773
+
+> Output records written: 66964
+
+> Output records written: 66964
+
+> Output records written: 66964
+
+> Output records written: 67743
+
+> Output records written: 68084
+
+> Output records written: 68292
+
+> Output records written: 68617
+
+> Output records written: 68825
+
+> Output records written: 68825
+
+> Output records written: 69395
+
+> Output records written: 69530
+
+> Output records written: 69704
+
+> Output records written: 70175
+
+> Output records written: 70305
+
+> Output records written: 70715
+
+> Output records written: 71070
+
+> Output records written: 71313
+
+> Output records written: 71556
+
+> Output records written: 71610
+
+> Output records written: 72040
+
+> Output records written: 72040
+
+> Output records written: 73035
+
+> Output records written: 73035
+
+> Output records written: 73487
+
+> Output records written: 73802
+
+> Output records written: 74014
+
+> Output records written: 74221
+
+> Output records written: 74221
+
+> Output records written: 74593
+
+> Output records written: 74790
+
+> Output records written: 74790
+
+> Output records written: 74790
+
+> Output records written: 75754
+
+> Output records written: 75975
+
+> Output records written: 76052
+
+> Output records written: 76464
+
+> Output records written: 76693
+
+> Output records written: 76820
+
+> Output records written: 77172
+
+> Output records written: 77420
+
+> Output records written: 77592
+
+> Output records written: 78312
+
+> Output records written: 78458
+
+> Output records written: 78896
+
+> Output records written: 78896
+
+> Output records written: 79386
+
+> Output records written: 79515
+
+> Output records written: 79749
+
+> Output records written: 80102
+
+> Output records written: 80253
+
+> Output records written: 80580
+
+> Output records written: 80979
+
+> Output records written: 81165
+
+> Output records written: 81370
+
+> Output records written: 81682
+
+> Output records written: 82331
+
+> Output records written: 82383
+
+> Output records written: 82813
+
+> Output records written: 82813
+
+> Output records written: 83257
+
+> Output records written: 83515
+
+> Output records written: 83672
+
+> Output records written: 84156
+
+> Output records written: 84156
+
+> Output records written: 84943
+
+> Output records written: 85168
+
+> Output records written: 85440
+
+> Output records written: 85606
+
+> Output records written: 85606
+
+> Output records written: 86002
+
+> Output records written: 86182
+
+> Output records written: 86182
+
+> Output records written: 86182
+
+> Output records written: 86949
+
+> Output records written: 86949
+
+> Output records written: 86949
+
+> Output records written: 87669
+
+> Output records written: 87669
+
+> Output records written: 87669
+
+> Output records written: 88445
+
+> Output records written: 88445
+
+> Output records written: 88656
+
+> Output records written: 89154
+
+> Output records written: 89523
+
+> Output records written: 90216
+
+> Output records written: 90421
+
+> Output records written: 90909
+
+> Output records written: 91135
+
+> Output records written: 91135
+
+> Output records written: 91495
+
+> Output records written: 91758
+
+> Output records written: 91913
+
+> Output records written: 92134
+
+> Output records written: 92468
+
+> Output records written: 92468
+
+> Output records written: 92468
+
+> Output records written: 93339
+
+> Output records written: 93580
+
+> Output records written: 93580
+
+> Output records written: 94083
+
+> Output records written: 94241
+
+> Output records written: 94495
+
+> Output records written: 94762
+
+> Output records written: 94762
+
+> Output records written: 94762
+
+> Output records written: 95692
+
+> Output records written: 95692
+
+> Output records written: 96186
+
+> Output records written: 96340
+
+> Output records written: 96602
+
+> Output records written: 96733
+
+> Output records written: 97137
+
+> Output records written: 97252
+
+> Output records written: 97566
+
+> Output records written: 97939
+
+> Output records written: 98150
+
+> Output records written: 98150
+
+> Output records written: 98544
+
+> Output records written: 98544
+
+> Output records written: 99449
+
+> Output records written: 99449
+
+> Output records written: 99962
+
+> Output records written: 100278
+
+> Output records written: 100537
+
+> Output records written: 100702
+
+> Output records written: 100702
+
+> Output records written: 100780
+
+> Output records written: 101483
+
+> Output records written: 101571
+
+> Output records written: 101971
+
+> Output records written: 102201
+
+> Output records written: 102405
+
+> Output records written: 102555
+
+> Output records written: 102922
+
+> Output records written: 103075
+
+> Output records written: 103075
+
+> Output records written: 103075
+
+> Output records written: 103795
+
+> Output records written: 104033
+
+> Output records written: 104033
+
+> Output records written: 104577
+
+> Output records written: 104813
+
+> Output records written: 104994
+
+> Output records written: 105340
+
+> Output records written: 105509
+
+> Output records written: 105643
+
+> Output records written: 106130
+
+> Output records written: 106131
+
+> Output records written: 106131
+
+> Output records written: 106814
+
+> Output records written: 106814
+
+> Output records written: 106814
+
+> Output records written: 107501
+
+> Output records written: 107501
+
+> Output records written: 107501
+
+> Output records written: 108370
+
+> Output records written: 108370
+
+> Output records written: 108370
+
+> Output records written: 109158
+
+> Output records written: 109291
+
+> Output records written: 109609
+
+> Output records written: 109897
+
+> Output records written: 110080
+
+> Output records written: 110365
+
+> Output records written: 110639
+
+> Output records written: 110789
+
+> Output records written: 111005
+
+> Output records written: 111449
+
+> Output records written: 111684
+
+> Output records written: 112330
+
+> Output records written: 112562
+
+> Output records written: 112886
+
+> Output records written: 112886
+
+> Output records written: 113309
+
+> Output records written: 113670
+
+> Output records written: 113771
+
+> Output records written: 114153
+
+> Output records written: 114491
+
+> Output records written: 114693
+
+> Output records written: 114693
+
+> Output records written: 115123
+
+> Output records written: 115123
+
+> Output records written: 115123
+
+> Output records written: 116012
+
+> Output records written: 116143
+
+> Output records written: 116352
+
+> Output records written: 116759
+
+> Output records written: 116968
+
+> Output records written: 117251
+
+> Output records written: 117549
+
+> Output records written: 117549
+
+> Output records written: 117549
+
+> Output records written: 118356
+
+> Output records written: 118592
+
+> Output records written: 118592
+
+> Output records written: 119127
+
+> Output records written: 119127
+
+> Output records written: 119507
+
+> Output records written: 119880
+
+> Output records written: 120119
+
+> Output records written: 120119
+
+> Output records written: 120658
+
+> Output records written: 120658
+
+> Output records written: 120842
+
+> Output records written: 121363
+
+> Output records written: 121573
+
+> Output records written: 121573
+
+> Output records written: 121973
+
+> Output records written: 121973
+
+> Output records written: 121973
+
+> Output records written: 122909
+
+> Output records written: 123067
+
+> Output records written: 123171
+
+> Output records written: 123614
+
+> Output records written: 123818
+
+> Output records written: 124123
+
+> Output records written: 124461
+
+> Output records written: 124645
+
+> Output records written: 124921
+
+> Output records written: 125247
+
+> Output records written: 125247
+
+> Output records written: 125247
+
+> Output records written: 125967
+
+> Output records written: 126130
+
+> Output records written: 126367
+
+> Output records written: 126367
+
+> Output records written: 127015
+
+> Output records written: 127015
+
+> Output records written: 127492
+
+> Output records written: 127505
+
+> Output records written: 127832
+
+> Output records written: 128020
+
+> Output records written: 128383
+
+> Output records written: 128604
+
+> Output records written: 128839
+
+> Output records written: 129018
+
+> Output records written: 129018
+
+> Output records written: 129596
+
+> Output records written: 129779
+
+> Output records written: 129779
+
+> Output records written: 129779
+
+> Output records written: 130541
+
+> Output records written: 130541
+
+> Output records written: 130855
+
+> Output records written: 131460
+
+> Output records written: 131460
+
+> Output records written: 131545
+
+> Output records written: 132194
+
+> Output records written: 132194
+
+> Output records written: 132194
+
+> Output records written: 132763
+
+> Output records written: 132763
+
+> Output records written: 132763
+
+> Output records written: 133670
+
+> Output records written: 133840
+
+> Output records written: 133840
+
+> Output records written: 134274
+
+> Output records written: 134274
+
+> Output records written: 134274
+
+> Output records written: 135070
+
+> Output records written: 135070
+
+> Output records written: 136099
+
+> Output records written: 136363
+
+> Output records written: 136476
+
+> Output records written: 136859
+
+> Output records written: 137040
+
+> Output records written: 137225
+
+> Output records written: 137612
+
+> Output records written: 137830
+
+> Output records written: 138045
+
+> Output records written: 138196
+
+> Output records written: 138529
+
+> Output records written: 138773
+
+> Output records written: 139006
+
+> Output records written: 139059
+
+> Output records written: 139513
+
+> Output records written: 139762
+
+> Output records written: 139980
+
+> Output records written: 140301
+
+> Output records written: 140301
+
+> Output records written: 140301
+
+> Output records written: 141114
+
+> Output records written: 141346
+
+> Output records written: 141493
+
+> Output records written: 141798
+
+> Output records written: 141798
+
+> Output records written: 141798
+
+> Output records written: 142591
+
+> Output records written: 142802
+
+> Output records written: 143062
+
+> Output records written: 143348
+
+> Output records written: 143425
+
+> Output records written: 143659
+
+> Output records written: 144077
+
+> Output records written: 144260
+
+> Output records written: 144260
+
+> Output records written: 144886
+
+> Output records written: 144886
+
+> Output records written: 145282
+
+> Output records written: 145600
+
+> Output records written: 145810
+
+> Output records written: 145810
+
+> Output records written: 146316
+
+> Output records written: 146316
+
+> Output records written: 146316
+
+> Output records written: 147153
+
+> Output records written: 147153
+
+> Output records written: 147153
+
+> Output records written: 147712
+
+> Output records written: 147712
+
+> Output records written: 147712
+
+> Output records written: 148443
+
+> Output records written: 148443
+
+> Output records written: 148443
+
+> Output records written: 149187
+
+> Output records written: 149532
+
+> Output records written: 149532
+
+> Output records written: 149949
+
+> Output records written: 150181
+
+> Output records written: 150181
+
+> Output records written: 150826
+
+> Output records written: 150826
+
+> Output records written: 150826
+
+> Output records written: 151435
+
+> Output records written: 151435
+
+> Output records written: 151839
+
+> Output records written: 152219
+
+> Output records written: 152219
+
+> Output records written: 152677
+
+> Output records written: 153157
+
+> Output records written: 153393
+
+> Output records written: 153632
+
+> Output records written: 153793
+
+> Output records written: 154029
+
+> Output records written: 154369
+
+> Output records written: 154557
+
+> Output records written: 154557
+
+> Output records written: 154921
+
+> Output records written: 155382
+
+> Output records written: 155382
+
+> Output records written: 155783
+
+> Output records written: 155966
+
+> Output records written: 155966
+
+> Output records written: 155966
+
+> Output records written: 156740
+
+> Output records written: 156740
+
+> Output records written: 157286
+
+> Output records written: 157503
+
+> Output records written: 157503
+
+> Output records written: 157503
+
+> Output records written: 158466
+
+> Output records written: 158987
+
+> Output records written: 159245
+
+> Output records written: 159525
+
+> Output records written: 159751
+
+> Output records written: 159802
+
+> Output records written: 160226
+
+> Output records written: 160493
+
+> Output records written: 160746
+
+> Output records written: 161005
+
+> Output records written: 161249
+
+> Output records written: 161288
+
+> Output records written: 161288
+
+> Output records written: 162020
+
+> Output records written: 162207
+
+> Output records written: 162464
+
+> Output records written: 162671
+
+> Output records written: 162950
+
+> Output records written: 163208
+
+> Output records written: 163465
+
+> Output records written: 163645
+
+> Output records written: 163645
+
+> Output records written: 163645
+
+> Output records written: 164471
+
+> Output records written: 164695
+
+> Output records written: 164941
+
+> Output records written: 165169
+
+> Output records written: 165296
+
+> Output records written: 165526
+
+> Output records written: 165978
+
+> Output records written: 166028
+
+> Output records written: 166028
+
+> Output records written: 166764
+
+> Output records written: 166948
+
+> Output records written: 167261
+
+> Output records written: 167492
+
+> Output records written: 167701
+
+> Output records written: 167990
+
+> Output records written: 168043
+
+> Output records written: 168043
+
+> Output records written: 168043
+
+> Output records written: 168939
+
+> Output records written: 168939
+
+> Output records written: 169201
+
+> Output records written: 169658
+
+> Output records written: 169809
+
+> Output records written: 170071
+
+> Output records written: 170313
+
+> Output records written: 170313
+
+> Output records written: 170313
+
+> Output records written: 171031
+
+> Output records written: 171031
+
+> Output records written: 171553
+
+> Output records written: 171933
+
+> Output records written: 171933
+
+> Output records written: 171933
+
+> Output records written: 172666
+
+> Output records written: 172849
+
+> Output records written: 172849
+
+> Output records written: 173284
+
+> Output records written: 173284
+
+> Output records written: 173284
+
+> Output records written: 174029
+
+> Output records written: 174029
+
+> Output records written: 174553
+
+> Output records written: 174924
+
+> Output records written: 175094
+
+> Output records written: 175353
+
+> Output records written: 175669
+
+> Output records written: 175825
+
+> Output records written: 176008
+
+> Output records written: 176431
+
+> Output records written: 176593
+
+> Output records written: 176759
+
+> Output records written: 177251
+
+> Output records written: 177482
+
+> Output records written: 177799
+
+> Output records written: 178052
+
+> Output records written: 178305
+
+> Output records written: 178540
+
+> Output records written: 178792
+
+> Output records written: 179041
+
+> Output records written: 179274
+
+> Output records written: 179529
+
+> Output records written: 179694
+
+> Output records written: 180001
+
+> Output records written: 180079
+
+> Output records written: 180079
+
+> Output records written: 180642
+
+> Output records written: 180642
+
+> Output records written: 180878
+
+> Output records written: 181520
+
+> Output records written: 181726
+
+> Output records written: 181945
+
+> Output records written: 182341
+
+> Output records written: 182551
+
+> Output records written: 182680
+
+> Output records written: 183085
+
+> Output records written: 183246
+
+> Output records written: 183455
+
+> Output records written: 183883
+
+> Output records written: 184121
+
+> Output records written: 184121
+
+> Output records written: 184635
+
+> Output records written: 184792
+
+> Output records written: 185056
+
+> Output records written: 185438
+
+> Output records written: 185438
+
+> Output records written: 185513
+
+> Output records written: 186125
+
+> Output records written: 186125
+
+> Output records written: 186125
+
+> Output records written: 187040
+
+> Output records written: 187040
+
+> Output records written: 187329
+
+> Output records written: 187625
+
+> Output records written: 187898
+
+> Output records written: 188263
+
+> Output records written: 188331
+
+> Output records written: 189055
+
+> Output records written: 189157
+
+> Output records written: 189546
+
+> Output records written: 189780
+
+> Output records written: 189998
+
+> Output records written: 190251
+
+> Output records written: 190451
+
+> Output records written: 190679
+
+> Output records written: 190879
+
+> Output records written: 191165
+
+> Output records written: 191386
+
+> Output records written: 191636
+
+> Output records written: 191883
+
+> Output records written: 192109
+
+> Output records written: 192342
+
+> Output records written: 192610
+
+> Output records written: 192927
+
+> Output records written: 192927
+
+> Output records written: 192927
+
+> Output records written: 193710
+
+> Output records written: 193916
+
+> Output records written: 194173
+
+> Output records written: 194477
+
+> Output records written: 194740
+
+> Output records written: 194945
+
+> Output records written: 195088
+
+> Output records written: 195088
+
+> Output records written: 195088
+
+> Output records written: 196003
+
+> Output records written: 196210
+
+> Output records written: 196210
+
+> Output records written: 196794
+
+> Output records written: 196794
+
+> Output records written: 197110
+
+> Output records written: 197576
+
+> Output records written: 197576
+
+> Output records written: 197918
+
+> Output records written: 198329
+
+> Output records written: 198511
+
+> Output records written: 198511
+
+> Output records written: 198564
+
+> Output records written: 199110
+
+> Output records written: 199110
+
+> Output records written: 199110
+
+> Output records written: 199110
+
+> Output records written: 200287
+
+> Output records written: 200419
+
+> Output records written: 201193
+
+> Output records written: 201193
+
+> Output records written: 201588
+
+> Output records written: 201978
+
+> Output records written: 201978
+
+> Output records written: 202575
+
+> Output records written: 202879
+
+> Output records written: 202879
+
+> Output records written: 203135
+
+> Output records written: 203604
+
+> Output records written: 203604
+
+> Output records written: 203604
+
+> Output records written: 204375
+
+> Output records written: 204559
+
+> Output records written: 204760
+
+> Output records written: 205134
+
+> Output records written: 205264
+
+> Output records written: 205495
+
+> Output records written: 205882
+
+> Output records written: 205960
+
+> Output records written: 206141
+
+> Output records written: 206604
+
+> Output records written: 206761
+
+> Output records written: 207140
+
+> Output records written: 207426
+
+> Output records written: 207599
+
+> Output records written: 207807
+
+> Output records written: 207989
+
+> Output records written: 208278
+
+> Output records written: 208278
+
+> Output records written: 208278
+
+> Output records written: 209056
+
+> Output records written: 209056
+
+> Output records written: 209056
+
+> Output records written: 209818
+
+> Output records written: 209948
+
+> Output records written: 210133
+
+> Output records written: 210618
+
+> Output records written: 210829
+
+> Output records written: 211065
+
+> Output records written: 211344
+
+> Output records written: 211527
+
+> Output records written: 211738
+
+> Output records written: 212144
+
+> Output records written: 212379
+
+> Output records written: 212870
+
+> Output records written: 212974
+
+> Output records written: 213321
+
+> Output records written: 213321
+
+> Output records written: 213373
+
+> Output records written: 214092
+
+> Output records written: 214092
+
+> Output records written: 214092
+
+> Output records written: 214842
+
+> Output records written: 215001
+
+> Output records written: 215001
+
+> Output records written: 215589
+
+> Output records written: 215589
+
+> Output records written: 215589
+
+> Output records written: 216285
+
+> Output records written: 216399
+
+> Output records written: 216399
+
+> Output records written: 216988
+
+> Output records written: 217134
+
+> Output records written: 217134
+
+> Output records written: 217134
+
+> Output records written: 217936
+
+> Output records written: 217936
+
+> Output records written: 217936
+
+> Output records written: 218729
+
+> Output records written: 218729
+
+> Output records written: 218802
+
+> Output records written: 219667
+
+> Output records written: 219667
+
+> Output records written: 220053
+
+> Output records written: 220388
+
+> Output records written: 220476
+
+> Output records written: 220896
+
+> Output records written: 221156
+
+> Output records written: 221314
+
+> Output records written: 221314
+
+> Output records written: 221820
+
+> Output records written: 221820
+
+> Output records written: 221820
+
+> Output records written: 222783
+
+> Output records written: 222783
+
+> Output records written: 222862
+
+> Output records written: 223430
+
+> Output records written: 223541
+
+> Output records written: 223905
+
+> Output records written: 224292
+
+> Output records written: 224345
+
+> Output records written: 224345
+
+> Output records written: 224345
+
+> Output records written: 225141
+
+> Output records written: 225141
+
+> Output records written: 225141
+
+> Output records written: 225879
+
+> Output records written: 225938
+
+> Output records written: 225938
+
+> Output records written: 226651
+
+> Output records written: 226913
+
+> Output records written: 227149
+
+> Output records written: 227545
+
+> Output records written: 227728
+
+> Output records written: 227936
+
+> Output records written: 228350
+
+> Output records written: 228350
+
+> Output records written: 228621
+
+> Output records written: 229098
+
+> Output records written: 229333
+
+> Output records written: 229333
+
+> Output records written: 229934
+
+> Output records written: 229934
+
+> Output records written: 230247
+
+> Output records written: 230674
+
+> Output records written: 230674
+
+> Output records written: 230969
+
+> Output records written: 231542
+
+> Output records written: 231725
+
+> Output records written: 231828
+
+> Output records written: 232335
+
+> Output records written: 232544
+
+> Output records written: 232691
+
+> Output records written: 233100
+
+> Output records written: 233100
+
+> Output records written: 233100
+
+> Output records written: 233891
+
+> Output records written: 234094
+
+> Output records written: 234278
+
+> Output records written: 234666
+
+> Output records written: 234666
+
+> Output records written: 234929
+
+> Output records written: 235439
+
+> Output records written: 235597
+
+> Output records written: 235932
+
+> Output records written: 236239
+
+> Output records written: 236239
+
+> Output records written: 236500
+
+> Output records written: 237011
+
+> Output records written: 237247
+
+> Output records written: 237247
+
+> Output records written: 237750
+
+> Output records written: 237750
+
+> Output records written: 238020
+
+> Output records written: 238337
+
+> Output records written: 238337
+
+> Output records written: 238962
+
+> Output records written: 238962
+
+> Output records written: 239743
+
+> Output records written: 240135
+
+> Output records written: 240389
+
+> Output records written: 240515
+
+> Output records written: 240515
+
+> Output records written: 241112
+
+> Output records written: 241310
+
+> Output records written: 241310
+
+> Output records written: 241839
+
+> Output records written: 242054
+
+> Output records written: 242308
+
+> Output records written: 242333
+
+> Output records written: 242789
+
+> Output records written: 242789
+
+> Output records written: 242789
+
+> Output records written: 243552
+
+> Output records written: 243789
+
+> Output records written: 243789
+
+> Output records written: 244437
+
+> Output records written: 244594
+
+> Output records written: 244852
+
+> Output records written: 245212
+
+> Output records written: 245394
+
+> Output records written: 245683
+
+> Output records written: 246018
+
+> Output records written: 246226
+
+> Output records written: 246507
+
+> Output records written: 246821
+
+> Output records written: 247030
+
+> Output records written: 247030
+
+> Output records written: 247469
+
+> Output records written: 247469
+
+> Output records written: 248170
+
+> Output records written: 248382
+
+> Output records written: 248382
+
+> Output records written: 248694
+
+> Output records written: 249097
+
+> Output records written: 249304
+
+> Output records written: 249304
+
+> Output records written: 249813
+
+> Output records written: 249995
+
+> Output records written: 250283
+
+> Output records written: 250593
+
+> Output records written: 250593
+
+> Output records written: 250852
+
+> Output records written: 251340
+
+> Output records written: 251449
+
+> Output records written: 251791
+
+> Output records written: 252118
+
+> Output records written: 252354
+
+> Output records written: 252354
+
+> Output records written: 252988
+
+> Output records written: 252988
+
+> Output records written: 253469
+
+> Output records written: 253631
+
+> Output records written: 253631
+
+> Output records written: 254143
+
+> Output records written: 254378
+
+> Output records written: 254863
+
+> Output records written: 254876
+
+> Output records written: 254876
+
+> Output records written: 255252
+
+> Output records written: 255707
+
+> Output records written: 255707
+
+> Output records written: 256680
+
+> Output records written: 256737
+
+> Output records written: 257124
+
+> Output records written: 257435
+
+> Output records written: 257667
+
+> Output records written: 258065
+
+> Output records written: 258065
+
+> Output records written: 258829
+
+> Output records written: 258854
+
+> Output records written: 259312
+
+> Output records written: 259661
+
+> Output records written: 259775
+
+> Output records written: 260139
+
+> Output records written: 260385
+
+> Output records written: 260591
+
+> Output records written: 260591
+
+> Output records written: 261066
+
+> Output records written: 261066
+
+> Output records written: 261066
+
+> Output records written: 261802
+
+> Output records written: 261802
+
+> Output records written: 261802
+
+> Output records written: 262580
+
+> Output records written: 262580
+
+> Output records written: 262580
+
+> Output records written: 263364
+
+> Output records written: 263364
+
+> Output records written: 263364
+
+> Output records written: 264055
+
+> Output records written: 264055
+
+> Output records written: 264542
+
+> Output records written: 264963
+
+> Output records written: 264963
+
+> Output records written: 265241
+
+> Output records written: 265719
+
+> Output records written: 265955
+
+> Output records written: 266188
+
+> Output records written: 266481
+
+> Output records written: 266481
+
+> Output records written: 266787
+
+> Output records written: 267322
+
+> Output records written: 267322
+
+> Output records written: 267722
+
+> Output records written: 268069
+
+> Output records written: 268282
+
+> Output records written: 268282
+
+> Output records written: 268769
+
+> Output records written: 268769
+
+> Output records written: 268769
+
+> Output records written: 269693
+
+> Output records written: 269935
+
+> Output records written: 270212
+
+> Output records written: 270346
+
+> Output records written: 270644
+
+> Output records written: 270644
+
+> Output records written: 270644
+
+> Output records written: 271409
+
+> Output records written: 271590
+
+> Output records written: 271590
+
+> Output records written: 272453
+
+> Output records written: 272453
+
+> Output records written: 272453
+
+> Output records written: 273285
+
+> Output records written: 273285
+
+> Output records written: 273550
+
+> Output records written: 273550
+
+> Output records written: 274010
+
+> Output records written: 274959
+
+> Output records written: 274959
+
+> Output records written: 275409
+
+> Output records written: 275860
+
+> Output records written: 276071
+
+> Output records written: 276335
+
+> Output records written: 276591
+
+> Output records written: 276829
+
+> Output records written: 277057
+
+> Output records written: 277201
+
+> Output records written: 277201
+
+> Output records written: 277201
+
+> Output records written: 277680
+
+> Output records written: 277680
+
+> Output records written: 278519
+
+> Output records written: 278781
+
+> Output records written: 279021
+
+> Output records written: 279021
+
+> Output records written: 279375
+
+> Output records written: 279375
+
+> Output records written: 279375
+
+> Output records written: 280219
+
+> Output records written: 280426
+
+> Output records written: 280651
+
+> Output records written: 281015
+
+> Output records written: 281156
+
+> Output records written: 281361
+
+> Output records written: 281699
+
+> Output records written: 281888
+
+> Output records written: 282172
+
+> Output records written: 282431
+
+> Output records written: 282432
+
+> Output records written: 282432
+
+> Output records written: 282432
+
+> Output records written: 283439
+
+> Output records written: 283675
+
+> Output records written: 283931
+
+> Output records written: 284181
+
+> Output records written: 284415
+
+> Output records written: 284676
+
+> Output records written: 284932
+
+> Output records written: 285136
+
+> Output records written: 285348
+
+> Output records written: 285560
+
+> Output records written: 285560
+
+> Output records written: 286164
+
+> Output records written: 286430
+
+> Output records written: 286661
+
+> Output records written: 286950
+
+> Output records written: 287183
+
+> Output records written: 287413
+
+> Output records written: 287662
+
+> Output records written: 287910
+
+> Output records written: 288135
+
+> Output records written: 288366
+
+> Output records written: 288617
+
+> Output records written: 288872
+
+> Output records written: 289086
+
+> Output records written: 289316
+
+> Output records written: 289393
+
+> Output records written: 289849
+
+> Output records written: 290002
+
+> Output records written: 290320
+
+> Output records written: 290732
+
+> Output records written: 290962
+
+> Output records written: 291172
+
+> Output records written: 291358
+
+> Output records written: 291358
+
+> Output records written: 291358
+
+> Output records written: 292227
+
+> Output records written: 292452
+
+> Output records written: 292452
+
+> Output records written: 293044
+
+> Output records written: 293226
+
+> Output records written: 293226
+
+> Output records written: 293735
+
+> Output records written: 294035
+
+> Output records written: 294245
+
+> Output records written: 294603
+
+> Output records written: 294838
+
+> Output records written: 294838
+
+> Output records written: 295480
+
+> Output records written: 295661
+
+> Output records written: 295765
+
+> Output records written: 296227
+
+> Output records written: 296431
+
+> Output records written: 296690
+
+> Output records written: 296845
+
+> Output records written: 296845
+
+> Output records written: 297392
+
+> Output records written: 297721
+
+> Output records written: 297852
+
+> Output records written: 298065
+
+> Output records written: 298386
+
+> Output records written: 298386
+
+> Output records written: 298492
+
+> Output records written: 299145
+
+> Output records written: 299145
+
+> Output records written: 299145
+
+> Output records written: 299864
+
+> Output records written: 300201
+
+> Output records written: 300201
+
+> Output records written: 300642
+
+> Output records written: 300642
+
+> Output records written: 301374
+
+> Output records written: 301374
+
+> Output records written: 301374
+
+> Output records written: 302386
+
+> Output records written: 302489
+
+> Output records written: 302798
+
+> Output records written: 303064
+
+> Output records written: 303064
+
+> Output records written: 303064
+
+> Output records written: 303969
+
+> Output records written: 304099
+
+> Output records written: 304301
+
+> Output records written: 304735
+
+> Output records written: 304915
+
+> Output records written: 304915
+
+> Output records written: 305451
+
+> Output records written: 305659
+
+> Output records written: 305891
+
+> Output records written: 306191
+
+> Output records written: 306370
+
+> Output records written: 306666
+
+> Output records written: 306929
+
+> Output records written: 307113
+
+> Output records written: 307113
+
+> Output records written: 307565
+
+> Output records written: 307565
+
+> Output records written: 307565
+
+> Output records written: 308455
+
+> Output records written: 308508
+
+> Output records written: 308508
+
+> Output records written: 309191
+
+> Output records written: 309346
+
+> Output records written: 309657
+
+> Output records written: 309913
+
+> Output records written: 310067
+
+> Output records written: 310068
+
+> Output records written: 310708
+
+> Output records written: 310838
+
+> Output records written: 311100
+
+> Output records written: 311463
+
+> Output records written: 311696
+
+> Output records written: 311696
+
+> Output records written: 312235
+
+> Output records written: 312448
+
+> Output records written: 312448
+
+> Output records written: 312969
+
+> Output records written: 313148
+
+> Output records written: 313148
+
+> Output records written: 313741
+
+> Output records written: 313925
+
+> Output records written: 313925
+
+> Output records written: 314502
+
+> Output records written: 314657
+
+> Output records written: 314657
+
+> Output records written: 315198
+
+> Output records written: 315459
+
+> Output records written: 315694
+
+> Output records written: 315954
+
+> Output records written: 316081
+
+> Output records written: 316081
+
+> Output records written: 316686
+
+> Output records written: 316869
+
+> Output records written: 316869
+
+> Output records written: 317437
+
+> Output records written: 317437
+
+> Output records written: 317652
+
+> Output records written: 318235
+
+> Output records written: 318235
+
+> Output records written: 318571
+
+> Output records written: 319057
+
+> Output records written: 319057
+
+> Output records written: 319472
+
+> Output records written: 319761
+
+> Output records written: 319975
+
+> Output records written: 319975
+
+> Output records written: 320524
+
+> Output records written: 320695
+
+> Output records written: 320695
+
+> Output records written: 321293
+
+> Output records written: 321505
+
+> Output records written: 321505
+
+> Output records written: 322103
+
+> Output records written: 322285
+
+> Output records written: 322586
+
+> Output records written: 322600
+
+> Output records written: 322637
+
+> Output records written: 322757
+
+> Output records written: 322793
+
+> Output records written: 323110
+
+> Output records written: 323110
+
+> Output records written: 323810
+
+> Output records written: 323961
+
+> Output records written: 323961
+
+> Output records written: 323961
+
+> Output records written: 323961
+
+> Output records written: 325014
+
+> Output records written: 325118
+
+> Output records written: 325504
+
+> Output records written: 325594
+
+> Output records written: 325594
+
+> Output records written: 326054
+
+> Output records written: 326391
+
+> Output records written: 326391
+
+> Output records written: 326391
+
+> Output records written: 327132
+
+> Output records written: 327302
+
+> Output records written: 327302
+
+> Output records written: 327916
+
+> Output records written: 327916
+
+> Output records written: 328309
+
+> Output records written: 328809
+
+> Output records written: 328809
+
+> Output records written: 329283
+
+> Output records written: 329568
+
+> Output records written: 329750
+
+> Output records written: 329957
+
+> Output records written: 330409
+
+> Output records written: 330459
+
+> Output records written: 330459
+
+> Output records written: 331125
+
+> Output records written: 331448
+
+> Output records written: 331660
+
+> Output records written: 331660
+
+> Output records written: 332243
+
+> Output records written: 332455
+
+> Output records written: 332713
+
+> Output records written: 332972
+
+> Output records written: 333147
+
+> Output records written: 333147
+
+> Output records written: 333549
+
+> Output records written: 333959
+
+> Output records written: 334189
+
+> Output records written: 334419
+
+> Output records written: 334696
+
+> Output records written: 334954
+
+> Output records written: 335162
+
+> Output records written: 335478
+
+> Output records written: 335582
+
+> Output records written: 335967
+
+> Output records written: 336232
+
+> Output records written: 336335
+
+> Output records written: 336335
+
+> Output records written: 337064
+
+> Output records written: 337248
+
+> Output records written: 337557
+
+> Output records written: 337809
+
+> Output records written: 337966
+
+> Output records written: 338254
+
+> Output records written: 338578
+
+> Output records written: 338761
+
+> Output records written: 338761
+
+> Output records written: 339353
+
+> Output records written: 339353
+
+> Output records written: 339639
+
+> Output records written: 340174
+
+> Output records written: 340700
+
+> Output records written: 340927
+
+> Output records written: 341132
+
+> Output records written: 341132
+
+> Output records written: 341132
+
+> Output records written: 341919
+
+> Output records written: 341996
+
+> Output records written: 341996
+
+> Output records written: 342626
+
+> Output records written: 342655
+
+> Output records written: 342655
+
+> Output records written: 342655
+
+> Output records written: 343559
+
+> Output records written: 343770
+
+> Output records written: 343770
+
+> Output records written: 344340
+
+> Output records written: 344340
+
+> Output records written: 344604
+
+> Output records written: 345114
+
+> Output records written: 345254
+
+> Output records written: 345551
+
+> Output records written: 345891
+
+> Output records written: 346048
+
+> Output records written: 346048
+
+> Output records written: 346554
+
+> Output records written: 346554
+
+> Output records written: 347475
+
+> Output records written: 347475
+
+> Output records written: 348027
+
+> Output records written: 348315
+
+> Output records written: 348570
+
+> Output records written: 348769
+
+> Output records written: 348769
+
+> Output records written: 349222
+
+> Output records written: 349477
+
+> Output records written: 349477
+
+> Output records written: 350106
+
+> Output records written: 350361
+
+> Output records written: 350524
+
+> Output records written: 350524
+
+> Output records written: 351074
+
+> Output records written: 351128
+
+> Output records written: 351128
+
+> Output records written: 351858
+
+> Output records written: 352029
+
+> Output records written: 352132
+
+> Output records written: 352132
+
+> Output records written: 352802
+
+> Output records written: 352958
+
+> Output records written: 353218
+
+> Output records written: 353434
+
+> Output records written: 353731
+
+> Output records written: 353731
+
+> Output records written: 354153
+
+> Output records written: 354153
+
+> Output records written: 354205
+
+> Output records written: 355033
+
+> Output records written: 355270
+
+> Output records written: 355528
+
+> Output records written: 355788
+
+> Output records written: 355942
+
+> Output records written: 356159
+
+> Output records written: 356565
+
+> Output records written: 356744
+
+> Output records written: 357007
+
+> Output records written: 357346
+
+> Output records written: 357528
+
+> Output records written: 357817
+
+> Output records written: 357978
+
+> Output records written: 357978
+
+> Output records written: 357978
+
+> Output records written: 359028
+
+> Output records written: 359373
+
+> Output records written: 359788
+
+> Output records written: 360046
+
+> Output records written: 360271
+
+> Output records written: 360501
+
+> Output records written: 360768
+
+> Output records written: 360979
+
+> Output records written: 361106
+
+> Output records written: 361106
+
+> Output records written: 361664
+
+> Output records written: 361664
+
+> Output records written: 361664
+
+> Output records written: 362437
+
+> Output records written: 362645
+
+> Output records written: 362849
+
+> Output records written: 363226
+
+> Output records written: 363355
+
+> Output records written: 363355
+
+> Output records written: 363972
+
+> Output records written: 364128
+
+> Output records written: 364130
+
+> Output records written: 364146
+
+> Output records written: 365647
+
+> Output records written: 365647
+
+> Output records written: 366438
+
+> Output records written: 366438
+
+> Output records written: 366438
+
+> Output records written: 367162
+
+> Output records written: 367162
+
+> Output records written: 367162
+
+> Output records written: 367878
+
+> Output records written: 367878
+
+> Output records written: 367878
+
+> Output records written: 368714
+
+> Output records written: 368714
+
+> Output records written: 369317
+
+> Output records written: 369450
+
+> Output records written: 369450
+
+> Output records written: 369450
+
+> Output records written: 370196
+
+> Output records written: 370196
+
+> Output records written: 370196
+
+> Output records written: 370989
+
+> Output records written: 370989
+
+> Output records written: 370989
+
+> Output records written: 370989
+
+> Output records written: 371946
+
+> Output records written: 372167
+
+> Output records written: 373032
+
+> Output records written: 373032
+
+> Output records written: 373032
+
+> Output records written: 373805
+
+> Output records written: 373935
+
+> Output records written: 374272
+
+> Output records written: 374518
+
+> Output records written: 374729
+
+> Output records written: 374936
+
+> Output records written: 375276
+
+> Output records written: 375455
+
+> Output records written: 375455
+
+> Output records written: 375968
+
+> Output records written: 375968
+
+> Output records written: 375968
+
+> Output records written: 376869
+
+> Output records written: 377131
+
+> Output records written: 377131
+
+> Output records written: 377647
+
+> Output records written: 377855
+
+> Output records written: 378064
+
+> Output records written: 378380
+
+> Output records written: 378574
+
+> Output records written: 378731
+
+> Output records written: 379032
+
+> Output records written: 379399
+
+> Output records written: 379610
+
+> Output records written: 379610
+
+> Output records written: 380114
+
+> Output records written: 380350
+
+> Output records written: 380350
+
+> Output records written: 380859
+
+> Output records written: 381041
+
+> Output records written: 381276
+
+> Output records written: 381574
+
+> Output records written: 381758
+
+> Output records written: 382090
+
+> Output records written: 382304
+
+> Output records written: 382553
+
+> Output records written: 382570
+
+> Output records written: 382984
+
+> Output records written: 383341
+
+> Output records written: 383341
+
+> Output records written: 383500
+
+> Output records written: 384261
+
+> Output records written: 384261
+
+> Output records written: 384703
+
+> Output records written: 385001
+
+> Output records written: 385001
+
+> Output records written: 385288
+
+> Output records written: 385756
+
+> Output records written: 385892
+
+> Output records written: 386120
+
+> Output records written: 386535
+
+> Output records written: 386714
+
+> Output records written: 386895
+
+> Output records written: 387155
+
+> Output records written: 387482
+
+> Output records written: 387696
+
+> Output records written: 388044
+
+> Output records written: 388162
+
+> Output records written: 388345
+
+> Output records written: 388775
+
+> Output records written: 388775
+
+> Output records written: 388828
+
+> Output records written: 389531
+
+> Output records written: 389531
+
+> Output records written: 389531
+
+> Output records written: 390257
+
+> Output records written: 390476
+
+> Output records written: 390476
+
+> Output records written: 391059
+
+> Output records written: 391271
+
+> Output records written: 391271
+
+> Output records written: 391816
+
+> Output records written: 391999
+
+> Output records written: 392210
+
+> Output records written: 392553
+
+> Output records written: 392690
+
+> Output records written: 392690
+
+> Output records written: 393151
+
+> Output records written: 393151
+
+> Output records written: 393818
+
+> Output records written: 394031
+
+> Output records written: 394031
+
+> Output records written: 394242
+
+> Output records written: 394761
+
+> Output records written: 394761
+[2025-02-23 22:51:56.446] [info] > Simplex reads basecalled: 394761
+[2025-02-23 22:51:56.446] [info] > 394761 reads demuxed @ classifications/s: 2.274808e+03
+[2025-02-23 22:51:56.446] [info] > finished barcode demuxing
+[2025-02-23 22:51:56.447] [info] > generating summary file
+[2025-02-23 22:52:03.232] [info] > summary file complete.
